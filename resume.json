@@ -1,49 +1,61 @@
 {
-  "basics": {
-    "name": "Christopher Dewan",
-    "label": "Software and Hardware Engineer",
-    "picture": "",
-    "email": "Chris.Dewan@outlook.com",
-    "website": "http://m3rlin.net",
-    "summary": "I work on spaceship parts!",
-    "location": {
-      "city": "Los Angeles",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Github",
-        "url": "https://github.com/m3rlin45"
-      }
-    ]
-  },
-  "work": [
-    {
-        "company": "Raytheon",
-        "position": "VIIRS ESTE Responsible Engineering Authority",
-        "website": "http://www.raytheon.com/capabilities/products/viirs/",
-        "startDate": "2012-08-01",
-        "summary": "VIIRS is a spaceborn sensor that provides multispectral radiometric imaging of the earth for weather prediction purposes. Prior to integration onto a spacecraft it undergoes a long intensive test in simulated environments and using a simulation of the spacecraft and ground station that control it. I was the product owner for the ground station and spacecraft simulators (ESTE), in both hardware and software. In this role I undertook a large number of upgrades and improvements, both driven by customer needs and changing program requirements.",
-        "highlights": [
-            "Pushed for and lead a complete redesign and rewrite of the core software of the ESTE",
-            "Designed and implemented a level shift board allowing the use of COTS 1394 boards in test",
-            "Redesigned the ESTE to support SpaceWire connectivity to support VIIRS upgrades",
-            "Designed, built, and maintained an automated data aggregation and transfer system that provided Analysts with test data within 5 minutes of collection, a vast improvement over the several hours of manual work it took previously"
+    "basics": {
+        "name": "Christopher Dewan",
+        "label": "Software and Hardware Engineer",
+        "picture": "",
+        "email": "Chris.Dewan@outlook.com",
+        "website": "http://m3rlin.net",
+        "summary": "I work on spaceship parts!",
+        "location": {
+            "city": "Los Angeles",
+            "countryCode": "US",
+            "region": "California"
+        },
+        "profiles": [
+            {
+                "network": "Github",
+                "url": "https://github.com/m3rlin45"
+            }
         ]
     },
-    {
-      "company": "Raytheon",
-      "position": "Optical Test Station Electrical and Software Architect",
-      "website": "http://raytheon.com",
-      "startDate": "2011-04-01",
-      "endDate": "2012-08-01",
-      "summary": "foo bar",
-      "highlights": [
-        "power supplies"
-      ]
-    }
-  ],
+    "work": [
+        {
+          "company": "Raytheon",
+          "position": "Staff Assistant to the Software Department",
+          "website": "http://raytheon.com",
+          "startDate": "2011-04-01",
+          "endDate": "2012-08-01",
+          "summary": "foo bar",
+          "highlights": [
+            "power supplies"
+          ]
+        },
+        {
+            "company": "Raytheon",
+            "position": "VIIRS ESTE Responsible Engineering Authority",
+            "website": "http://www.raytheon.com/capabilities/products/viirs/",
+            "startDate": "2012-08-01",
+            "endDate": "present",
+            "summary": "VIIRS is a spaceborn sensor that provides multispectral radiometric imaging of the earth for weather prediction purposes. Prior to integration onto a spacecraft it undergoes a long intensive test in simulated environments and using a simulation of the spacecraft and ground station that control it. I was the product owner for the ground station and spacecraft simulators (ESTE), in both hardware and software. In this role I undertook a large number of upgrades and improvements, both driven by customer needs and changing program requirements.",
+            "highlights": [
+                "Pushed for and lead a complete redesign and rewrite of the core software of the ESTE",
+                "Designed and implemented a level shift board allowing the use of COTS 1394 boards in test",
+                "Redesigned the ESTE to support SpaceWire connectivity to support VIIRS upgrades",
+                "Designed, built, and maintained an automated data aggregation and transfer system that provided Analysts with test data within 5 minutes of collection, a vast improvement over the several hours of manual work it took previously"
+            ]
+        },
+        {
+            "company": "Raytheon",
+            "position": "Optical Test Station Electrical and Software Architect",
+            "website": "http://raytheon.com",
+            "startDate": "2011-04-01",
+            "endDate": "2012-08-01",
+            "summary": "foo bar",
+            "highlights": [
+                "power supplies"
+            ]
+        }
+    ],
   "education": [
     {
       "institution": "Caltech",
@@ -53,8 +65,8 @@
       "endDate": "2010-06-01",
       "gpa": "3.5",
       "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
+        "APH9",
+        "APH109"
       ]
     }
   ],
