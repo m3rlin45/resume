@@ -15,6 +15,10 @@
             {
                 "network": "Github",
                 "url": "https://github.com/m3rlin45"
+            },
+            {
+                "network": "Picasa",
+                "url": "https://picasaweb.google.com/m3rlin45"
             }
         ]
     },
@@ -120,7 +124,10 @@
   "interests": [
     {
         "name": "Photography",
-        "url" :  "http://picasaweb.google.com/m3rlin45"
+        "keywords": [
+            "Landscape",
+            "Product"
+        ]
     }
   ]
 }
