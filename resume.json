@@ -86,16 +86,16 @@
   ],
   "skills": [
     {
-        "name": "Programming Languages",
-        "level": "master",
+        "name": "Programming",
+        "level": "Shipped a major project",
         "keywords": [
             "C#",
             "C++"
         ]
     },
         {
-        "name": "Programming Languages",
-        "level": "intermediate",
+        "name": "Programming",
+        "level": "Used for nontrivial production work",
         "keywords": [
             "HTML",
             "Powershell"
@@ -118,7 +118,7 @@
     },
     {
         "language": "Japanese",
-        "fluency": "Passed JLPT N4 December 2014"
+        "fluency": "JLPT N4"
     }
   ],
   "interests": [
