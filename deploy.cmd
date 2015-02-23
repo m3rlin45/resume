@@ -59,7 +59,7 @@ echo Building Resume
 call :Executecmd npm install resume-cli
 IF !ERRORLEVEL! NEQ 0 goto error
 REM This creates the **index.html** which is deployed by Azure Websites.
-call :Executecmd node .\node_modules\resume-cli\index.js export index -f html -t elegant
+call :Executecmd node .\node_modules\resume-cli\index.js export index -f html -t modern-extended
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 1. KuduSync
