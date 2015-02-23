@@ -5,7 +5,7 @@
         "picture": "",
         "email": "Chris.Dewan@outlook.com",
         "website": "http://m3rlin.net",
-        "summary": "todo",
+        "summary": "I work on spaceship Parts!",
         "location": {
             "city": "Los Angeles",
             "countryCode": "US",
@@ -55,9 +55,20 @@
             "website": "http://raytheon.com",
             "startDate": "2011-04-01",
             "endDate": "2012-08-01",
-            "summary": "foo bar",
+            "summary": "todo",
             "highlights": [
-                "power supplies"
+                "todo"
+            ]
+        },
+        {
+            "company": "NTT Communication Science Laboratories",
+            "position": "Summer Intern",
+            "website": "http://www.kecl.ntt.co.jp/rps/english/index_e.html",
+            "startDate": "2009-06-10",
+            "endDate": "2009-08-31",
+            "summary": "todo",
+            "highlights": [
+                "todo"
             ]
         }
     ],
