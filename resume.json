@@ -87,7 +87,7 @@
   "skills": [
     {
         "name": "Programming Languages",
-        "level": "I have shipped at least one major (>10K SLOC by me) project in these languages",
+        "level": "master",
         "keywords": [
             "C#",
             "C++"
@@ -95,15 +95,15 @@
     },
         {
         "name": "Programming Languages",
-        "level": "I have done nontrivial production work in these languages",
+        "level": "intermediate",
         "keywords": [
             "HTML",
             "Powershell"
         ]
     },
     {
-      "name": "Hardware Design",
-      "level": "todo",
+      "name": "Electrical Hardware Design",
+      "level": "intermediate",
       "keywords": [
         "Parts Selection",
         "Circuit Design/ Schematic Capture",
