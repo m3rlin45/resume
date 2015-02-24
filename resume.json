@@ -52,13 +52,18 @@
         },
         {
             "company": "Raytheon",
-            "position": "Optical Test Station Electrical and Software Architect",
+            "position": "Test Station Electrical and Software Architect",
             "website": "http://raytheon.com",
             "startDate": "2011-04-01",
             "endDate": "2012-08-01",
             "summary": "todo",
             "highlights": [
-                "todo"
+                "Gathered electrical and software requirements for the test station",
+                "Designed an overall hardware and software architecture to satisfy the requirements",
+                "Selected all the components to be used, did the interconnect, wiring, and mechanical design",
+                "Designed a web based backend data store and api for both configuration data and telemetry using C#, asp.Net MVC, and XML-RPC",
+                "Built a client for the api that could be consumed by typical Labview programmers",
+                "Worked closely with the Labview frontend group, resulting in smooth integration"
             ]
         },
         {
@@ -118,7 +123,7 @@
       "level": "intermediate",
       "keywords": [
         "Parts Selection",
-        "Circuit Design/ Schematic Capture",
+        "Circuit Design / Schematic Capture",
         "Fabrication"
       ]
     }
