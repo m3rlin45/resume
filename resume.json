@@ -117,8 +117,9 @@
             "name": "Programming",
             "level": "Major projects",
             "keywords": [
-                "C#",
-                "C++"
+                "C#, ASP.Net MVC, MsTest Unit Test, Entitity Framework",
+                "C++11, boost libraries, boost::test unit test framework, Intel TBB library",
+                "Agile software development, unit testing, and continuous integration"
             ]
         },
         {
@@ -127,6 +128,7 @@
             "keywords": [
                 "Instrument Selection",
                 "Test Design",
+                "Testing",
                 "Data Analysis"
             ]
         },
