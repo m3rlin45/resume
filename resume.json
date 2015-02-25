@@ -42,12 +42,14 @@
             "position": "VIIRS ESTE REA",
             "website": "http://www.raytheon.com/capabilities/products/viirs/",
             "startDate": "2012-08-01",
-            "summary": "VIIRS is a spaceborn sensor that provides multispectral radiometric imaging of the earth for weather prediction purposes. Prior to integration onto a spacecraft it undergoes a long intensive test in simulated environments and using a simulation of the spacecraft and ground station that control it. I was the product owner for the ground station and spacecraft simulators (ESTE), in both hardware and software. In this role I undertook a large number of upgrades and improvements, both driven by customer needs and changing program requirements.",
+            "summary": "VIIRS is a spaceborn sensor that provides multispectral radiometric imaging of the earth for weather prediction purposes. It undergoes a long series of intensive tests in simulated environments with spacecraft and ground station simulators. I was the Responsible Engineering Authority (REA) for the ground station and spacecraft simulators (ESTE), in both hardware and software. I undertook a large number of upgrades and improvements, driven by emerging customer needs and evolving program requirements.",
             "highlights": [
-                "Pushed for and lead a complete redesign and rewrite of the core software of the ESTE",
+                "Made the case for, designed, and implemented a complete redesign and rewrite of the core software of the ESTE (40K lines of new C++)",
                 "Made an adapter board to allow the use of cheap COTS communications boards in place of the expensive custom ones",
                 "Redesigned the ESTE to support SpaceWire connectivity to support VIIRS upgrades",
-                "Designed, built, and maintained an automated data aggregation and transfer system that provided Analysts with test data within 5 minutes of collection, a vast improvement over the several hours of manual work it took previously"
+                "Designed, built, and maintained an automated data aggregation and transfer system that provided Analysts with test data within 5 minutes of collection, a vast improvement over the several hours of manual work it took previously",
+                "Provided 24/7 on call support for several months of continuous testing",
+                "Testing completed with a marked (70%) reduction in errors caused the ESTE compared to previous programs, as a result of the above actions."
             ]
         },
         {
