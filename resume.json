@@ -101,12 +101,7 @@
             "studyType": "BS",
             "startDate": "2006-10-01",
             "endDate": "2010-06-01",
-            "gpa": "3.5",
-            "courses": [
-                "APH9",
-                "APH109",
-                "todo: more"
-            ]
+            "gpa": "3.5"
         }
     ],
     "awards": [
