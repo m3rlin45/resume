@@ -127,6 +127,15 @@
             ]
         },
         {
+            "name": "Test and Measurement",
+            "level": "Major Projects",
+            "keywords": [
+                "Instrument Selection",
+                "Test Design",
+                "Data Analysis"
+            ]
+        },
+        {
             "name": "Programming",
             "level": "Minor projects",
             "keywords": [
@@ -141,15 +150,6 @@
                 "Parts Selection",
                 "Circuit Design / Schematic Capture",
                 "Fabrication"
-            ]
-        },
-        {
-            "name": "Test and Measurement",
-            "level": "Major Projects",
-            "keywords": [
-                "Instrument Selection",
-                "Test Design",
-                "Data Analysis"
             ]
         }
     ],
