@@ -28,7 +28,7 @@
             "position": "Advisor to Software Center Managment",
             "website": "http://raytheon.com",
             "startDate": "2015-01-01",
-            "summary": "Worked with the top management of the Sofware Engineering Center to improve talent acquisition and retention",
+            "summary": "Led an effort in Sofware Engineering Center to improve talent acquisition and retention",
             "highlights": [
                 "Added an emphasis on hiring people with both hardware and software skills for test and measurement software roles",
                 "Expanded the duration of on site interviews and greatly expanded their technical scope",
@@ -42,7 +42,7 @@
             "position": "VIIRS ESTE REA",
             "website": "http://www.raytheon.com/capabilities/products/viirs/",
             "startDate": "2012-08-01",
-            "summary": "VIIRS is a spaceborn sensor that provides multispectral radiometric imaging of the earth for weather prediction purposes. It undergoes a long series of intensive tests in simulated environments with spacecraft and ground station simulators. I was the Responsible Engineering Authority (REA) for the ground station and spacecraft simulators (ESTE), in both hardware and software. I undertook a large number of upgrades and improvements, driven by emerging customer needs and evolving program requirements.",
+            "summary": "VIIRS is a spaceborne sensor that provides multispectral radiometric imaging of the earth for weather prediction purposes. It undergoes a long series of intensive tests in simulated environments with spacecraft and ground station simulators. I was the Responsible Engineering Authority (REA) for the ground station and spacecraft simulators (ESTE), in both hardware and software. I undertook a large number of upgrades and improvements, driven by emerging customer needs and evolving program requirements.",
             "highlights": [
                 "Made the case for, designed, and implemented a complete redesign and rewrite of the core software of the ESTE (40K lines of new C++)",
                 "Made an adapter board to allow the use of cheap COTS communications boards in place of the expensive custom ones",
@@ -63,7 +63,7 @@
                 "Gathered electrical and software requirements for the test station",
                 "Designed an overall hardware and software architecture to satisfy the requirements",
                 "Selected all the components to be used, did the interconnect, wiring, and mechanical design",
-                "Designed a web based backend data store and api for both configuration data and telemetry using C#, asp.Net MVC, and XML-RPC",
+                "Designed a web based backend data store and api for both configuration data and telemetry using C#, asp.Net MVC, and XML-RPC (~10K LOC)",
                 "Built a client for the api that could be consumed by typical Labview programmers",
                 "Worked closely with the Labview frontend group, resulting in smooth integration"
             ]
@@ -119,7 +119,8 @@
             "keywords": [
                 "C#, ASP.Net MVC, MsTest Unit Test, Entitity Framework",
                 "C++11, boost libraries, boost::test unit test framework, Intel TBB library",
-                "Agile software development, unit testing, and continuous integration"
+                "Agile software development, unit testing, and continuous integration",
+                "White box reverse engineering of legacy code"
             ]
         },
         {
