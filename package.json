@@ -1,0 +1,7 @@
+{
+  "name": "CMD-Resume",
+  "version": "0.0.1",
+  "dependencies": {
+    "resume-cli": "^0.3.13"
+  }
+}

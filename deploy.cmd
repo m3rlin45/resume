@@ -56,7 +56,7 @@ echo Handling Basic Web Site deployment.
 
 REM Use the Executecmd macro to execute and validate the command worked
 echo Building Resume
-call :Executecmd npm install resume-cli
+call :Executecmd npm install
 IF !ERRORLEVEL! NEQ 0 goto error
 REM This creates the **index.html** which is deployed by Azure Websites.
 call :Executecmd node .\node_modules\resume-cli\index.js export index -f html -t modern-extended
