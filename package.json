@@ -2,6 +2,7 @@
   "name": "CMD-Resume",
   "version": "0.0.1",
   "dependencies": {
+    "moment": "^2.9.0",
     "resume-cli": "^0.3.13"
   }
 }
