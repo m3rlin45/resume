@@ -130,7 +130,7 @@ Overall GPA: <$ school.gpa $>
 <$ interest.name $> & 
 <% set comma = joiner() %> 
 <% for keyw in interest.keywords %> 
-<$ comma() $> <$ keyw $> 
+<$- comma() -$> <$ keyw $> 
 <% endfor %>\\
 <% endfor %>
 \end{tabular}
