@@ -14,7 +14,8 @@
         "profiles": [
             {
                 "network": "Github",
-                "url": "https://github.com/m3rlin45"
+                "url": "https://github.com/m3rlin45",
+                "username": "m3rlin45"
             },
             {
                 "network": "Picasa",
@@ -22,7 +23,7 @@
                 "username": "m3rlin45"
             },
             {
-                "network": "JSON Resume",
+                "network": "Resume JSON",
                 "username": "This resume is built using CI from this repository",
                 "url": "https://github.com/m3rlin45/resume"
             }
