@@ -78,7 +78,7 @@
             "highlights": [
                 "Research on human color perception of materials. Focusing on use of specular and matte reflection by the vision system to infer materials and illuminants in a scene",
                 "Experimented with Machine vision techniques for manipulating specular and matter reflection",
-                "Designed, built, and tested a device using polarized light to take pictures that could be easily separated for later manipulation in subject testing. Task involved MATLAB, microcontroller (Arduino/AVR-C), stepper motors, motor controllers, circuit design, and fabrication."
+                "Designed, built, and tested a device using polarized light to take pictures that could be easily separated for later manipulation in subject testing. Task involved MATLAB, microcontroller (Arduino), stepper motors, motor controllers, circuit design, and fabrication."
             ]
         },
         {
