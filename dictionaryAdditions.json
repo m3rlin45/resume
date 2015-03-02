@@ -121,6 +121,10 @@
         "XMLRPC",
         "Arduino",
         "JSON",
-        "m3rlin45"
+        "m3rlin45",
+        "Languages",
+        "Frameworks",
+        "nunjucksjs",
+        "Log4CXX"
     ]
 }

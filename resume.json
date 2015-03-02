@@ -121,12 +121,53 @@
     ],
     "skills": [
         {
-            "name": "Programming",
+            "name": "Programming Languages",
             "level": "Major projects",
             "keywords": [
-                "C#, ASP.NET MVC, MSTest Unit Test, Entity Framework",
-                "C++11, boost libraries, boost::test unit test framework, Intel TBB library",
-                "Agile software development, unit testing, and continuous integration",
+                "C#",
+                "C++"
+            ]
+        },
+        {
+            "name": "Frameworks",
+            "level": "Major Projects",
+            "keywords": [
+                "C++11/14",
+                "boost",
+                "boost::test",
+                "Intel TBB",
+                "ASP.NET MVC",
+                "MSTest",
+                "Entity Framework"
+            ]
+        },
+        {
+            "name": "Programming",
+            "level": "Minor projects",
+            "keywords": [
+                "Javascript",
+                "HTML",
+                "Powershell",
+                "LaTeX",
+                "LabVIEW"
+            ]
+        },
+        {
+            "name": "Frameworks",
+            "level": "Minor projects",
+            "keywords": [
+                "node.js",
+                "nunjucks.js",
+                "Log4CXX"
+            ]
+        },
+        {
+            "name": "Programming Techniques",
+            "level": "Major Projects",
+            "keywords": [
+                "Agile (Scrum)",
+                "Unit Testing",
+                "Continuous Integration",
                 "White box reverse engineering of legacy code"
             ]
         },
@@ -141,19 +182,12 @@
             ]
         },
         {
-            "name": "Programming",
-            "level": "Minor projects",
-            "keywords": [
-                "HTML",
-                "Powershell"
-            ]
-        },
-        {
             "name": "Electrical Hardware Design",
             "level": "Minor Projects",
             "keywords": [
                 "Parts Selection",
-                "Circuit Design / Schematic Capture",
+                "Circuit Design",
+                "Schematic Capture",
                 "Fabrication"
             ]
         }

@@ -88,6 +88,24 @@ Tools & SVN, Vim, Emacs
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+<% for skill  in skills %>
+<$ skill.name $> & 
+<%- set comma = joiner() -%> 
+<%- for keyw in skill.keywords -%> 
+<$ comma() $> <$ keyw | TeXEscape $> 
+<%- endfor -%>\\
+<% endfor %>
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
