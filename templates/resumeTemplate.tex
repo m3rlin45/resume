@@ -43,8 +43,8 @@
 
 <% for job in work %>
 
-\begin{rSubsection}{<$ job.company $>}{<$ job.startDate $> - <$ job.endDate $>}{ <$ job.position $> }{}
-\item <$ job.summary | TeXEscape $>
+\begin{rSubsection}{<$ job.company $>}{<$ job.startDate $> - <$ job.endDate $>}{ <$ job.position $> }{} 
+{ <$ job.summary | TeXEscape $> }
 <% for highlight in job.highlights %>
 \item <$ highlight | TeXEscape $>
 <% endfor %>
@@ -52,35 +52,25 @@
 
 <% endfor %>
 
-\begin{rSubsection}{ACME, Inc}{October 2010 - Present}{Web Developer}{Palo Alto, CA}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
-\item Donec et mollis dolor. Praesent et diam eget libero Adobe Coldfusion egestas mattis sit amet vitae augue.
-\item Nam tincidunt congue enim, ut porta lorem Microsoft SQL lacinia consectetur.
-\item Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-\item Pellentesque auctor nisi id magna consequat JavaScript sagittis.
-\item Aliquam at massa ipsum. Quisque bash bibendum purus convallis nulla ultrices ultricies.
-\end{rSubsection}
+\end{rSection}
 
-%------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
 
-\begin{rSubsection}{AJAX Hosting}{December 2009 - October 2010}{Lead Developer}{Austin, TX}
-\item Aenean ut gravida lorem. Ut turpis felis, Perl pulvinar a semper sed, adipiscing id dolor.
-\item Curabitur dapibus enim sit amet elit pharetra tincidunt website feugiat nisl imperdiet. Ut convallis AJAX libero in urna ultrices accumsan.
-\item Cum sociis natoque penatibus et magnis dis MySQL parturient montes, nascetur ridiculus mus.
-\item In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
-\item Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper.
-\end{rSubsection}
+\begin{rSection}{Awards}
 
-%------------------------------------------------
+<% for award in awards %>
 
-\begin{rSubsection}{TinySoft}{January 2008 - April 2010}{Web Designer \& Developer}{Gainesville, GA}
-\item Vivamus PostgreSQL fermentum semper porta. Nunc diam velit PHP, adipiscing ut tristique vitae
-\item Maecenas convallis ullamcorper ultricies stylesheets.
-\item Quisque mi metus, unit tests CSS ornare sit amet fermentum et, tincidunt et orci.
-\item Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id
-\end{rSubsection}
+{\bf <$ award.awarder $> --- <$ award.title $>} \hfill {\em <$ award.date $>} \\ 
+<$ award.summary $>\\
+
+<% endfor %>
+
 
 \end{rSection}
+
+%----------------------------------------------------------------------------------------
 
 %----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
