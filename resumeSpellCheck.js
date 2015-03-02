@@ -28,7 +28,7 @@ function findCheckableStrings(aResume){
             if(typeof aResume[keys[i]] === "string") 
             {
                 //next get rid of all dates, emails, and urls, cant spell check those
-                if (!(moment(aResume[keys[i]]).isValid()
+                if (!(moment(new Date(aResume[keys[i]])).isValid()
                     || validator.isURL(aResume[keys[i]])
                     || validator.isEmail(aResume[keys[i]]))) {
                     checkableStrings.push(S(aResume[keys[i]]).stripPunctuation());
@@ -47,8 +47,13 @@ var mispelledWords = checkableWords.filter(function (word) {
     return !dict.lookup(word).found;
 });
 
+//error if there are mispelled words.
 if (mispelledWords.length != 0) {
     console.log("Mispelled words found, either fix them or add them to dictionaryAdditions.json");
     console.log(mispelledWords);
     process.exit(1)
+}
+else {
+    console.log("Spelling looks good!");
+    process.exit(0);
 }

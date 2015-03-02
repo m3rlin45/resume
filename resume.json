@@ -58,7 +58,7 @@
             "website": "http://raytheon.com",
             "startDate": "2011-04-01",
             "endDate": "2012-08-01",
-            "summary": "Built stuff Todo",
+            "summary": "A capital project in which I did the entire design and integration flow for the electronics and software back end. Station is a Raytheon capital asset in use today.",
             "highlights": [
                 "Gathered electrical and software requirements for the test station",
                 "Designed an overall hardware and software architecture to satisfy the requirements",
