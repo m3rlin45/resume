@@ -119,6 +119,7 @@
         "MVC",
         "Experimented",
         "XMLRPC",
-        "Arduino"
+        "Arduino",
+        "JSON"
     ]
 }
