@@ -22,10 +22,6 @@
                 "username": "m3rlin45"
             },
             {
-                "network": "Personal Site",
-                "url": "http://m3rlin.net"
-            },
-            {
                 "network": "JSON Resume",
                 "username": "This resume is built using CI from this repository",
                 "url": "https://github.com/m3rlin45/resume"
