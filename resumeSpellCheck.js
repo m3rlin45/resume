@@ -1,10 +1,11 @@
 var fs = require('fs');
 var moment = require('moment');
-var validUrl = require('valid-url');
+var validator = require('validator');
 var unique = require('unique-words');
 var spelling = require('spelling');
 var dictionary = require('spelling/dictionaries/en_US.js');
 var dict = new spelling(dictionary);
+var S = require('string');
 
 //add our additional words to dictionary
 var safeWords = JSON.parse(fs.readFileSync('dictionaryAdditions.json', 'utf8'));
@@ -26,9 +27,11 @@ function findCheckableStrings(aResume){
         else {
             if(typeof aResume[keys[i]] === "string") 
             {
-                //next get rid of all dates and urls, cant spell check those
-                if (!(moment(aResume[keys[i]]).isValid()||validUrl.isUri(aResume[keys[i]]))) {
-                    checkableStrings.push(aResume[keys[i]]);
+                //next get rid of all dates, emails, and urls, cant spell check those
+                if (!(moment(aResume[keys[i]]).isValid()
+                    || validator.isURL(aResume[keys[i]])
+                    || validator.isEmail(aResume[keys[i]]))) {
+                    checkableStrings.push(S(aResume[keys[i]]).stripPunctuation());
                 }
             }
         }

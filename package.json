@@ -5,7 +5,8 @@
     "moment": "^2.9.0",
     "resume-cli": "^0.3.13",
     "spelling": "^1.0.0",
+    "string": "^3.0.0",
     "unique-words": "^1.0.0",
-    "valid-url": "^1.0.9"
+    "validator": "^3.32.0"
   }
 }

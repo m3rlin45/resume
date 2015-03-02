@@ -5,7 +5,7 @@
         "picture": "",
         "email": "Chris.Dewan@outlook.com",
         "website": "http://m3rlin.net",
-        "summary": "I work on spaceship Parts!",
+        "summary": "I work on spaceship parts!",
         "location": {
             "city": "Los Angeles",
             "countryCode": "US",
@@ -25,16 +25,16 @@
     "work": [
         {
             "company": "Raytheon",
-            "position": "Advisor to Software Center Managment",
+            "position": "Adviser to Software Center Management",
             "website": "http://raytheon.com",
             "startDate": "2015-01-01",
-            "summary": "Led an effort in Sofware Engineering Center to improve talent acquisition and retention",
+            "summary": "Led an effort in Software Engineering Center to improve talent acquisition and retention",
             "highlights": [
                 "Added an emphasis on hiring people with both hardware and software skills for test and measurement software roles",
                 "Expanded the duration of on site interviews and greatly expanded their technical scope",
                 "Added an emphasis on system level skills demanded by the quick turn nature of the work.",
                 "Organized an effort to ensure that new hires would have real work from day 1, to improve morale and retention.",
-                "Peformed resume screening, phone screening, and on site interviews to assist in implementing these hiring changes"
+                "Performed resume screening, phone screening, and on site interviews to assist in implementing these hiring changes"
             ]
         },
         {
@@ -44,10 +44,10 @@
             "startDate": "2012-08-01",
             "summary": "VIIRS is a spaceborne sensor that provides multispectral radiometric imaging of the earth for weather prediction purposes. It undergoes a long series of intensive tests in simulated environments with spacecraft and ground station simulators. I was the Responsible Engineering Authority (REA) for the ground station and spacecraft simulators (ESTE), in both hardware and software. I undertook a large number of upgrades and improvements, driven by emerging customer needs and evolving program requirements.",
             "highlights": [
-                "Made the case for, designed, and implemented a complete redesign and rewrite of the core software of the ESTE (40K lines of new C++)",
-                "Made an adapter board to allow the use of cheap COTS communications boards in place of the expensive custom ones",
+                "Made the case for, designed, and implemented a complete redesign and rewrite of the core software of the ESTE (~40,000 lines of new C++)",
+                "Made an adapter board to allow the use of cheaper commercial communications boards in place of expensive custom ones",
                 "Redesigned the ESTE to support SpaceWire connectivity to support VIIRS upgrades",
-                "Designed, built, and maintained an automated data aggregation and transfer system that provided Analysts with test data within 5 minutes of collection, a vast improvement over the several hours of manual work it took previously",
+                "Designed, built, and maintained an automated data aggregation and transfer system that provided data analysts with test data within 5 minutes of collection, a vast improvement over the several hours of manual work it took previously",
                 "Provided 24/7 on call support for several months of continuous testing",
                 "Testing completed with a marked (70%) reduction in errors caused the ESTE compared to previous programs, as a result of the above actions."
             ]
@@ -63,9 +63,9 @@
                 "Gathered electrical and software requirements for the test station",
                 "Designed an overall hardware and software architecture to satisfy the requirements",
                 "Selected all the components to be used, did the interconnect, wiring, and mechanical design",
-                "Designed a web based backend data store and api for both configuration data and telemetry using C#, asp.Net MVC, and XML-RPC (~10K LOC)",
-                "Built a client for the api that could be consumed by typical Labview programmers",
-                "Worked closely with the Labview frontend group, resulting in smooth integration"
+                "Designed a web based back end data store and api for both configuration data and telemetry using C#, asp.Net MVC, and XML-RPC (~10,000 lines of code)",
+                "Built a client for the api that could be consumed by typical LabVIEW programmers",
+                "Worked closely with the LabVIEW front end group, resulting in smooth integration"
             ]
         },
         {
@@ -74,11 +74,11 @@
             "website": "http://www.kecl.ntt.co.jp/rps/english/index_e.html",
             "startDate": "2009-06-22",
             "endDate": "2009-08-28",
-            "summary": "Worked in the Vision group of the NTT Behavioral Research Lab in the NTT Atsugi R&D Center",
+            "summary": "Worked in the vision group of the NTT Behavioral Research Lab in the NTT Atsugi R&D Center",
             "highlights": [
                 "Research on human color perception of materials. Focusing on use of specular and matte reflection by the vision system to infer materials and illuminants in a scene",
-                "Experimented with Machine vision tehcniques for manipulating specular and matter reflection",
-                "Designed, built, and tested a device using polarized light to take pictures that could be easily separated easily for later manipulation in subject testing. Task involved Matlab, microcontroller (Arduino/AVR-C), stepper motors, motor controllers, circuit design, and fabrication."
+                "Experimented with Machine vision techniques for manipulating specular and matter reflection",
+                "Designed, built, and tested a device using polarized light to take pictures that could be easily separated for later manipulation in subject testing. Task involved MATLAB, microcontroller (Arduino/AVR-C), stepper motors, motor controllers, circuit design, and fabrication."
             ]
         },
         {
@@ -87,10 +87,10 @@
             "website": "http://www.kecl.ntt.co.jp/rps/english/index_e.html",
             "startDate": "2008-10-01",
             "endDate": "2009-12-01",
-            "summary": "Instructed Physics students in a hands on laboratory environment.",
+            "summary": "Instructed physics students in a hands on laboratory environment.",
             "highlights": [
-                "Physics 105, Analog Circuits Laboratory: Instructed students on both the theory and the practice of designing, analyzing, and constructing analog circuits using passive and active components, including transistors and op-amps.",
-                "Physics 6, Sophomore Laboratory in Physics: Experiments include Mass Spectroscopy, analysis of resonant circuits and resonant mechanical systems, light spectroscopy, diffraction of electrons by crystalline solidsn"
+                "Physics 105, Analog Circuits Laboratory: theory and the practice of designing, analyzing, and constructing analog circuits using passive and active components, including transistors and operational amplifiers.",
+                "Physics 6, Sophomore Laboratory in Physics: mass spectroscopy, analysis of resonant circuits, resonant mechanical systems, light spectroscopy, and diffraction of electrons by crystalline solids"
             ]
         }
     ],
@@ -117,7 +117,7 @@
             "name": "Programming",
             "level": "Major projects",
             "keywords": [
-                "C#, ASP.Net MVC, MsTest Unit Test, Entitity Framework",
+                "C#, ASP.NET MVC, MSTest Unit Test, Entity Framework",
                 "C++11, boost libraries, boost::test unit test framework, Intel TBB library",
                 "Agile software development, unit testing, and continuous integration",
                 "White box reverse engineering of legacy code"
