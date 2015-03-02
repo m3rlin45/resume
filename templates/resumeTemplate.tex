@@ -104,6 +104,40 @@ Overall GPA: <$ school.gpa $>
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Languages}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+<% for lang  in languages %>
+<$ lang.language $> & <$ lang.fluency $> \\
+<% endfor %>
+\end{tabular}
+
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Interests}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+<% for interest  in interests %>
+<$ interest.name $> & 
+<% set comma = joiner() %> 
+<% for keyw in interest.keywords %> 
+<$ comma() $> <$ keyw $> 
+<% endfor %>\\
+<% endfor %>
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
 %	EXAMPLE SECTION
 %----------------------------------------------------------------------------------------
 
