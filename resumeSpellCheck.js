@@ -46,6 +46,6 @@ var mispelledWords = checkableWords.filter(function (word) {
 
 if (mispelledWords.length != 0) {
     console.log("Mispelled words found, either fix them or add them to dictionaryAdditions.json");
-    console.log(mispelledWords);
+    mispelledWords.forEach(console.log);
     process.exit(1)
 }
