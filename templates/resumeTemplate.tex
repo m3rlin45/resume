@@ -78,13 +78,18 @@
 
 \begin{rSection}{Skills}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-<% for skill  in skills %>
-<$ skill.name $> & \bf <$ skill.level $>\\ &
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
+<% set filteredSkills = skills | ConvertSkills %>
+<% for skill  in filteredSkills %>
+<$ skill.name $> & \\
+<% for entry in skill.entries %>
+<% if loop.last %> \smallbreak <% endif %>
+\textnormal{  <$ entry.level $>} &
 <%- set comma = joiner() -%> 
-<%- for keyw in skill.keywords -%> 
+<%- for keyw in entry.keywords -%> 
 <$ comma() $> <$ keyw | TeXEscape $> 
-<%- endfor %>\\\\
+<%- endfor -%>\\
+<%- endfor %>
 <% endfor %>
 \end{tabular}
 
