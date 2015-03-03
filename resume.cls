@@ -116,9 +116,8 @@
   \\
   {\em #3} \hfill {\em #4} % Italic job title and location
   }
-  \par
-  {#5} % summary
-  \\%\smallskip
+  \par \parindent=1em
+  {#5}\smallskip % summary
   \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
