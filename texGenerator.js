@@ -18,6 +18,14 @@ env.addFilter('TeXEscape', function(str) {
     return lescape(str);
 });
 
+env.addFilter('ConvertSkills', function (skills) {
+    var newSkills = {};
+    skills.forEach(function (skill) {
+        newSkills[skill.name].push({ "level": skill.level, "keywords": skill.keywords });
+    });
+    return newSkills;
+})
+
 var resume = JSON.parse(fs.readFileSync('resume.json', 'utf8'));
 
 var res = nunjucks.render('resumeTemplate.tex', resume);

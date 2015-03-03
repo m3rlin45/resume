@@ -121,8 +121,8 @@
     ],
     "skills": [
         {
-            "name": "Programming Languages",
-            "level": "Major projects",
+            "name": "Languages",
+            "level": "Major Work",
             "keywords": [
                 "C#",
                 "C++"
@@ -130,11 +130,10 @@
         },
         {
             "name": "Frameworks",
-            "level": "Major Projects",
+            "level": "Major Work",
             "keywords": [
                 "C++11/14",
                 "boost",
-                "boost::test",
                 "Intel TBB",
                 "ASP.NET MVC",
                 "MSTest",
@@ -143,7 +142,7 @@
         },
         {
             "name": "Programming",
-            "level": "Minor projects",
+            "level": "Minor Work",
             "keywords": [
                 "Javascript",
                 "HTML",
@@ -154,7 +153,7 @@
         },
         {
             "name": "Frameworks",
-            "level": "Minor projects",
+            "level": "Minor Work",
             "keywords": [
                 "node.js",
                 "nunjucks.js",
@@ -162,18 +161,18 @@
             ]
         },
         {
-            "name": "Programming Techniques",
-            "level": "Major Projects",
+            "name": "Techniques",
+            "level": "Major Work",
             "keywords": [
                 "Agile (Scrum)",
                 "Unit Testing",
                 "Continuous Integration",
-                "White box reverse engineering of legacy code"
+                "White box reverse engineering"
             ]
         },
         {
-            "name": "Test and Measurement",
-            "level": "Major Projects",
+            "name": "Device Test",
+            "level": "Major Work",
             "keywords": [
                 "Instrument Selection",
                 "Test Design",
@@ -182,8 +181,8 @@
             ]
         },
         {
-            "name": "Electrical Hardware Design",
-            "level": "Minor Projects",
+            "name": "Electrical Design",
+            "level": "Minor Work",
             "keywords": [
                 "Parts Selection",
                 "Circuit Design",
