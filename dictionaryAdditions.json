@@ -125,6 +125,7 @@
         "Languages",
         "Frameworks",
         "nunjucksjs",
-        "Log4CXX"
+        "Log4CXX",
+        "thinking"
     ]
 }
