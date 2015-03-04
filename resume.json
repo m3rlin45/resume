@@ -62,16 +62,16 @@
         },
         {
             "company": "Raytheon",
-            "position": "Test Station Electrical and Software Architect",
+            "position": "Capital Test Station: Electrical and Software Architect",
             "website": "http://raytheon.com",
             "startDate": "2011-04-01",
             "endDate": "2012-08-01",
-            "summary": "A capital project in which I did the entire design and integration flow for the electronics and software back end. Station is a Raytheon capital asset in use today.",
+            "summary": "Raytheon owned test station, built to support customer programs and internal R&D. A grounds up new design adding significant new capabilities to Raytheon.",
             "highlights": [
                 "Gathered electrical and software requirements for the test station",
                 "Designed an overall hardware and software architecture to satisfy the requirements",
                 "Selected all the components to be used, did the interconnect, wiring, and mechanical design",
-                "Designed a web based back end data store and api for both configuration data and telemetry using C#, asp.Net MVC, and XML-RPC (~10,000 lines of code)",
+                "Designed a web based back end data store and api for both configuration data and telemetry using C#, ASP.NET MVC, and XML-RPC (~10,000 lines of code)",
                 "Built a client for the api that could be consumed by typical LabVIEW programmers",
                 "Worked closely with the LabVIEW front end group, resulting in smooth integration"
             ]
