@@ -46,17 +46,18 @@
         },
         {
             "company": "Raytheon",
-            "position": "VIIRS ESTE REA",
+            "position": "VIIRS Ground Support Equipment Responsible Engineering Authority",
             "website": "http://www.raytheon.com/capabilities/products/viirs/",
             "startDate": "2012-08-01",
-            "summary": "VIIRS is a spaceborne sensor that provides multispectral radiometric imaging of the earth for weather prediction purposes. It undergoes a long series of intensive tests in simulated environments with spacecraft and ground station simulators. I was the Responsible Engineering Authority (REA) for the ground station and spacecraft simulators (ESTE), in both hardware and software. I undertook a large number of upgrades and improvements, driven by emerging customer needs and evolving program requirements.",
+            "summary": "VIIRS (Visible Infrared Imaging Radiometric Suite) is a spaceborne camera used for weather prediction. As a highly calibrated piece of space hardware, it undergoes extensive testing with spacecraft and ground station simulators.",
             "highlights": [
-                "Made the case for, designed, and implemented a complete redesign and rewrite of the core software of the ESTE (~40,000 lines of new C++)",
-                "Made an adapter board to allow the use of cheaper commercial communications boards in place of expensive custom ones",
-                "Redesigned the ESTE to support SpaceWire connectivity to support VIIRS upgrades",
-                "Designed, built, and maintained an automated data aggregation and transfer system that provided data analysts with test data within 5 minutes of collection, a vast improvement over the several hours of manual work it took previously",
+                "Engineering owner of the ground station and spacecraft simulators for VIIRS test program, both hardware and software.",
+                "Made the business case for, architected, and implemented a complete redesign and rewrite of the core simulator software. (~40,000 lines of new C++)",
+                "Designed and built an adapter board for cheap commercial communications hardware to be used.",
+                "Redesigned the simulator to support SpaceWire connectivity to support VIIRS upgrades.",
+                "Designed, built, and maintained an automated data aggregation and transfer system reducing test to analysis time from hours to less than 5 minutes.",
                 "Provided 24/7 on call support for several months of continuous testing",
-                "Testing completed with a marked (70%) reduction in errors caused the ESTE compared to previous programs, as a result of the above actions."
+                "As a result of upgrades, test program had a marked (80%) reduction in errors caused the simulators."
             ]
         },
         {
