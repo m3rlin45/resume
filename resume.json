@@ -51,8 +51,8 @@
             "startDate": "2012-08-01",
             "summary": "VIIRS (Visible Infrared Imaging Radiometric Suite) is a spaceborne camera used for weather prediction. As a highly calibrated piece of space hardware, it undergoes extensive testing with spacecraft and ground station simulators.",
             "highlights": [
-                "Engineering owner of the ground station and spacecraft simulators for VIIRS test program, both hardware and software.",
-                "Made the business case for, architected, and implemented a complete redesign and rewrite of the core simulator software. (~40,000 lines of new C++)",
+                "Engineering owner of the ground station and spacecraft simulators for VIIRS test program.",
+                "Made the business case for, architected, and implemented a rewrite of the simulator software. (~40,000 lines of C++)",
                 "Designed and built an adapter board for cheap commercial communications hardware to be used.",
                 "Redesigned the simulator to support SpaceWire connectivity to support VIIRS upgrades.",
                 "Designed, built, and maintained an automated data aggregation and transfer system reducing test to analysis time from hours to less than 5 minutes.",
@@ -71,7 +71,7 @@
                 "Gathered electrical and software requirements for the test station",
                 "Designed an overall hardware and software architecture to satisfy the requirements",
                 "Selected all the components to be used, did the interconnect, wiring, and mechanical design",
-                "Designed a web based back end data store and api for both configuration data and telemetry using C#, ASP.NET MVC, and XML-RPC (~10,000 lines of code)",
+                "Designed a web based back end data store and api for both configuration data and telemetry using C#, HTML, ASP.NET MVC, and XML-RPC (~10,000 lines)",
                 "Built a client for the api that could be consumed by typical LabVIEW programmers",
                 "Worked closely with the LabVIEW front end group, resulting in smooth integration"
             ]
@@ -97,7 +97,7 @@
             "endDate": "2009-12-01",
             "summary": "Instructed physics students in a hands on laboratory environment.",
             "highlights": [
-                "Physics 105, Analog Circuits Laboratory: theory and the practice of designing, analyzing, and constructing analog circuits using passive and active components, including transistors and operational amplifiers.",
+                "Physics 105, Analog Circuits Laboratory: theory and the practice of designing, analyzing, and constructing analog circuits. Components included passives, transistors, and operational amplifiers.",
                 "Physics 6, Sophomore Laboratory in Physics: mass spectroscopy, analysis of resonant circuits, resonant mechanical systems, light spectroscopy, and diffraction of electrons by crystalline solids"
             ]
         }
