@@ -23,7 +23,7 @@
                 "username": "m3rlin45"
             },
             {
-                "network": "Resume JSON",
+                "network": "Resume Source",
                 "username": "This resume is built using CI from this repository",
                 "url": "https://github.com/m3rlin45/resume"
             }
@@ -123,7 +123,7 @@
             "title": "Mission Success Awards",
             "date": "2015-02-24",
             "awarder": "Raytheon VIIRS Program",
-            "summary": "Received 2 awards for personal contributions and 6 awards for team contributions to the VIIRS program over its 3 year duration."
+            "summary": "Received 2 awards for personal contributions and 6 awards for team contributions to the VIIRS program."
         },
                 {
             "title": "Award for Personal Contribution",

@@ -55,7 +55,7 @@
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	AWARD SECTION
+%	AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Awards}
@@ -63,7 +63,7 @@
 <% for award in awards %>
 
 {\bf <$ award.awarder $> --- <$ award.title $>} \hfill {\em <$ award.date $>} \\ 
-<$ award.summary $>\smallskip
+<$ award.summary $>
 
 <% endfor %>
 
@@ -151,12 +151,12 @@ Overall GPA: <$ school.gpa $>
 
 \begin{rSection}{Profiles}
 
-<% for profile in basics.profiles %>
-
-{\bf <$ profile.network $>} \hfill { <$ profile.url $>} \\ 
-<$ profile.username $>\\
-
-<% endfor %>
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+<% for profile  in basics.profiles -%>
+<$  profile.network $> & <$ profile.url $>\\
+\textnormal{  <$ profile.username $>} & \\
+<%- endfor %>
+\end{tabular}
 
 \end{rSection}
 
