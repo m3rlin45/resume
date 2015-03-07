@@ -24,12 +24,12 @@ EcHO START Unzipping MikTex
 d:\7zip\7za x -y -omiktex-2.9.5105 miktex-2.9.5105.exe > outmiktex
 EcHO DONE Unzipping MikTex
 
-popd
+
 
 
 
 :end
-
+popd
 REM Build the pdf
 pdflatex.exe resume.tex -halt-on-error
 
