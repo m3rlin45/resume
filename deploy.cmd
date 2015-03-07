@@ -67,6 +67,9 @@ IF !ERRORLEVEL! NEQ 0 goto error
 echo latex .tex file Generation
 call :Executecmd npm run buildTex
 IF !ERRORLEVEL! NEQ 0 goto error
+echo pdf file generation
+call :Executecmd pdflatex.exe resume.tex -halt-on-error
+IF !ERRORLEVEL! NEQ 0 goto error
 REM This creates the **index.html** which is deployed by Azure Websites.
 echo Building HTML Resume
 call :Executecmd node .\node_modules\resume-cli\index.js export index -f html -t modern-extended
