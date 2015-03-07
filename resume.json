@@ -52,10 +52,10 @@
             "summary": "VIIRS (Visible Infrared Imaging Radiometric Suite) is a spaceborne camera used for weather prediction. As a highly calibrated piece of space hardware, it undergoes extensive testing with spacecraft and ground station simulators.",
             "highlights": [
                 "Engineering owner of the ground station and spacecraft simulators for VIIRS test program.",
-                "Made the business case for, architected, and implemented a rewrite of the simulator software. (~40,000 lines of C++)",
+                "Made the case for, designed, and wrote a rewrite the simulator software. (~40,000 lines of C++)",
                 "Designed and built an adapter board for cheap commercial communications hardware to be used.",
                 "Redesigned the simulator to support SpaceWire connectivity to support VIIRS upgrades.",
-                "Designed, built, and maintained an automated data aggregation and transfer system reducing test to analysis time from hours to less than 5 minutes.",
+                "Designed, built, and maintained an automated data aggregation  system. Reduced analysis time from hours to less than 5 minutes.",
                 "Provided 24/7 on call support for several months of continuous testing",
                 "As a result of upgrades, test program had a marked (80%) reduction in errors caused the simulators."
             ]
@@ -84,9 +84,9 @@
             "endDate": "2009-08-28",
             "summary": "Worked in the vision group of the NTT Behavioral Research Lab in the NTT Atsugi R&D Center",
             "highlights": [
-                "Research on human color perception of materials. Focusing on use of specular and matte reflection by the vision system to infer materials and illuminants in a scene",
+                "Research on human material color perception focusing on specular and matte reflection's effects on inference materials and illuminants in a scene",
                 "Experimented with Machine vision techniques for manipulating specular and matter reflection",
-                "Designed, built, and tested a device using polarized light to take pictures that could be easily separated for later manipulation in subject testing. Task involved MATLAB, microcontroller (Arduino), stepper motors, motor controllers, circuit design, and fabrication."
+                "Designed and built an electromechanical optical system which controlled light polarization to separate matte and specular components of a scene."
             ]
         },
         {
