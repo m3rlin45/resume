@@ -26,6 +26,9 @@ EcHO DONE Unzipping MikTex
 
 popd
 
+REM Build the pdf
+pdflatex.exe resume.tex -halt-on-error
+
 :end
 
 REM KuduSync is after this!

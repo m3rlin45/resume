@@ -55,9 +55,6 @@ IF NOT DEFINED KUDU_SYNC_CMD (
 echo Handling Basic Web Site deployment.
 
 REM Use the Executecmd macro to execute and validate the command worked
-echo installing LaTeX
-call :Executecmd getLatex.cmd
-IF !ERRORLEVEL! NEQ 0 goto error
 echo installing npm packages
 call :Executecmd npm install
 IF !ERRORLEVEL! NEQ 0 goto error
@@ -67,8 +64,8 @@ IF !ERRORLEVEL! NEQ 0 goto error
 echo latex .tex file Generation
 call :Executecmd npm run buildTex
 IF !ERRORLEVEL! NEQ 0 goto error
-echo pdf file generation
-call :Executecmd pdflatex.exe resume.tex -halt-on-error
+echo Latex Install and PDF file generation
+call :Executecmd buildPDF.cmd
 IF !ERRORLEVEL! NEQ 0 goto error
 REM This creates the **index.html** which is deployed by Azure Websites.
 echo Building HTML Resume
