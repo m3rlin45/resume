@@ -49,7 +49,7 @@
             "position": "VIIRS Ground Support Equipment Responsible Engineering Authority",
             "website": "http://www.raytheon.com/capabilities/products/viirs/",
             "startDate": "2012-08-01",
-            "summary": "VIIRS (Visible Infrared Imaging Radiometric Suite) is a spaceborne camera used for weather prediction. As a highly calibrated piece of space hardware, it undergoes extensive testing with spacecraft and ground station simulators.",
+            "summary": "VIIRS (Visible Infrared Imaging Radiometer Suite) is a spaceborne camera used for weather prediction. As a highly calibrated piece of space hardware, it undergoes extensive testing with spacecraft and ground station simulators.",
             "highlights": [
                 "Engineering owner of the ground station and spacecraft simulators for VIIRS test program.",
                 "Made the case for, designed, and wrote a rewrite the simulator software. (~40,000 lines of C++)",
