@@ -62,7 +62,10 @@ echo installing npm packages
 call :Executecmd npm install
 IF !ERRORLEVEL! NEQ 0 goto error
 echo Spell Checking
-call :Executecmd node resumeSpellCheck.js
+call :Executecmd npm run spellcheck
+IF !ERRORLEVEL! NEQ 0 goto error
+echo latex .tex file Generation
+call :Executecmd node buildTex
 IF !ERRORLEVEL! NEQ 0 goto error
 REM This creates the **index.html** which is deployed by Azure Websites.
 echo Building HTML Resume
