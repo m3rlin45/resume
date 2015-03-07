@@ -118,6 +118,18 @@
             "date": "2012-11-01",
             "awarder": "Raytheon",
             "summary": "Award for a novel configuration database scheme for a test station"
+        },
+        {
+            "title": "Mission Success Awards",
+            "date": "2015-02-24",
+            "awarder": "Raytheon VIIRS Program",
+            "summary": "Received 2 awards for personal contributions and 6 awards for team contributions to the VIIRS program over its 3 year duration."
+        },
+                {
+            "title": "Award for Personal Contribution",
+            "date": "2012-02-11",
+            "awarder": "Raytheon Software Center",
+            "summary": "Awarded for work in improving hiring process in the Software Center."
         }
     ],
     "skills": [
