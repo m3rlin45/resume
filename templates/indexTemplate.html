@@ -56,10 +56,22 @@
                         <a class="page-scroll" href="#profile">Profile</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#experience">Experience</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#awards">Awards</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#languages">Languages</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#interests">Interests</a>
                     </li>
                 </ul>
             </div>
@@ -96,19 +108,32 @@
                     {{basics.location.city}}, {{basics.location.region}}
                 </p>
                 <p>{{basics.summary}}</p>
+                <ul class="list-inline">
+                    {% for profile in basics.profiles %}
+                    <li>
+                        <a href="{{profile.url}}" class="btn btn-default btn-lg">{{profile.network}} <br />{{profile.username}}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
+    <section id="experience" class="content-section text-center">
+        <div class="experience-section">
             <div class="container">
+                {% for job in work %}
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                    <h3>{{job.company}} - {{job.position}}</h3>
+                    <p>{{job.summary}}</p>
+                    <ul class="text-left">
+                        {% for highlight in job.highlights %}
+                        <li>{{highlight}}</li>
+                        {%endfor%}
+                    </ul>
                 </div>
+                {%endfor%}
             </div>
         </div>
     </section>

@@ -24,7 +24,7 @@
             },
             {
                 "network": "Resume Source",
-                "username": "This resume is built using CI from this repository",
+                "username": "This resume is built using CI",
                 "url": "https://github.com/m3rlin45/resume"
             }
         ]
