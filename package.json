@@ -14,5 +14,6 @@
     "scripts": {
         "spellcheck": "node resumeSpellCheck.js",
         "buildTex" :  "node texGenerator.js"
+		"buildHtml" : "node htmlGenerator.js"
     }
 }
