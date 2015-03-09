@@ -88,7 +88,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">{{basics.name}}</h1>
                         <p class="intro-text">{{basics.label}}</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
+                        <a href="#profile" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -98,28 +98,32 @@
     </header>
 
     <!-- Profile Section -->
-    <section id="profile" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>{{basics.name}}</h2>
-                <p>
-                    <a href="{{basics.website}}">{{basics.website}}</a> <br />
-                    <a href="mailto:{{basics.email}}">{{basics.email}}</a> <br />
-                    {{basics.location.city}}, {{basics.location.region}}
-                </p>
-                <p>{{basics.summary}}</p>
-                <ul class="list-inline">
-                    {% for profile in basics.profiles %}
-                    <li>
-                        <a href="{{profile.url}}" class="btn btn-default btn-lg">{{profile.network}} <br />{{profile.username}}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
+    <section id="profile" class="content-section text-center">
+        <div class="profile-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2>{{basics.name}}</h2>
+                        <p>
+                            <a href="{{basics.website}}">{{basics.website}}</a> <br />
+                            <a href="mailto:{{basics.email}}">{{basics.email}}</a> <br />
+                            {{basics.location.city}}, {{basics.location.region}}
+                        </p>
+                        <p>{{basics.summary}}</p>
+                        <ul class="list-inline">
+                            {% for profile in basics.profiles %}
+                            <li>
+                                <a href="{{profile.url}}" class="btn btn-default btn-lg">{{profile.network}} <br />{{profile.username}}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Download Section -->
+    <!-- Experience Section -->
     <section id="experience" class="content-section text-center">
         <div class="experience-section">
             <div class="container">
@@ -138,36 +142,72 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
+    <!-- Education Section -->
+    <section id="education" class="content-section text-center">
+        <div class="education-section">
+            <div class="container">
+                {% for school in education %}
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h3>{{school.institution}} - {{school.studyType}}, {{school.area}}</h3>
+                    <p>{{school.startDate}}-{{school.endDate}}</p>
+                    <p>GPA: {{school.gpa}}</p>
+                </div>
+                {%endfor%}
             </div>
         </div>
     </section>
 
-    <!-- Map Section -->
-    <div id="map"></div>
+    <!-- Awards Section -->
+    <section id="awards" class="content-section text-center">
+        <div class="awards-section">
+            <div class="container">
+                {% for award in awards %}
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h3>{{award.awarder}}-{{award.title}}</h3>
+                    <p>{{award.date}}</p>
+                    <p>{{award.summary}}</p>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+    </section>
+
+    <!-- languages Section -->
+    <section id="languages" class="content-section text-center">
+        <div class="languages-section">
+            <div class="container">
+                {% for lang in languages %}
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p>{{lang.language}} - {{lang.fluency}}</p>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="content-section text-center">
+        <div class="interests-section">
+            <div class="container">
+                {% for interest in interests %}
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h3>{{interest.name}}</h3>
+                    <p>{{job.summary}}</p>
+                    <ul class="text-left">
+                        {% for keyword in interest.keywords %}
+                        <li>{{keyword}}</li>
+                        {%endfor%}
+                    </ul>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2014</p>
+            <p>Copyright &copy; {{basics.name}} 2015</p>
         </div>
     </footer>
 

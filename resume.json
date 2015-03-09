@@ -1,7 +1,7 @@
 {
     "basics": {
         "name": "Christopher Dewan",
-        "label": "I work on spaceship parts!",
+        "label": "Software and Hardware Engineer",
         "picture": "",
         "email": "Chris.Dewan@outlook.com",
         "website": "http://m3rlin.net",
@@ -24,7 +24,7 @@
             },
             {
                 "network": "Resume Source",
-                "username": "This resume is built using CI",
+                "username": "This resume is built from code",
                 "url": "https://github.com/m3rlin45/resume"
             }
         ]

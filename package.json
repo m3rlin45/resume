@@ -1,19 +1,21 @@
 {
-    "name": "CMD-Resume",
-    "version": "0.0.1",
-    "dependencies": {
-        "escape-latex": "^0.1.2",
-        "moment": "^2.9.0",
-        "nunjucks": "^1.2.0",
-        "resume-cli": "^0.3.13",
-        "spelling": "^1.0.0",
-        "string": "^3.0.0",
-        "unique-words": "^1.0.0",
-        "validator": "^3.32.0"
-    },
-    "scripts": {
-        "spellcheck": "node resumeSpellCheck.js",
-        "buildTex" :  "node texGenerator.js"
-		"buildHtml" : "node htmlGenerator.js"
-    }
+  "name": "CMD-Resume",
+  "version": "0.0.1",
+  "dependencies": {
+    "escape-latex": "^0.1.2",
+    "less": "^2.4.0",
+    "moment": "^2.9.0",
+    "nunjucks": "^1.2.0",
+    "resume-cli": "^0.3.13",
+    "spelling": "^1.0.0",
+    "string": "^3.0.0",
+    "unique-words": "^1.0.0",
+    "validator": "^3.32.0"
+  },
+  "scripts": {
+    "spellcheck": "node resumeSpellCheck.js",
+    "buildTex": "node texGenerator.js",
+    "buildHtml": "node htmlGenerator.js",
+    "buildStyles": "node node_modules\\less\\bin\\lessc less\\grayscale.less  css\\grayscale.css"
+  }
 }
