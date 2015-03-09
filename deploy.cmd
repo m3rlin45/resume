@@ -69,7 +69,9 @@ call :Executecmd buildPDF.cmd
 IF !ERRORLEVEL! NEQ 0 goto error
 REM This creates the **index.html** which is deployed by Azure Websites.
 echo Building HTML Resume
-call :Executecmd node .\node_modules\resume-cli\index.js export index -f html -t modern-extended
+call :Executecmd npm run buildHtml
+echo Building CSS files
+call :Executecmd npm run buildStyles
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 1. KuduSync
