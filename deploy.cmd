@@ -58,6 +58,9 @@ REM Use the Executecmd macro to execute and validate the command worked
 echo installing npm packages
 call :Executecmd npm install
 IF !ERRORLEVEL! NEQ 0 goto error
+echo installing bower packages
+call :Executecmd bower install
+IF !ERRORLEVEL! NEQ 0 goto error
 echo Spell Checking
 call :Executecmd npm run spellcheck
 IF !ERRORLEVEL! NEQ 0 goto error
@@ -70,6 +73,7 @@ IF !ERRORLEVEL! NEQ 0 goto error
 REM This creates the **index.html** which is deployed by Azure Websites.
 echo Building HTML Resume
 call :Executecmd npm run buildHtml
+IF !ERRORLEVEL! NEQ 0 goto error
 echo Building CSS files
 call :Executecmd npm run buildStyles
 IF !ERRORLEVEL! NEQ 0 goto error
