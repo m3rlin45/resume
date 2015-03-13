@@ -127,17 +127,31 @@
     <section id="experience" class="content-section text-center">
         <div class="experience-section">
             <div class="container">
-                {% for job in work %}
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h3>{{job.company}} - {{job.position}}</h3>
-                    <p>{{job.summary}}</p>
-                    <ul class="text-left">
-                        {% for highlight in job.highlights %}
-                        <li>{{highlight}}</li>
-                        {%endfor%}
-                    </ul>
+                <div class="row">
+                    <h1 class="col-lg-4 col-lg-offset-4">Experience</h1>
                 </div>
-                {%endfor%}
+                <div class="row">
+                    {% for job in work %}
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="experience-panel">{{job.company}} - {{job.position}}</h3>
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="well well-sm">
+                                    <p class ="experience-panel">{{job.summary}}</p>
+                                </div>
+                                <ul class="text-left experience-panel">
+                                    {% for highlight in job.highlights %}
+                                    <li>{{highlight}}</li>
+                                    {%endfor%}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {%endfor%}
+                </div>
             </div>
         </div>
     </section>
