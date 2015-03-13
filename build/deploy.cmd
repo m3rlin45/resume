@@ -68,7 +68,7 @@ echo latex .tex file Generation
 call :Executecmd npm run buildTex
 IF !ERRORLEVEL! NEQ 0 goto error
 echo Latex Install and PDF file generation
-call :Executecmd buildPDF.cmd
+call :Executecmd build\buildPDF.cmd
 IF !ERRORLEVEL! NEQ 0 goto error
 REM This creates the **index.html** which is deployed by Azure Websites.
 echo Building HTML Resume
