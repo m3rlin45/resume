@@ -1,5 +1,6 @@
 var nunjucks = require('nunjucks');
 var fs = require('fs');
+var moment = require('moment');
 
 
 var env = nunjucks.configure('templates', {
@@ -23,6 +24,16 @@ env.addFilter('ConvertSkills', function (skills) {
         ret.push({ "name": key, "entries": newSkills[key] });
     });
     return ret;
+})
+
+env.addFilter('PrettifyDate', function (date) {
+    var momentDate = moment(new Date(date));
+    return momentDate.format('MMMM Do YYYY');
+})
+
+env.addFilter('DateYearMonth', function (date) {
+    var momentDate = moment(new Date(date));
+    return momentDate.format('MMMM YYYY');
 })
 
 var resume = JSON.parse(fs.readFileSync('resume.json', 'utf8'));

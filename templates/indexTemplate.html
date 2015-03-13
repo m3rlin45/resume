@@ -163,7 +163,7 @@
                 {% for school in education %}
                 <div class="col-lg-8 col-lg-offset-2">
                     <h3>{{school.institution}} - {{school.studyType}}, {{school.area}}</h3>
-                    <p>{{school.startDate}}-{{school.endDate}}</p>
+                    <p>{{school.startDate | DateYearMonth}} &mdash; {{school.endDate | DateYearMonth}}</p>
                     <p>GPA: {{school.gpa}}</p>
                 </div>
                 {%endfor%}
@@ -177,8 +177,8 @@
             <div class="container">
                 {% for award in awards %}
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h3>{{award.awarder}}-{{award.title}}</h3>
-                    <p>{{award.date}}</p>
+                    <h3>{{award.awarder}}  {{award.title}}</h3>
+                    <p>{{award.date | DateYearMonth}}</p>
                     <p>{{award.summary}}</p>
                 </div>
                 {%endfor%}
