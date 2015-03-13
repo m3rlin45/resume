@@ -1,6 +1,6 @@
 var nunjucks = require('nunjucks');
 var fs = require('fs');
-var lescape = require('escape-latex');
+var filters = require('./filters');
 
 
 var env = nunjucks.configure('templates', {
@@ -14,28 +14,7 @@ var env = nunjucks.configure('templates', {
     }
 });
 
-env.addFilter('TeXEscape', function(str) {
-    return lescape(str);
-});
-
-env.addFilter('ConvertSkills', function (skills) {
-    var newSkills = {};
-    skills.forEach(function (skill) {
-        var entry = { "level": skill.level, "keywords": skill.keywords };
-        if (skill.name in newSkills) {
-            newSkills[skill.name].push(entry);
-        } else {
-            newSkills[skill.name] = [entry];
-        }
-    });
-
-    var ret = [];
-    var keys = Object.keys(newSkills);
-    keys.forEach(function (key) {
-        ret.push({ "name": key, "entries": newSkills[key] });
-    });
-    return ret;
-})
+filters.addFilters(env);
 
 var resume = JSON.parse(fs.readFileSync('resume.json', 'utf8'));
 
