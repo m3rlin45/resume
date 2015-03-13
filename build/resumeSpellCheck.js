@@ -1,3 +1,4 @@
+var filePath = process.argv[2];
 var fs = require('fs');
 var moment = require('moment');
 var validator = require('validator');
@@ -13,7 +14,7 @@ safeWords.AllowedWords.forEach(function (word) {
     dict.insert(word)
 });
 
-var resume = JSON.parse(fs.readFileSync('resume.json', 'utf8'));
+var resume = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
 var checkableStrings = [];
 

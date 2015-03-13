@@ -62,7 +62,7 @@ echo installing bower packages
 call :Executecmd bower install
 IF !ERRORLEVEL! NEQ 0 goto error
 echo Spell Checking
-call :Executecmd npm run spellcheck
+call :Executecmd npm run spellCheck
 IF !ERRORLEVEL! NEQ 0 goto error
 echo latex .tex file Generation
 call :Executecmd npm run buildTex

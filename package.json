@@ -13,9 +13,9 @@
     "validator": "^3.32.0"
   },
   "scripts": {
-    "spellcheck": "node resumeSpellCheck.js",
-    "buildTex": "node texGenerator.js",
-    "buildHtml": "node htmlGenerator.js",
+    "spellCheck": "node build\\resumeSpellCheck.js resume.json",
+    "buildTex": "node build\\texGenerator.js resume.json",
+    "buildHtml": "node build\\htmlGenerator.js resume.json",
     "buildStyles": "node node_modules\\less\\bin\\lessc less\\grayscale.less  css\\grayscale.css"
   }
 }

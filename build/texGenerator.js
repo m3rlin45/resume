@@ -1,3 +1,4 @@
+var filePath = process.argv[2];
 var nunjucks = require('nunjucks');
 var fs = require('fs');
 var filters = require('./filters');
@@ -16,7 +17,7 @@ var env = nunjucks.configure('templates', {
 
 filters.addFilters(env);
 
-var resume = JSON.parse(fs.readFileSync('resume.json', 'utf8'));
+var resume = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
 var res = nunjucks.render('resumeTemplate.tex', resume);
 
