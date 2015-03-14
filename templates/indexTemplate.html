@@ -102,7 +102,7 @@
         <div class="profile-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-md-8 col-md-offset-2">
                         <h2>{{basics.name}}</h2>
                         <p>
                             <a href="{{basics.website}}">{{basics.website}}</a> <br />
@@ -128,11 +128,11 @@
         <div class="experience-section">
             <div class="container">
                 <div class="row">
-                    <h1 class="col-lg-4 col-lg-offset-4">Experience</h1>
+                    <h1 class="col-md-4 col-md-offset-4">Experience</h1>
                 </div>
                 <div class="row">
                     {% for job in work %}
-                    <div class="col-lg-6">
+                    <div class="col-md-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h3 class="detail-panel"><a href="{{job.url}}">{{job.company}}</a> &mdash; {{job.position}}</h3>
@@ -168,11 +168,11 @@
         <div class="education-section">
             <div class="container">
                 <div class="row">
-                    <h1 class="col-lg-4 col-lg-offset-4">Education</h1>
+                    <h1 class="col-md-4 col-md-offset-4">Education</h1>
                 </div>
                 <div class="row">
                     {% for school in education %}
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-md-8 col-md-offset-2">
                         <h3>{{school.institution}} - {{school.studyType}}, {{school.area}}</h3>
                         <p>{{school.startDate | DateYearMonth}} &mdash; {{school.endDate | DateYearMonth}}</p>
                         <p>GPA: {{school.gpa}}</p>
@@ -188,11 +188,11 @@
         <div class="awards-section">
             <div class="container">
                 <div class="row">
-                    <h1 class="col-lg-4 col-lg-offset-4">Awards</h1>
+                    <h1 class="col-md-4 col-md-offset-4">Awards</h1>
                 </div>
                 <div class="row">
                     {% for award in awards %}
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <div class="panel panel-default">
                             <div class="panel-heading detail-panel">
                                 <h4 class="detail-panel">{{award.awarder}} &mdash; {{award.title}}</h4>
@@ -216,7 +216,7 @@
         <div class="languages-section">
             <div class="container">
                 {% for lang in languages %}
-                <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-md-8 col-md-offset-2">
                     <p>{{lang.language}} - {{lang.fluency}}</p>
                 </div>
                 {%endfor%}
@@ -229,7 +229,7 @@
         <div class="interests-section">
             <div class="container">
                 {% for interest in interests %}
-                <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-md-8 col-md-offset-2">
                     <h3>{{interest.name}}</h3>
                     <p>{{job.summary}}</p>
                     <ul class="text-left">
