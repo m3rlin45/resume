@@ -123,6 +123,17 @@
         </div>
     </section>
 
+    {% macro dateFooter(startDate, endDate) %}
+    <div class="panel-footer detail-panel">
+        {{startDate | DateYearMonth}} &mdash;
+        {% if endDate %}
+        {{endDate | DateYearMonth}}
+        {% else %}
+        Present
+        {% endif %}
+    </div>
+    {% endmacro %}
+
     <!-- Experience Section -->
     <section id="experience" class="content-section text-center">
         <div class="experience-section">
@@ -140,7 +151,7 @@
                             </div>
                             <div class="panel-body">
                                 {% for role in job.roles %}
-                                <div class="panel {{ "col-md-6 panel-default" if job.roles.length > 1 }}">
+                                <div class="panel {{ "col-md-6 panel-default inner-panel" if job.roles.length > 1 }}">
                                     <div class="panel-heading">
                                         <h5 class="detail-panel">{{role.position}}</h5>
                                     </div>
@@ -154,17 +165,11 @@
                                             {%endfor%}
                                         </ul>
                                     </div>
-                                    <div class="panel-footer detail-panel">
-                                        {{role.startDate | DateYearMonth}} &mdash;
-                                        {% if role.endDate %}
-                                        {{role.endDate | DateYearMonth}}
-                                        {% else %}
-                                        Present
-                                        {% endif %}
-                                    </div>
+                                    {{ dateFooter(role.startDate, role.endDate) if job.roles.length > 1  }}
                                 </div>
                                 {% endfor %}
                             </div>
+                            {{ dateFooter(job.roles[0].startDate, job.roles[0].endDate) if job.roles.length == 1  }}
                         </div>
                     </div>
                     {%endfor%}
@@ -227,7 +232,7 @@
             <div class="container">
                 {% for lang in languages %}
                 <div class="col-md-8 col-md-offset-2">
-                    <p>{{lang.language}} - {{lang.fluency}}</p>
+                    <p>{{lang.language}} &mdash; {{lang.fluency}}</p>
                 </div>
                 {%endfor%}
             </div>
