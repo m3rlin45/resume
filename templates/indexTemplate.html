@@ -135,18 +135,25 @@
                     <div class="col-lg-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="experience-panel">{{job.company}} - {{job.position}}</h3>
+                                <h3 class="detail-panel"><a href="{{job.url}}">{{job.company}}</a> &mdash; {{job.position}}</h3>
                             </div>
-
                             <div class="panel-body">
-                                <div class="well well-sm">
-                                    <p class ="experience-panel">{{job.summary}}</p>
+                                <div class="well detail-panel">
+                                    {{job.summary}}
                                 </div>
-                                <ul class="text-left experience-panel">
+                                <ul class="text-left detail-panel">
                                     {% for highlight in job.highlights %}
                                     <li>{{highlight}}</li>
                                     {%endfor%}
                                 </ul>
+                            </div>
+                            <div class="panel-footer detail-panel">
+                                {{job.startDate | DateYearMonth}} &mdash;
+                                {% if job.endDate%}
+                                {{job.endDate | DateYearMonth}}
+                                {% else %}
+                                Present
+                                {% endif %}
                             </div>
                         </div>
                     </div>
@@ -160,13 +167,18 @@
     <section id="education" class="content-section text-center">
         <div class="education-section">
             <div class="container">
-                {% for school in education %}
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h3>{{school.institution}} - {{school.studyType}}, {{school.area}}</h3>
-                    <p>{{school.startDate | DateYearMonth}} &mdash; {{school.endDate | DateYearMonth}}</p>
-                    <p>GPA: {{school.gpa}}</p>
+                <div class="row">
+                    <h1 class="col-lg-4 col-lg-offset-4">Education</h1>
                 </div>
-                {%endfor%}
+                <div class="row">
+                    {% for school in education %}
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h3>{{school.institution}} - {{school.studyType}}, {{school.area}}</h3>
+                        <p>{{school.startDate | DateYearMonth}} &mdash; {{school.endDate | DateYearMonth}}</p>
+                        <p>GPA: {{school.gpa}}</p>
+                    </div>
+                    {%endfor%}
+                </div>
             </div>
         </div>
     </section>
@@ -175,13 +187,26 @@
     <section id="awards" class="content-section text-center">
         <div class="awards-section">
             <div class="container">
-                {% for award in awards %}
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h3>{{award.awarder}}  {{award.title}}</h3>
-                    <p>{{award.date | DateYearMonth}}</p>
-                    <p>{{award.summary}}</p>
+                <div class="row">
+                    <h1 class="col-lg-4 col-lg-offset-4">Awards</h1>
                 </div>
-                {%endfor%}
+                <div class="row">
+                    {% for award in awards %}
+                    <div class="col-lg-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading detail-panel">
+                                <h4 class="detail-panel">{{award.awarder}} &mdash; {{award.title}}</h4>
+                            </div>
+                            <div class="panel-body detail-panel">
+                                {{award.summary}}
+                            </div>
+                            <div class="panel-footer detail-panel">
+                                {{award.date | DateYearMonth}}
+                            </div>
+                        </div>
+                    </div>
+                    {%endfor%}
+                </div>
             </div>
         </div>
     </section>

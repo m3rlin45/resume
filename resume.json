@@ -45,8 +45,8 @@
             ]
         },
         {
-            "company": "Raytheon",
-            "position": "VIIRS Ground Support Equipment Responsible Engineering Authority",
+            "company": "Raytheon VIIRS Program",
+            "position": "Ground Support Equipment Responsible Engineering Authority",
             "website": "http://www.raytheon.com/capabilities/products/viirs/",
             "startDate": "2012-08-01",
             "summary": "VIIRS (Visible Infrared Imaging Radiometer Suite) is a calibrated spaceborne sensor used for weather prediction. It undergoes extensive pre-launch testing with spacecraft and ground station simulators.",
