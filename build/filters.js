@@ -22,6 +22,24 @@ module.exports = {
             return ret;
         })
 
+        env.addFilter('ConvertWork', function (work) {
+            var newWork = {};
+            work.forEach(function (job) {
+                if (job.company in newWork) {
+                    newWork[job.company].push(job);
+                } else {
+                    newWork[job.company] = [job];
+                }
+            });
+
+            var ret = [];
+            var keys = Object.keys(newWork);
+            keys.forEach(function (key) {
+                ret.push({ "company": key, "website": newWork[key][0].website, "roles": newWork[key] });
+            });
+            return ret;
+        })
+
         env.addFilter('PrettifyDate', function (date) {
             var momentDate = moment(new Date(date));
             return momentDate.format('MMMM Do YYYY');

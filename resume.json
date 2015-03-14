@@ -45,9 +45,9 @@
             ]
         },
         {
-            "company": "Raytheon VIIRS Program",
-            "position": "Ground Support Equipment Responsible Engineering Authority",
-            "website": "http://www.raytheon.com/capabilities/products/viirs/",
+            "company": "Raytheon",
+            "position": "VIIRS Ground Support Equipment Responsible Engineering Authority",
+            "website": "http://raytheon.com",
             "startDate": "2012-08-01",
             "summary": "VIIRS (Visible Infrared Imaging Radiometer Suite) is a calibrated spaceborne sensor used for weather prediction. It undergoes extensive pre-launch testing with spacecraft and ground station simulators.",
             "highlights": [
@@ -56,7 +56,7 @@
                 "Designed and built an adapter board for cheap commercial communications hardware to be used.",
                 "Redesigned the simulator to support SpaceWire connectivity to support VIIRS upgrades.",
                 "Designed, built, and maintained an automated data aggregation  system. Reduced analysis time from hours to less than 5 minutes.",
-                "Provided 24/7 on call support for several months of continuous testing",
+                "Provided 24/7 on call support for several months of continuous testing.",
                 "As a result of upgrades, test program had a marked (80%) reduction in errors caused the simulators."
             ]
         },
@@ -68,12 +68,26 @@
             "endDate": "2012-08-01",
             "summary": "Raytheon owned test station, built to support customer programs and internal R&D. A grounds up new design adding significant new capabilities to Raytheon.",
             "highlights": [
-                "Gathered electrical and software requirements for the test station",
-                "Designed an overall hardware and software architecture to satisfy the requirements",
-                "Selected all the components to be used, did the interconnect, wiring, and mechanical design",
-                "Designed a web based back end data store and api for both configuration data and telemetry using C#, HTML, ASP.NET MVC, and XML-RPC (~10,000 lines)",
-                "Built a client for the api that could be consumed by typical LabVIEW programmers",
-                "Worked closely with the LabVIEW front end group, resulting in smooth integration"
+                "Gathered electrical and software requirements for the test station.",
+                "Designed an overall hardware and software architecture to satisfy the requirements.",
+                "Selected all the components to be used, did the interconnect, wiring, and mechanical design.",
+                "Designed a web based back end data store and api for both configuration data and telemetry using C#, HTML, ASP.NET MVC, and XML-RPC. (~10,000 lines)",
+                "Built a client for the api that could be consumed by typical LabVIEW programmers.",
+                "Worked closely with the LabVIEW front end group, resulting in smooth integration."
+            ]
+        },
+        {
+            "company": "Raytheon",
+            "position": "Test Systems Engineer",
+            "website": "http://raytheon.com",
+            "startDate": "2010-06-21",
+            "endDate": "2011-04-01",
+            "summary": "Designed Test apparatus and components, supported test programs and R&D efforts.",
+            "highlights": [
+                "Designed circuit boards and enclosures to support testing of space hardware.",
+                "Part of a field test to validate a new method for satellite vicarious calibration.",
+                "Radiometric calibration of a hyperspectral sensor."
+
             ]
         },
         {
@@ -92,7 +106,7 @@
         {
             "company": "Caltech Physics Department",
             "position": "Teaching Assistant, Physics Laboratories",
-            "website": "http://www.kecl.ntt.co.jp/rps/english/index_e.html",
+            "website": "http://www.caltech.edu",
             "startDate": "2008-10-01",
             "endDate": "2009-12-01",
             "summary": "Instructed physics students in a hands on laboratory environment.",

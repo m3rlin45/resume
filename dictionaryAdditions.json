@@ -147,6 +147,9 @@
         "reflections",
         "effects",
         "electromechanical",
-        "prelaunch"
+        "prelaunch",
+        "hyperspectral",
+        "efforts",
+        "enclosures"
     ]
 }
