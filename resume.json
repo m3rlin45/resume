@@ -108,7 +108,7 @@
             "summary": "Instructed physics students in a hands on laboratory environment.",
             "highlights": [
                 "Physics 105, Analog Circuits Laboratory: theory and the practice of designing, analyzing, and constructing analog circuits. Components included passives, transistors, and operational amplifiers.",
-                "Physics 6, Sophomore Laboratory in Physics: mass spectroscopy, analysis of resonant circuits, resonant mechanical systems, light spectroscopy, and diffraction of electrons by crystalline solids"
+                "Physics 6, Sophomore Laboratory in Physics: mass spectroscopy, analysis of resonant circuits, resonant mechanical systems, light spectroscopy, and diffraction of electrons by crystalline solids."
             ]
         }
     ],
@@ -157,10 +157,9 @@
             "keywords": [
                 "C++11/14",
                 "boost",
+                "boost::test",
                 "Intel TBB",
-                "ASP.NET MVC",
-                "MSTest",
-                "Entity Framework"
+                "ASP.NET MVC"
             ]
         },
         {
@@ -169,6 +168,7 @@
             "keywords": [
                 "Javascript",
                 "HTML",
+                "CSS",
                 "Powershell",
                 "LaTeX",
                 "LabVIEW"
@@ -180,7 +180,9 @@
             "keywords": [
                 "node.js",
                 "nunjucks.js",
-                "Log4CXX"
+                "Log4CXX",
+                "MSTest",
+                "Entity Framework"
             ]
         },
         {
