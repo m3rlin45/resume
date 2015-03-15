@@ -233,7 +233,24 @@
         "name": "Photography",
         "keywords": [
             "Landscape",
-            "Product"
+            "Product",
+            "Motorsport"
+        ]
+    },
+    {
+        "name": "Reading",
+        "keywords": [
+            "History",
+            "Economics",
+            "Biography"
+        ]
+    },
+    {
+        "name": "Technology",
+        "keywords": [
+            "Computer Hardware",
+            "Video Gaming",
+            "Virtual Reality"
         ]
     }
   ]

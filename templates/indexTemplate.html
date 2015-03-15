@@ -230,11 +230,18 @@
     <section id="languages" class="content-section text-center">
         <div class="languages-section">
             <div class="container">
-                {% for lang in languages %}
-                <div class="col-md-8 col-md-offset-2">
-                    <p>{{lang.language}} &mdash; {{lang.fluency}}</p>
+                <div class="row">
+                    <h1 class="col-md-4 col-md-offset-4">Languages</h1>
                 </div>
-                {%endfor%}
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <ul class="list-group">
+                            {% for lang in languages %}
+                            <li class="list-group-item language-list"><h3>{{lang.language}} &mdash; {{lang.fluency}}</h3></li>
+                            {%endfor%}
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -243,17 +250,25 @@
     <section id="interests" class="content-section text-center">
         <div class="interests-section">
             <div class="container">
-                {% for interest in interests %}
-                <div class="col-md-8 col-md-offset-2">
-                    <h3>{{interest.name}}</h3>
-                    <p>{{job.summary}}</p>
-                    <ul class="text-left">
-                        {% for keyword in interest.keywords %}
-                        <li>{{keyword}}</li>
-                        {%endfor%}
-                    </ul>
+                <div class="row">
+                    <h1 class="col-md-4 col-md-offset-4">Interests</h1>
                 </div>
-                {%endfor%}
+                <div class="row">
+                    {% for interest in interests %}
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><h3 class="detail-panel">{{interest.name}}</h3></div>
+                            <div class="panel-body detail-panel">
+                                <ul class="list-unstyled text-left">
+                                    {% for keyword in interest.keywords %}
+                                    <li>{{keyword}}</li>
+                                    {%endfor%}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {%endfor%}
+                </div>
             </div>
         </div>
     </section>
