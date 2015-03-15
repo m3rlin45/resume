@@ -22,17 +22,19 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.4in,right=0.5in,bottom=0.4in]{geometry} % Document margins
 
 \name{<$ basics.name $>} % Your name
 \address{<$ basics.location.city $>, <$ basics.location.region $> <$ basics.location.countryCode $>} % Your address
-%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
-%\address{(000)~$\cdot$~111~$\cdot$~1111 \\ john@smith.com} % Your phone number and email
 \address{<$ basics.email $>}
 \address{<$ basics.website $>}
 
 \begin{document}
 
+
+<% macro printDate(date) %>
+<$ date | DateYearMonth if date else "Present" $>
+<% endmacro %>
 
 
 %----------------------------------------------------------------------------------------
@@ -41,14 +43,20 @@
 
 \begin{rSection}{Experience}
 
-<% for job in work %>
+<% for workplace in work | ConvertWork %>
 
-\begin{rSubsection}{<$ job.company $>}{<$ job.startDate $> - <$ job.endDate $>}{ <$ job.position $> }{} 
+<% set isNotFirst = joiner("true") %>
+
+<% for job in workplace.roles %>
+
+\begin{rSubsection}{<$ job.company if not isNotFirst() $>}{ <$ job.position $> }{<$ printDate(job.startDate) $> --- <$ printDate(job.endDate) $>}
 { <$ job.summary | TeXEscape $> }
 <% for highlight in job.highlights %>
 \item <$ highlight | TeXEscape $>
 <% endfor %>
 \end{rSubsection}
+
+<% endfor %>
 
 <% endfor %>
 
@@ -62,7 +70,7 @@
 
 <% for award in awards %>
 
-{\bf <$ award.awarder $> --- <$ award.title $>} \hfill {\em <$ award.date $>} \\ 
+{\bf <$ award.awarder $> --- <$ award.title $>} \hfill {\em <$ printDate(award.date) $>} \\ 
 <$ award.summary $>
 
 <% endfor %>
@@ -103,7 +111,7 @@
 
 <% for school in education %>
 
-{\bf <$ school.institution $>} \hfill {\em <$ school.startDate $> --- <$ school.endDate $>} \\ 
+{\bf <$ school.institution $>} \hfill {\em <$ printDate(school.startDate) $> --- <$ printDate(school.endDate) $>} \\ 
 <$ school.studyType $> in <$ school.area $>\\
 Overall GPA: <$ school.gpa $>
 

@@ -110,14 +110,12 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rSubsection}[5]{ % 5 input arguments - company name, year(s) employed, job title, location, an d summary
- {\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4}} % Italic job title and location
-  %\setlength{\parskip}{.5 em}
+\newenvironment{rSubsection}[4]{ % 4 input arguments - company name, job title, employment dates, and summary
+ \ifthenelse{\equal{#1}{}}{}{
+ {\bf \hspace*{-1.25em}#1} \\}% Bold company name
+  {\bf #2} \hfill { #3} % Italic job title and normal date
   \par \hangindent=1em
-  {#5}\smallskip % summary
+  {#4}\smallskip % summary
   \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
@@ -128,6 +126,6 @@
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
 \def\namesize{\huge} % Size of the name at the top of the document
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
-\def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
-\def\nameskip{\bigskip} % The space after your name at the top
+\def\sectionlineskip{\smallskip} % The space above the horizontal line for each section 
+\def\nameskip{\medskip} % The space after your name at the top
 \def\sectionskip{\medskip} % The space after the heading section
