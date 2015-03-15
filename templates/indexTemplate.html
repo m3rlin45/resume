@@ -140,6 +140,25 @@
     </div>
     {% endmacro %}
 
+    {% macro rollBlock(role, isSingle) %}
+    <div class="panel {{ "col-md-10 col-md-offset-1 panel-default inner-panel" if not isSingle }}">
+        <div class="panel-heading">
+            <h5 class="detail-panel">{{role.position}}</h5>
+        </div>
+        <div class="panel-body">
+            <div class="well well-sm detail-panel">
+                {{role.summary}}
+            </div>
+            <ul class="text-left detail-panel">
+                {% for highlight in role.highlights %}
+                <li>{{highlight}}</li>
+                {%endfor%}
+            </ul>
+        </div>
+        {{ dateFooter(role.startDate, role.endDate) if not isSingle  }}
+    </div>
+    {% endmacro %}
+
     <!-- Experience Section -->
     <section id="experience" class="experience-section content-section text-center">
         <div class="container">
@@ -154,22 +173,7 @@
                         </div>
                         <div class="panel-body">
                             {% for role in job.roles %}
-                            <div class="panel {{ "col-md-10 col-md-offset-1 panel-default inner-panel" if job.roles.length > 1 }}">
-                                <div class="panel-heading">
-                                    <h5 class="detail-panel">{{role.position}}</h5>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="well well-sm detail-panel">
-                                        {{role.summary}}
-                                    </div>
-                                    <ul class="text-left detail-panel">
-                                        {% for highlight in role.highlights %}
-                                        <li>{{highlight}}</li>
-                                        {%endfor%}
-                                    </ul>
-                                </div>
-                                {{ dateFooter(role.startDate, role.endDate) if job.roles.length > 1  }}
-                            </div>
+                                {{ rollBlock(role, job.roles.length > 1) }}
                             {% endfor %}
                         </div>
                         {{ dateFooter(job.roles[0].startDate, job.roles[0].endDate) if job.roles.length == 1  }}
