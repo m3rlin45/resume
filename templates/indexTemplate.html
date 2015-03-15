@@ -143,14 +143,14 @@
             <div class="row">
                 {% set filteredWork = work | ConvertWork %}
                 {% for job in filteredWork %}
-                <div class="{{ "col-md-12" if job.roles.length > 1 else "col-md-8 col-md-offset-2" }}">
+                <div class="{{ "col-md-10 col-md-offset-1" if job.roles.length > 1 else "col-md-8 col-md-offset-2" }}">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="detail-panel"><a href="{{job.website}}">{{job.company}}</a></h3>
                         </div>
                         <div class="panel-body">
                             {% for role in job.roles %}
-                            <div class="panel {{ "col-md-6 panel-default inner-panel" if job.roles.length > 1 }}">
+                            <div class="panel {{ "col-md-10 col-md-offset-1 panel-default inner-panel" if job.roles.length > 1 }}">
                                 <div class="panel-heading">
                                     <h5 class="detail-panel">{{role.position}}</h5>
                                 </div>
