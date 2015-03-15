@@ -56,7 +56,7 @@
                 "Redesigned the simulator for SpaceWire connectivity to support VIIRS upgrades.",
                 "Built, and maintained a data aggregation system which cut analysis time from hours to minutes.",
                 "Provided 24/7 on call support for months of continuous testing.",
-                "As a result of upgrades, test program had a marked (80%) reduction in errors caused the simulators."
+                "As a result of upgrades, test program had a marked (80%) reduction in errors caused by the simulators."
             ]
         },
         {
@@ -67,12 +67,11 @@
             "endDate": "2012-08-01",
             "summary": "New test station, built to offer new capabilities to customer programs and internal R&D.",
             "highlights": [
-                "Gathered electrical and software requirements for the test station.",
-                "Designed an overall hardware and software architecture to satisfy the requirements.",
-                "Selected all the components to be used, did the interconnect, wiring, and mechanical design.",
-                "Designed a web based back end data store and api for both configuration data and telemetry using C#, HTML, ASP.NET MVC, and XML-RPC. (~10,000 lines)",
-                "Built a client for the api that could be consumed by typical LabVIEW programmers.",
-                "Worked closely with the LabVIEW front end group, resulting in smooth integration."
+                "Gathered electrical and software requirements.",
+                "Designed the hardware and software architecture, including interconnect, wiring, and mechanical.",
+                "Built a web app and api for configuration data and telemetry. (~10,000 lines of C# and HTML)",
+                "Built a client library for the api that could be easily consumed in LabVIEW.",
+                "Worked closely with the LabVIEW team, resulting in smooth integration."
             ]
         },
         {
