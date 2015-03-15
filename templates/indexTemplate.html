@@ -173,7 +173,7 @@
                         </div>
                         <div class="panel-body">
                             {% for role in job.roles %}
-                                {{ rollBlock(role, job.roles.length > 1) }}
+                            {{ rollBlock(role, job.roles.length > 1) }}
                             {% endfor %}
                         </div>
                         {{ dateFooter(job.roles[0].startDate, job.roles[0].endDate) if job.roles.length == 1  }}
@@ -225,6 +225,12 @@
         </div>
     </section>
 
+    {% macro skillBadge(entry) %}
+    <span class="badge {{ "badge-highSkill" if entry.level == "Major Work"}}">
+        {{entry.level}}
+    </span>
+    {% endmacro %}
+
     <!-- Skills Section -->
     <section id="skills" class="skills-section content-section text-center">
         <div class="container">
@@ -232,7 +238,7 @@
             <div class="row">
                 {% set filteredSkills = skills | ConvertSkills %}
                 {% for skill in filteredSkills %}
-                <div class="{{ "col-md-10 col-md-offset-1" if skill.entries.length > 1 else "col-md-8 col-md-offset-2" }}">
+                <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="detail-panel">{{skill.name}}</h3>
@@ -240,12 +246,12 @@
                         <div class="panel-body">
                             <ul class="text-left list-group detail-panel">
                                 {% for entry in skill.entries %}
-                                    {% for line in entry.keywords %}
-                                        <li class="list-group-item">
-                                            <span class="badge">{entry.level}</span>
-                                            {{line}}
-                                        </li>
-                                    {% endfor%}
+                                {% for line in entry.keywords %}
+                                <li class="list-group-item">
+                                    {{skillBadge(entry)}}
+                                    {{line}}
+                                </li>
+                                {% endfor%}
                                 {% endfor %}
                             </ul>
                         </div>
