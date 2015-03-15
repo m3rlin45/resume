@@ -112,8 +112,7 @@
 <% for school in education %>
 
 {\bf <$ school.institution $>} \hfill {\em <$ printDate(school.startDate) $> --- <$ printDate(school.endDate) $>} \\ 
-<$ school.studyType $> in <$ school.area $>\\
-Overall GPA: <$ school.gpa $>
+<$ school.studyType $> in <$ school.area $> \hfill Overall GPA: <$ school.gpa $>
 
 <% endfor %>
 
