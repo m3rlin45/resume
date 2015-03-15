@@ -123,6 +123,12 @@
         </div>
     </section>
 
+    {% macro sectionTitle(name) %}
+    <div class="row">
+        <h1 class="col-md-4 col-md-offset-4">{{name}}</h1>
+    </div>
+    {% endmacro %}
+
     {% macro dateFooter(startDate, endDate) %}
     <div class="panel-footer detail-panel">
         {{startDate | DateYearMonth}} &mdash;
@@ -137,9 +143,7 @@
     <!-- Experience Section -->
     <section id="experience" class="experience-section content-section text-center">
         <div class="container">
-            <div class="row">
-                <h1 class="col-md-4 col-md-offset-4">Experience</h1>
-            </div>
+            {{ sectionTitle("Experience")}}
             <div class="row">
                 {% set filteredWork = work | ConvertWork %}
                 {% for job in filteredWork %}
@@ -179,9 +183,7 @@
     <!-- Education Section -->
     <section id="education" class="content-section education-section text-center">
         <div class="container">
-            <div class="row">
-                <h1 class="col-md-4 col-md-offset-4">Education</h1>
-            </div>
+            {{ sectionTitle("Education")}}
             <div class="row">
                 {% for school in education %}
                 <div class="col-md-8 col-md-offset-2">
@@ -197,9 +199,7 @@
     <!-- Awards Section -->
     <section id="awards" class="content-section awards-section text-center">
         <div class="container">
-            <div class="row">
-                <h1 class="col-md-4 col-md-offset-4">Awards</h1>
-            </div>
+            {{ sectionTitle("Awards")}}
             <div class="row">
                 {% for award in awards %}
                 <div class="col-md-4">
@@ -224,9 +224,7 @@
     <!-- languages Section -->
     <section id="languages" class="content-section languages-section text-center">
         <div class="container">
-            <div class="row">
-                <h1 class="col-md-4 col-md-offset-4">Languages</h1>
-            </div>
+            {{ sectionTitle("Languages")}}
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <ul class="list-group">
@@ -242,9 +240,7 @@
     <!-- Interests Section -->
     <section id="interests" class="content-section interests-section text-center">
         <div class="container">
-            <div class="row">
-                <h1 class="col-md-4 col-md-offset-4">Interests</h1>
-            </div>
+            {{ sectionTitle("Interests")}}
             <div class="row">
                 {% for interest in interests %}
                 <div class="col-md-4">
@@ -267,7 +263,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Text and Photographs Copyright &copy; {{basics.name}} 2015</p>
+            <p>Text and Photographs by {{basics.name}} &copy; 2015</p>
         </div>
     </footer>
 
