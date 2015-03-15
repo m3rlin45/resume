@@ -140,8 +140,8 @@
     </div>
     {% endmacro %}
 
-    {% macro rollBlock(role, isSingle) %}
-    <div class="panel {{ "col-md-10 col-md-offset-1 panel-default inner-panel" if not isSingle }}">
+    {% macro rollBlock(role, isMultiple) %}
+    <div class="panel {{ "col-md-10 col-md-offset-1 panel-default inner-panel" if isMultiple }}">
         <div class="panel-heading">
             <h5 class="detail-panel">{{role.position}}</h5>
         </div>
@@ -155,7 +155,7 @@
                 {%endfor%}
             </ul>
         </div>
-        {{ dateFooter(role.startDate, role.endDate) if not isSingle  }}
+        {{ dateFooter(role.startDate, role.endDate) if isMultiple  }}
     </div>
     {% endmacro %}
 
