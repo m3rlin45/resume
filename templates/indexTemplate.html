@@ -225,21 +225,6 @@
         </div>
     </section>
 
-    {% macro skillBlock(skill, isMultiple) %}
-    <div class="panel {{ "col-md-10 col-md-offset-1 panel-default inner-panel" if isMultiple }}">
-        <div class="panel-heading">
-            <h5 class="detail-panel">{{skill.level}}</h5>
-        </div>
-        <div class="panel-body">
-            <ul class="text-left list-group detail-panel">
-                {% for keyword in skill.keywords %}
-                <li class="list-group-item">{{keyword}}</li>
-                {%endfor%}
-            </ul>
-        </div>
-    </div>
-    {% endmacro %}
-
     <!-- Skills Section -->
     <section id="skills" class="skills-section content-section text-center">
         <div class="container">
@@ -253,9 +238,16 @@
                             <h3 class="detail-panel">{{skill.name}}</h3>
                         </div>
                         <div class="panel-body">
-                            {% for entry in skill.entries %}
-                            {{ skillBlock(entry, skill.entries.length > 1 ) }}
-                            {% endfor %}
+                            <ul class="text-left list-group detail-panel">
+                                {% for entry in skill.entries %}
+                                    {% for line in entry.keywords %}
+                                        <li class="list-group-item">
+                                            <span class="badge">{entry.level}</span>
+                                            {{line}}
+                                        </li>
+                                    {% endfor%}
+                                {% endfor %}
+                            </ul>
                         </div>
                     </div>
                 </div>
