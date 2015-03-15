@@ -185,7 +185,7 @@
             <div class="row">
                 {% for school in education %}
                 <div class="col-md-8 col-md-offset-2">
-                    <h3>{{school.institution}} - {{school.studyType}}, {{school.area}}</h3>
+                    <h3>{{school.institution}} &mdash; {{school.studyType}}, {{school.area}}</h3>
                     <p>{{school.startDate | DateYearMonth}} &mdash; {{school.endDate | DateYearMonth}}</p>
                     <p>GPA: {{school.gpa}}</p>
                 </div>
