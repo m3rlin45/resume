@@ -35,6 +35,9 @@
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
+\def \title#1{\def\@title{#1}} % Defines the \name command to set name
+\def \@title {} % Sets \@title to empty by default
+
 \def \addressSep {$\diamond$} % Set default address separator to a diamond
 
 % One, two or three address lines can be specified 
@@ -68,6 +71,8 @@
 \def \printname {
   \begingroup
     \hfil{\MakeUppercase{\namesize\bf \@name}}\hfil
+    \break
+    {\centerline{ \@title}}
     \nameskip\break
   \endgroup
 }
@@ -127,5 +132,5 @@
 \def\namesize{\huge} % Size of the name at the top of the document
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
 \def\sectionlineskip{\smallskip} % The space above the horizontal line for each section 
-\def\nameskip{\medskip} % The space after your name at the top
+\def\nameskip{\smallskip} % The space after your name at the top
 \def\sectionskip{\medskip} % The space after the heading section
