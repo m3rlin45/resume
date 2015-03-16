@@ -71,8 +71,6 @@
 \def \printname {
   \begingroup
     \hfil{\MakeUppercase{\namesize\bf \@name}}\hfil
-    \break
-    {\centerline{ \@title}}
     \nameskip\break
   \endgroup
 }
@@ -85,6 +83,8 @@
 \renewcommand{\document}{
   \ori@document  % Begin document
   \printname % Print the name specified with \name
+ \printaddress{\@title} %print out title
+  \smallskip
   \@ifundefined{@addressone}{}{ % Print the first address if specified
     \printaddress{\@addressone}}
   \@ifundefined{@addresstwo}{}{ % Print the second address if specified
