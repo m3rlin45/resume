@@ -141,22 +141,36 @@
     {% endmacro %}
 
     {% macro rollBlock(role, isMultiple) %}
-    <div class="panel {{ "col-md-10 col-md-offset-1 panel-default inner-panel" if isMultiple }}">
+        {% if isMultiple %}
+        <div class="panel col-md-10 col-md-offset-1 panel-default inner-panel">
+            {{ roleBlockTop(role) }} 
+            <div class="panel-body">
+                {{ roleBlockCenter(role) }}
+            </div>
+            {{ dateFooter(role.startDate, role.endDate) if isMultiple  }}
+        </div>
+        {% else %}
+        {{ roleBlockCenter(role) }}
+        {% endif %}
+    {% endmacro %}
+
+    {% macro roleBlockTop(role) %}
+        {% if role.position %}
         <div class="panel-heading">
             <h5 class="detail-panel">{{role.position}}</h5>
         </div>
-        <div class="panel-body">
-            <div class="well well-sm detail-panel">
-                {{role.summary}}
-            </div>
-            <ul class="text-left detail-panel">
-                {% for highlight in role.highlights %}
-                <li>{{highlight}}</li>
-                {%endfor%}
-            </ul>
+        {% endif %}
+    {% endmacro %}
+
+    {% macro roleBlockCenter(role) %}
+        <div class="well well-sm detail-panel">
+            {{role.summary}}
         </div>
-        {{ dateFooter(role.startDate, role.endDate) if isMultiple  }}
-    </div>
+        <ul class="text-left detail-panel">
+            {% for highlight in role.highlights %}
+            <li>{{highlight}}</li>
+            {%endfor%}
+        </ul>
     {% endmacro %}
 
     <!-- Experience Section -->
@@ -164,12 +178,12 @@
         <div class="container">
             {{ sectionTitle("Experience")}}
             <div class="row">
-                {% set filteredWork = work | ConvertWork %}
-                {% for job in filteredWork %}
+                {% for job in work %}
                 <div class="{{ "col-md-10 col-md-offset-1" if job.roles.length > 1 else "col-md-8 col-md-offset-2" }}">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="detail-panel"><a href="{{job.website}}">{{job.company}}</a></h3>
+                            <h4 class="detail-panel">{{job.title}}</h4>
                         </div>
                         <div class="panel-body">
                             {% for role in job.roles %}
