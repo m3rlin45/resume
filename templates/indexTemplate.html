@@ -56,17 +56,18 @@
                         <a class="page-scroll" href="#profile">Profile</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#experience">Experience</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#education">Education</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#awards">Awards</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#skills">Skills</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#awards">Awards</a>
+                    </li>
+
                     <li>
                         <a class="page-scroll" href="#languages">Languages</a>
                     </li>
@@ -173,31 +174,6 @@
         </ul>
     {% endmacro %}
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section content-section text-center">
-        <div class="container">
-            {{ sectionTitle("Experience")}}
-            <div class="row">
-                {% for job in work %}
-                <div class="{{ "col-md-10 col-md-offset-1" if job.roles.length > 1 else "col-md-8 col-md-offset-2" }}">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="detail-panel"><a href="{{job.website}}">{{job.company}}</a></h3>
-                            <h4 class="detail-panel">{{job.title}}</h4>
-                        </div>
-                        <div class="panel-body">
-                            {% for role in job.roles %}
-                            {{ rollBlock(role, job.roles.length > 1) }}
-                            {% endfor %}
-                        </div>
-                        {{ dateFooter(job.roles[0].startDate, job.roles[0].endDate) if job.roles.length == 1  }}
-                    </div>
-                </div>
-                {%endfor%}
-            </div>
-        </div>
-    </section>
-
     <!-- Education Section -->
     <section id="education" class="content-section education-section text-center">
         <div class="container">
@@ -207,32 +183,6 @@
                 <div class="col-md-8 col-md-offset-2">
                     <h3>{{school.institution}} &mdash; {{school.studyType}}, {{school.area}}</h3>
                     <p>{{school.startDate | DateYearMonth}} &mdash; {{school.endDate | DateYearMonth}}</p>
-                    <p>GPA: {{school.gpa}}</p>
-                </div>
-                {%endfor%}
-            </div>
-        </div>
-    </section>
-
-    <!-- Awards Section -->
-    <section id="awards" class="content-section awards-section text-center">
-        <div class="container">
-            {{ sectionTitle("Awards")}}
-            <div class="row">
-                {% for award in awards %}
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading detail-panel">
-                            <h4 class="detail-panel">{{award.awarder}}</h4>
-                            <h5 class="detail-panel">{{award.title}}</h5>
-                        </div>
-                        <div class="panel-body detail-panel">
-                            {{award.summary}}
-                        </div>
-                        <div class="panel-footer detail-panel">
-                            {{award.date | DateYearMonth}}
-                        </div>
-                    </div>
                 </div>
                 {%endfor%}
             </div>
@@ -275,6 +225,58 @@
             </div>
         </div>
     </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section content-section text-center">
+        <div class="container">
+            {{ sectionTitle("Experience")}}
+            <div class="row">
+                {% for job in work %}
+                <div class="{{ "col-md-10 col-md-offset-1" if job.roles.length > 1 else "col-md-8 col-md-offset-2" }}">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="detail-panel"><a href="{{job.website}}">{{job.company}}</a></h3>
+                            <h4 class="detail-panel">{{job.title}}</h4>
+                        </div>
+                        <div class="panel-body">
+                            {% for role in job.roles %}
+                            {{ rollBlock(role, job.roles.length > 1) }}
+                            {% endfor %}
+                        </div>
+                        {{ dateFooter(job.roles[0].startDate, job.roles[0].endDate) if job.roles.length == 1  }}
+                    </div>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="content-section awards-section text-center">
+        <div class="container">
+            {{ sectionTitle("Awards")}}
+            <div class="row">
+                {% for award in awards %}
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading detail-panel">
+                            <h4 class="detail-panel">{{award.awarder}}</h4>
+                            <h5 class="detail-panel">{{award.title}}</h5>
+                        </div>
+                        <div class="panel-body detail-panel">
+                            {{award.summary}}
+                        </div>
+                        <div class="panel-footer detail-panel">
+                            {{award.date | DateYearMonth}}
+                        </div>
+                    </div>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- languages Section -->
     <section id="languages" class="content-section languages-section text-center">
