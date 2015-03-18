@@ -37,6 +37,41 @@
 <$ date | DateYearMonth if date else "Present" $>
 <% endmacro %>
 
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+<% for school in education %>
+
+{\bf <$ school.institution $>}: <$ school.studyType $>, <$ school.area $>   \hfill {\em <$ printDate(school.startDate) $> --- <$ printDate(school.endDate) $>}
+<% endfor %>
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
+<% set filteredSkills = skills | ConvertSkills %>
+<% for skill  in filteredSkills %>
+<$ skill.name $> & \\
+<% for entry in skill.entries %>
+<% if loop.last %> \smallbreak <% endif %>
+\textnormal{  <$ entry.level $>} &
+<%- set comma = joiner() -%> 
+<%- for keyw in entry.keywords -%> 
+<$ comma() $> <$ keyw | TeXEscape $> 
+<%- endfor -%>\\
+<%- endfor %>
+<% endfor %>
+\end{tabular}
+
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -81,43 +116,9 @@
 
 %----------------------------------------------------------------------------------------
 
-%----------------------------------------------------------------------------------------
-%	SKILLS SECTION
-%----------------------------------------------------------------------------------------
 
-\begin{rSection}{Skills}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
-<% set filteredSkills = skills | ConvertSkills %>
-<% for skill  in filteredSkills %>
-<$ skill.name $> & \\
-<% for entry in skill.entries %>
-<% if loop.last %> \smallbreak <% endif %>
-\textnormal{  <$ entry.level $>} &
-<%- set comma = joiner() -%> 
-<%- for keyw in entry.keywords -%> 
-<$ comma() $> <$ keyw | TeXEscape $> 
-<%- endfor -%>\\
-<%- endfor %>
-<% endfor %>
-\end{tabular}
 
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Education}
-
-<% for school in education %>
-
-{\bf <$ school.institution $>} \hfill {\em <$ printDate(school.startDate) $> --- <$ printDate(school.endDate) $>} \\ 
-<$ school.studyType $> in <$ school.area $> \hfill Overall GPA: <$ school.gpa $>
-
-<% endfor %>
-
-\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	LANGUAGES SECTION
