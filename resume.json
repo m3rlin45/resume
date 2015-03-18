@@ -41,21 +41,21 @@
                     "summary": "Led an effort in Software Engineering Center to improve talent acquisition and retention.",
                     "highlights": [
                         "Added an emphasis on system and hardware skills for test and measurement software roles.",
-                        "Expanded the duration of on site interviews and their technical scope.",
-                        "Organized an effort to ensure new hires would have real work, to improve morale and retention.",
-                        "Performed resume screening, phone screening, and on site interviews."
+                        "Expanded the duration of on-site interviews and their technical scope.",
+                        "Organized an effort to ensure new hires would have real work, improving morale and retention.",
+                        "Performed resume screening, phone screening, and on-site interviews."
                     ]
                 },
                 {
                     "position": "VIIRS Ground Support Equipment Responsible Engineering Authority",
                     "startDate": "2012-08-01",
-                    "summary": "VIIRS (Visible Infrared Imaging Radiometer Suite) is a calibrated spaceborne sensor for weather prediction. It is tested extensively with simulators prior to launch.",
+                    "summary": "VIIRS (Visible Infrared Imaging Radiometer Suite) is a calibrated spaceborne sensor for weather prediction. We test it extensively with simulators prior to launch.",
                     "highlights": [
                         "Engineering owner of the ground station and spacecraft simulators for VIIRS test program.",
                         "Made the case for, designed, and executed a rewrite the simulator software. (~40,000 lines of C++)",
                         "Designed and built an adapter board so cheap commercial communications hardware could be used.",
                         "Redesigned the simulator for SpaceWire connectivity to support VIIRS upgrades.",
-                        "Built, and maintained a data aggregation system which cut analysis time from hours to minutes.",
+                        "Built and maintained a data aggregation system which cut analysis time from hours to minutes.",
                         "Provided 24/7 on call support for months of continuous testing.",
                         "As a result of upgrades, test program had a marked (80%) reduction in errors caused by the simulators."
                     ]
@@ -64,12 +64,12 @@
                     "position": "Raytheon Capital Test Station: Electrical and Software Architect",
                     "startDate": "2011-04-01",
                     "endDate": "2012-08-01",
-                    "summary": "New test station, built to offer new capabilities to customer programs and internal R&D.",
+                    "summary": "Software/hardware design of a test station offering new capabilities to customer programs and internal R&D.",
                     "highlights": [
-                        "Gathered electrical and software requirements.",
-                        "Designed the hardware and software architecture, including interconnect, wiring, and mechanical.",
-                        "Built a web app and api for configuration data and telemetry. (~10,000 lines of C# and HTML)",
-                        "Built a client library for the api that could be easily consumed in LabVIEW.",
+                        "Gathered electrical and software requirements and designed an overall architecture.",
+                        "Designed and built the hardware, including interconnect, wiring, and mechanical.",
+                        "Built a web app and API for configuration data and telemetry. (~10,000 lines of C# and HTML)",
+                        "Built a client library for the API that could be easily consumed in LabVIEW.",
                         "Worked closely with the LabVIEW team, resulting in smooth integration."
                     ]
                 },
@@ -81,7 +81,7 @@
                     "highlights": [
                         "Designed circuit boards and enclosures to support testing of space hardware.",
                         "Supported a field test of a new method for vicarious calibration of satellites.",
-                        "Radiometric calibration of a hyperspectral sensor."
+                        "Performed radiometric calibration of a hyperspectral sensor."
                     ]
                 }
             ]
@@ -110,11 +110,7 @@
                 {
                     "startDate": "2008-10-01",
                     "endDate": "2009-12-01",
-                    "summary": "Instructed physics students in a hands on laboratory environment.",
-                    "highlights": [
-                        "Physics 105, Analog Circuits Laboratory: theory and the practice of designing, analyzing, and constructing analog circuits. Components included passives, transistors, and operational amplifiers.",
-                        "Physics 6, Sophomore Laboratory in Physics: mass spectroscopy, analysis of resonant circuits, resonant mechanical systems, light spectroscopy, and diffraction of electrons by crystalline solids."
-                    ]
+                    "summary": "Instructed physics students in a hands on laboratory environment. Topics included: analog circuit design and analysis, mass spectroscopy, electron diffraction, and light spectroscopy."
                 }
             ]
         }
