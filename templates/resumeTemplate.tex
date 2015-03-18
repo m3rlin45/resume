@@ -44,13 +44,13 @@
 
 \begin{rSection}{Experience}
 
-<% for workplace in work | ConvertWork %>
+<% for workplace in work%>
 
 <% set isNotFirst = joiner("true") %>
 
 <% for job in workplace.roles %>
 
-\begin{rSubsection}{<$ job.company if not isNotFirst() $>}{ <$ job.position $> }{<$ printDate(job.startDate) $> --- <$ printDate(job.endDate) $>}
+\begin{rSubsection}{<$ workplace.company  if not isNotFirst() $>}{ <$ workplace.title $> }{<$ job.position $>}{<$ printDate(job.startDate) $> --- <$ printDate(job.endDate) $>}
 { <$ job.summary | TeXEscape $> }
 <% for highlight in job.highlights %>
 \item <$ highlight | TeXEscape $>

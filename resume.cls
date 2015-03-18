@@ -115,12 +115,12 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rSubsection}[4]{ % 4 input arguments - company name, job title, employment dates, and summary
+\newenvironment{rSubsection}[5]{ % 4 input arguments - company name, job title, position,  employment dates, and summary
  \ifthenelse{\equal{#1}{}}{}{
- {\bf \hspace*{-1.25em}#1} \\}% Bold company name
-  {\bf #2} \hfill { #3} % Italic job title and normal date
+ {\bf \hspace*{-1.25em}#1} \hfill {\bf #2} \\}% Bold company name
+  \ifthenelse{\equal{#3}{}}{\null\hfill {#4}}{{\em #3} \hfill { #4}} % Italic job title and normal date
   \par \hangindent=1em
-  {#4}\smallskip % summary
+  {#5}\smallskip % summary
   \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{

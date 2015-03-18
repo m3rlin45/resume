@@ -32,224 +32,231 @@
     "work": [
         {
             "company": "Raytheon",
-            "position": "Adviser to Software Center Management",
+            "title": "Senior Multi-Disciplined Engineer",
             "website": "http://raytheon.com",
-            "startDate": "2015-01-01",
-            "summary": "Led an effort in Software Engineering Center to improve talent acquisition and retention.",
-            "highlights": [
-                "Added an emphasis on system and hardware skills for test and measurement software roles.",
-                "Expanded the duration of on site interviews and their technical scope.",
-                "Organized an effort to ensure new hires would have real work, to improve morale and retention.",
-                "Performed resume screening, phone screening, and on site interviews."
-            ]
-        },
-        {
-            "company": "Raytheon",
-            "position": "VIIRS Ground Support Equipment Responsible Engineering Authority",
-            "website": "http://raytheon.com",
-            "startDate": "2012-08-01",
-            "summary": "VIIRS (Visible Infrared Imaging Radiometer Suite) is a calibrated spaceborne sensor for weather prediction. It is tested extensively with simulators prior to launch.",
-            "highlights": [
-                "Engineering owner of the ground station and spacecraft simulators for VIIRS test program.",
-                "Made the case for, designed, and executed a rewrite the simulator software. (~40,000 lines of C++)",
-                "Designed and built an adapter board so cheap commercial communications hardware could be used.",
-                "Redesigned the simulator for SpaceWire connectivity to support VIIRS upgrades.",
-                "Built, and maintained a data aggregation system which cut analysis time from hours to minutes.",
-                "Provided 24/7 on call support for months of continuous testing.",
-                "As a result of upgrades, test program had a marked (80%) reduction in errors caused by the simulators."
-            ]
-        },
-        {
-            "company": "Raytheon",
-            "position": "Raytheon Capital Test Station: Electrical and Software Architect",
-            "website": "http://raytheon.com",
-            "startDate": "2011-04-01",
-            "endDate": "2012-08-01",
-            "summary": "New test station, built to offer new capabilities to customer programs and internal R&D.",
-            "highlights": [
-                "Gathered electrical and software requirements.",
-                "Designed the hardware and software architecture, including interconnect, wiring, and mechanical.",
-                "Built a web app and api for configuration data and telemetry. (~10,000 lines of C# and HTML)",
-                "Built a client library for the api that could be easily consumed in LabVIEW.",
-                "Worked closely with the LabVIEW team, resulting in smooth integration."
-            ]
-        },
-        {
-            "company": "Raytheon",
-            "position": "Test Systems Engineer",
-            "website": "http://raytheon.com",
-            "startDate": "2010-06-21",
-            "endDate": "2011-04-01",
-            "summary": "Designed Test apparatus and components, supported test programs and R&D efforts.",
-            "highlights": [
-                "Designed circuit boards and enclosures to support testing of space hardware.",
-                "Supported a field test of a new method for vicarious calibration of satellites.",
-                "Radiometric calibration of a hyperspectral sensor."
+            "roles": [
+                {
+                    "position": "Adviser to Software Center Management",
+                    "startDate": "2015-01-01",
+                    "summary": "Led an effort in Software Engineering Center to improve talent acquisition and retention.",
+                    "highlights": [
+                        "Added an emphasis on system and hardware skills for test and measurement software roles.",
+                        "Expanded the duration of on site interviews and their technical scope.",
+                        "Organized an effort to ensure new hires would have real work, to improve morale and retention.",
+                        "Performed resume screening, phone screening, and on site interviews."
+                    ]
+                },
+                {
+                    "position": "VIIRS Ground Support Equipment Responsible Engineering Authority",
+                    "startDate": "2012-08-01",
+                    "summary": "VIIRS (Visible Infrared Imaging Radiometer Suite) is a calibrated spaceborne sensor for weather prediction. It is tested extensively with simulators prior to launch.",
+                    "highlights": [
+                        "Engineering owner of the ground station and spacecraft simulators for VIIRS test program.",
+                        "Made the case for, designed, and executed a rewrite the simulator software. (~40,000 lines of C++)",
+                        "Designed and built an adapter board so cheap commercial communications hardware could be used.",
+                        "Redesigned the simulator for SpaceWire connectivity to support VIIRS upgrades.",
+                        "Built, and maintained a data aggregation system which cut analysis time from hours to minutes.",
+                        "Provided 24/7 on call support for months of continuous testing.",
+                        "As a result of upgrades, test program had a marked (80%) reduction in errors caused by the simulators."
+                    ]
+                },
+                {
+                    "position": "Raytheon Capital Test Station: Electrical and Software Architect",
+                    "startDate": "2011-04-01",
+                    "endDate": "2012-08-01",
+                    "summary": "New test station, built to offer new capabilities to customer programs and internal R&D.",
+                    "highlights": [
+                        "Gathered electrical and software requirements.",
+                        "Designed the hardware and software architecture, including interconnect, wiring, and mechanical.",
+                        "Built a web app and api for configuration data and telemetry. (~10,000 lines of C# and HTML)",
+                        "Built a client library for the api that could be easily consumed in LabVIEW.",
+                        "Worked closely with the LabVIEW team, resulting in smooth integration."
+                    ]
+                },
+                {
+                    "position": "Test Systems Engineer",
+                    "startDate": "2010-06-21",
+                    "endDate": "2011-04-01",
+                    "summary": "Designed Test apparatus and components, supported test programs and R&D efforts.",
+                    "highlights": [
+                        "Designed circuit boards and enclosures to support testing of space hardware.",
+                        "Supported a field test of a new method for vicarious calibration of satellites.",
+                        "Radiometric calibration of a hyperspectral sensor."
+                    ]
+                }
             ]
         },
         {
             "company": "NTT Communication Science Laboratories",
-            "position": "Summer Intern",
+            "title": "Summer Intern",
             "website": "http://www.kecl.ntt.co.jp/rps/english/index_e.html",
-            "startDate": "2009-06-22",
-            "endDate": "2009-08-28",
-            "summary": "Worked in the vision group of the NTT Behavioral Research Lab in the NTT Atsugi R&D Center. Studied how reflections affect human visual inference of materials and illuminants.",
-            "highlights": [
-                "Experimented with Machine vision techniques for manipulating specular and matter reflection in an image.",
-                "Designed and built an apparatus to separate matte and specular reflection in a scene using polarization."
+            "roles": [
+                {
+                    "startDate": "2009-06-22",
+                    "endDate": "2009-08-28",
+                    "summary": "Worked in the vision group of the NTT Behavioral Research Lab in the NTT Atsugi R&D Center. Studied how reflections affect human visual inference of materials and illuminants.",
+                    "highlights": [
+                        "Experimented with Machine vision techniques for manipulating specular and matter reflection in an image.",
+                        "Designed and built an apparatus to separate matte and specular reflection in a scene using polarization."
+                    ]
+                }
             ]
         },
         {
             "company": "Caltech Physics Department",
-            "position": "Teaching Assistant, Physics Laboratories",
+            "title": "Teaching Assistant",
             "website": "http://www.caltech.edu",
-            "startDate": "2008-10-01",
-            "endDate": "2009-12-01",
-            "summary": "Instructed physics students in a hands on laboratory environment.",
-            "highlights": [
-                "Physics 105, Analog Circuits Laboratory: theory and the practice of designing, analyzing, and constructing analog circuits. Components included passives, transistors, and operational amplifiers.",
-                "Physics 6, Sophomore Laboratory in Physics: mass spectroscopy, analysis of resonant circuits, resonant mechanical systems, light spectroscopy, and diffraction of electrons by crystalline solids."
-            ]
-        }
-    ],
-    "education": [
-        {
-            "institution": "Caltech",
-            "area": "Physics",
-            "studyType": "BS",
-            "startDate": "2006-10-01",
-            "endDate": "2010-06-01",
-            "gpa": "3.5"
-        }
-    ],
-    "awards": [
-        {
-            "title": "Innovation Award",
-            "date": "2012-11-01",
-            "awarder": "Raytheon",
-            "summary": "Award for a novel configuration database scheme for a test station"
-        },
-        {
-            "title": "Mission Success Awards",
-            "date": "2015-02-24",
-            "awarder": "Raytheon VIIRS Program",
-            "summary": "Received 2 awards for personal contributions and 6 awards for team contributions to the VIIRS program."
-        },
+            "roles" : [
                 {
-            "title": "Award for Personal Contribution",
-            "date": "2015-02-11",
-            "awarder": "Raytheon Software Center",
-            "summary": "Awarded for work in improving hiring process in the Software Center."
-        }
-    ],
-    "skills": [
-        {
-            "name": "Languages",
-            "level": "Major Work",
-            "keywords": [
-                "C#",
-                "C++"
-            ]
-        },
-        {
-            "name": "Frameworks",
-            "level": "Major Work",
-            "keywords": [
-                "C++11/14",
-                "boost",
-                "boost::test",
-                "Intel TBB",
-                "ASP.NET MVC"
-            ]
-        },
-        {
-            "name": "Languages",
-            "level": "Minor Work",
-            "keywords": [
-                "Javascript",
-                "HTML",
-                "CSS",
-                "Powershell",
-                "LaTeX",
-                "LabVIEW"
-            ]
-        },
-        {
-            "name": "Frameworks",
-            "level": "Minor Work",
-            "keywords": [
-                "node.js",
-                "nunjucks.js",
-                "Log4CXX",
-                "MSTest",
-                "Entity Framework"
-            ]
-        },
-        {
-            "name": "Techniques",
-            "level": "Major Work",
-            "keywords": [
-                "Scrum",
-                "Unit Testing",
-                "Continuous Integration",
-                "White box reverse engineering"
-            ]
-        },
-        {
-            "name": "Measurement",
-            "level": "Major Work",
-            "keywords": [
-                "Instrument Selection",
-                "Test Design",
-                "Testing",
-                "Data Analysis"
-            ]
-        },
-        {
-            "name": "Electronics",
-            "level": "Minor Work",
-            "keywords": [
-                "Parts Selection",
-                "Circuit Design",
-                "Schematic Capture",
-                "Fabrication"
+                    "startDate": "2008-10-01",
+                    "endDate": "2009-12-01",
+                    "summary": "Instructed physics students in a hands on laboratory environment.",
+                    "highlights": [
+                        "Physics 105, Analog Circuits Laboratory: theory and the practice of designing, analyzing, and constructing analog circuits. Components included passives, transistors, and operational amplifiers.",
+                        "Physics 6, Sophomore Laboratory in Physics: mass spectroscopy, analysis of resonant circuits, resonant mechanical systems, light spectroscopy, and diffraction of electrons by crystalline solids."
+                    ]
+                }
             ]
         }
     ],
-  "languages": [
-    {
-        "language": "English",
-        "fluency": "Native speaker"
-    },
-    {
-        "language": "Japanese",
-        "fluency": "JLPT N4"
-    }
-  ],
-  "interests": [
-    {
-        "name": "Photography",
-        "keywords": [
-            "Landscape",
-            "Product",
-            "Motorsports"
-        ]
-    },
-    {
-        "name": "Reading",
-        "keywords": [
-            "History",
-            "Economics",
-            "Biography"
-        ]
-    },
-    {
-        "name": "Technology",
-        "keywords": [
-            "Computer Hardware",
-            "Video Gaming",
-            "Virtual Reality"
-        ]
-    }
-  ]
-}
+            "education": [
+                {
+                    "institution": "Caltech",
+                    "area": "Physics",
+                    "studyType": "BS",
+                    "startDate": "2006-10-01",
+                    "endDate": "2010-06-01",
+                    "gpa": "3.5"
+                }
+            ],
+            "awards": [
+                {
+                    "title": "Innovation Award",
+                    "date": "2012-11-01",
+                    "awarder": "Raytheon",
+                    "summary": "Award for a novel configuration database scheme for a test station"
+                },
+                {
+                    "title": "Mission Success Awards",
+                    "date": "2015-02-24",
+                    "awarder": "Raytheon VIIRS Program",
+                    "summary": "Received 2 awards for personal contributions and 6 awards for team contributions to the VIIRS program."
+                },
+                {
+                    "title": "Award for Personal Contribution",
+                    "date": "2015-02-11",
+                    "awarder": "Raytheon Software Center",
+                    "summary": "Awarded for work in improving hiring process in the Software Center."
+                }
+            ],
+            "skills": [
+                {
+                    "name": "Languages",
+                    "level": "Major Work",
+                    "keywords": [
+                        "C#",
+                        "C++"
+                    ]
+                },
+                {
+                    "name": "Frameworks",
+                    "level": "Major Work",
+                    "keywords": [
+                        "C++11/14",
+                        "boost",
+                        "boost::test",
+                        "Intel TBB",
+                        "ASP.NET MVC"
+                    ]
+                },
+                {
+                    "name": "Languages",
+                    "level": "Minor Work",
+                    "keywords": [
+                        "Javascript",
+                        "HTML",
+                        "CSS",
+                        "Powershell",
+                        "LaTeX",
+                        "LabVIEW"
+                    ]
+                },
+                {
+                    "name": "Frameworks",
+                    "level": "Minor Work",
+                    "keywords": [
+                        "node.js",
+                        "nunjucks.js",
+                        "Log4CXX",
+                        "MSTest",
+                        "Entity Framework"
+                    ]
+                },
+                {
+                    "name": "Techniques",
+                    "level": "Major Work",
+                    "keywords": [
+                        "Scrum",
+                        "Unit Testing",
+                        "Continuous Integration",
+                        "White box reverse engineering"
+                    ]
+                },
+                {
+                    "name": "Measurement",
+                    "level": "Major Work",
+                    "keywords": [
+                        "Instrument Selection",
+                        "Test Design",
+                        "Testing",
+                        "Data Analysis"
+                    ]
+                },
+                {
+                    "name": "Electronics",
+                    "level": "Minor Work",
+                    "keywords": [
+                        "Parts Selection",
+                        "Circuit Design",
+                        "Schematic Capture",
+                        "Fabrication"
+                    ]
+                }
+            ],
+            "languages": [
+                {
+                    "language": "English",
+                    "fluency": "Native speaker"
+                },
+                {
+                    "language": "Japanese",
+                    "fluency": "JLPT N4"
+                }
+            ],
+            "interests": [
+                {
+                    "name": "Photography",
+                    "keywords": [
+                        "Landscape",
+                        "Product",
+                        "Motorsports"
+                    ]
+                },
+                {
+                    "name": "Reading",
+                    "keywords": [
+                        "History",
+                        "Economics",
+                        "Biography"
+                    ]
+                },
+                {
+                    "name": "Technology",
+                    "keywords": [
+                        "Computer Hardware",
+                        "Video Gaming",
+                        "Virtual Reality"
+                    ]
+                }
+            ]
+        }
