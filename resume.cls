@@ -125,7 +125,7 @@
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.75em} % Some space after the list of bullet points
+  \vspace{0.5em} % Some space after the list of bullet points
 }
 
 \newenvironment{rSubsectionNoList}[5]{ % 4 input arguments - company name, job title, position,  employment dates, and summary

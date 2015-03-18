@@ -52,8 +52,8 @@
                     "summary": "VIIRS (Visible Infrared Imaging Radiometer Suite) is a calibrated spaceborne sensor for weather prediction. We test it extensively with simulators prior to launch.",
                     "highlights": [
                         "Engineering owner of the ground station and spacecraft simulators for VIIRS test program.",
-                        "Made the case for, designed, and executed a rewrite the simulator software. (~40,000 lines of C++)",
-                        "Designed and built an adapter board so cheap commercial communications hardware could be used.",
+                        "Made the case for, designed, and executed a rewrite of the simulator software. (~40,000 lines of C++)",
+                        "Designed and built an adapter board so inexpensive commercial communications hardware could be used.",
                         "Redesigned the simulator for SpaceWire connectivity to support VIIRS upgrades.",
                         "Built and maintained a data aggregation system which cut analysis time from hours to minutes.",
                         "Provided 24/7 on call support for months of continuous testing.",
@@ -96,7 +96,7 @@
                     "endDate": "2009-08-28",
                     "summary": "Worked in the vision group of the NTT Behavioral Research Lab in the NTT Atsugi R&D Center. Studied how reflections affect human visual inference of materials and illuminants.",
                     "highlights": [
-                        "Experimented with Machine vision techniques for manipulating specular and matter reflection in an image.",
+                        "Experimented with machine vision techniques for manipulating specular and matter reflection in an image.",
                         "Designed and built an apparatus to separate matte and specular reflection in a scene using polarization."
                     ]
                 }

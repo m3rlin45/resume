@@ -22,7 +22,7 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.5in,top=0.4in,right=0.5in,bottom=0.4in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
 
 \name{<$ basics.name $>} % Your name
 \title{<$ basics.label $>} % Job Title
@@ -135,7 +135,7 @@
 
 \begin{rSection}{Languages}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{16ex}} l }
 <% for lang  in languages %>
 <$ lang.language $> & <$ lang.fluency $> \\
 <% endfor %>
@@ -151,7 +151,7 @@
 
 \begin{rSection}{Interests}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{12ex}} l }
 <% for interest  in interests %>
 <$ interest.name $> & 
 <%- set comma = joiner() -%> 
