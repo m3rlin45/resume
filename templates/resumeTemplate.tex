@@ -23,12 +23,13 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
+\usepackage{hyperref}
 
 \name{<$ basics.name $>} % Your name
 \title{<$ basics.label $>} % Job Title
 \address{<$ basics.location.city $>, <$ basics.location.region $> <$ basics.location.countryCode $>} % Your address
 \address{<$ basics.email $>}
-\address{<$ basics.website $>}
+\address{\href{<$ basics.website $>}{<$ basics.website $>}}
 
 \begin{document}
 

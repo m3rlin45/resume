@@ -30,6 +30,8 @@ EcHO DONE Unzipping MikTex
 
 :end
 popd
+REM Install the url package
+mpm --install=url
 REM Build the pdf
 pdflatex.exe resume.tex -halt-on-error
 
