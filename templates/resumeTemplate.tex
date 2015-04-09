@@ -172,7 +172,7 @@
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 <% for profile  in basics.profiles -%>
-<$  profile.network $> & <$ profile.url $>\\
+<$  profile.network $> & \href{<$ profile.url $>}{<$ profile.url | TeXEscape $>}\\
 \textnormal{  <$ profile.username $>} & \\
 <%- endfor %>
 \end{tabular}
