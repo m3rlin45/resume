@@ -106,7 +106,7 @@
             "company": "Caltech Physics Department",
             "title": "Teaching Assistant",
             "website": "http://www.caltech.edu",
-            "roles" : [
+            "roles": [
                 {
                     "startDate": "2008-10-01",
                     "endDate": "2009-12-01",
@@ -115,110 +115,110 @@
             ]
         }
     ],
-            "education": [
-                {
-                    "institution": "Caltech",
-                    "area": "Physics",
-                    "studyType": "BS",
-                    "startDate": "2006-10-01",
-                    "endDate": "2010-06-01",
-                    "gpa": "3.5"
-                }
-            ],
-            "awards": [
-                {
-                    "title": "Innovation Award",
-                    "date": "2012-11-01",
-                    "awarder": "Raytheon",
-                    "summary": "Award for a novel configuration database scheme for a test station"
-                },
-                {
-                    "title": "Mission Success Awards",
-                    "date": "2015-02-24",
-                    "awarder": "Raytheon VIIRS Program",
-                    "summary": "Received 2 awards for personal contributions and 6 awards for team contributions to the VIIRS program."
-                },
-                {
-                    "title": "Award for Personal Contribution",
-                    "date": "2015-02-11",
-                    "awarder": "Raytheon Software Center",
-                    "summary": "Awarded for work in improving hiring process in the Software Center."
-                }
-            ],
-            "skills": [
-                {
-                    "name": "Languages",
-                    "level": "Major Work",
-                    "keywords": [
-                        "C#",
-                        "C++"
-                    ]
-                },
-                {
-                    "name": "Frameworks",
-                    "level": "Major Work",
-                    "keywords": [
-                        "C++11/14",
-                        "boost",
-                        "boost::test",
-                        "Intel TBB",
-                        "ASP.NET MVC"
-                    ]
-                },
-                {
-                    "name": "Languages",
-                    "level": "Minor Work",
-                    "keywords": [
-                        "Javascript",
-                        "HTML",
-                        "CSS",
-                        "Powershell",
-                        "LaTeX",
-                        "LabVIEW"
-                    ]
-                },
-                {
-                    "name": "Frameworks",
-                    "level": "Minor Work",
-                    "keywords": [
-                        "node.js",
-                        "nunjucks.js",
-                        "Log4CXX",
-                        "MSTest",
-                        "Entity Framework"
-                    ]
-                },
-                {
-                    "name": "Techniques",
-                    "level": "Major Work",
-                    "keywords": [
-                        "Scrum",
-                        "Unit Testing",
-                        "Continuous Integration",
-                        "White box reverse engineering"
-                    ]
-                },
-                {
-                    "name": "Measurement",
-                    "level": "Major Work",
-                    "keywords": [
-                        "Instrument Selection",
-                        "Test Design",
-                        "Testing",
-                        "Data Analysis"
-                    ]
-                },
-                {
-                    "name": "Electronics",
-                    "level": "Minor Work",
-                    "keywords": [
-                        "Parts Selection",
-                        "Circuit Design",
-                        "Schematic Capture",
-                        "Fabrication"
-                    ]
-                }
-            ],
+    "education": [
+        {
+            "institution": "Caltech",
+            "area": "Physics",
+            "studyType": "BS",
+            "startDate": "2006-10-01",
+            "endDate": "2010-06-01",
+            "gpa": "3.5"
+        }
+    ],
+    "awards": [
+        {
+            "title": "Innovation Award",
+            "date": "2012-11-01",
+            "awarder": "Raytheon",
+            "summary": "Award for a novel configuration database scheme for a test station"
+        },
+        {
+            "title": "Mission Success Awards",
+            "date": "2015-02-24",
+            "awarder": "Raytheon VIIRS Program",
+            "summary": "Received 2 awards for personal contributions and 6 awards for team contributions to the VIIRS program."
+        },
+        {
+            "title": "Award for Personal Contribution",
+            "date": "2015-02-11",
+            "awarder": "Raytheon Software Center",
+            "summary": "Awarded for work in improving hiring process in the Software Center."
+        }
+    ],
+    "skills": [
+        {
+            "name": "Languages",
+            "level": "Major Work",
+            "keywords": [
+                "C#",
+                "C++"
+            ]
+        },
+        {
+            "name": "Frameworks",
+            "level": "Major Work",
+            "keywords": [
+                "C++11/14",
+                "boost",
+                "boost::test",
+                "Intel TBB",
+                "ASP.NET MVC"
+            ]
+        },
+        {
+            "name": "Languages",
+            "level": "Minor Work",
+            "keywords": [
+                "Javascript",
+                "HTML",
+                "CSS",
+                "Powershell",
+                "LaTeX",
+                "LabVIEW"
+            ]
+        },
+        {
+            "name": "Frameworks",
+            "level": "Minor Work",
+            "keywords": [
+                "node.js",
+                "nunjucks.js",
+                "Log4CXX",
+                "MSTest",
+                "Entity Framework"
+            ]
+        },
+        {
+            "name": "Techniques",
+            "level": "Major Work",
+            "keywords": [
+                "Unit Testing",
+                "Continuous Integration",
+                "White Box Reverse Engineering",
+                "Scrum"
+            ]
+        },
+        {
+            "name": "Hardware Test",
+            "level": "Major Work",
+            "keywords": [
+                "Test Design",
+                "Apparatus Design",
+                "Test Conduction",
+                "Data Analysis"
+            ]
+        },
+        {
+            "name": "Electronics",
+            "level": "Minor Work",
+            "keywords": [
+                "Parts Selection",
+                "Circuit Design",
+                "Schematic Capture",
+                "Fabrication"
+            ]
+        }
+    ],
             "languages": [
                 {
                     "language": "English",
