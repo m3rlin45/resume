@@ -35,8 +35,11 @@
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
-\def \title#1{\def\@title{#1}} % Defines the \name command to set name
+\def \title#1{\def\@title{#1}} % Defines the \title command to set title
 \def \@title {} % Sets \@title to empty by default
+
+\def \summary #1{\def\@summary{#1}} % Defines the \title command to set title
+\def \@summary {} % Sets \@title to empty by default
 
 \def \addressSep {$\diamond$} % Set default address separator to a diamond
 
@@ -91,6 +94,9 @@
     \printaddress{\@addresstwo}}
      \@ifundefined{@addressthree}{}{ % Print the third address if specified
     \printaddress{\@addressthree}}
+   \begin{center}
+     \parbox{18 cm} { {\bf Summary:} \@summary}
+   \end{center}
 }
 
 %----------------------------------------------------------------------------------------
