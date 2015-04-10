@@ -34,6 +34,7 @@
             "company": "Raytheon",
             "title": "Senior Multi-Disciplined Engineer",
             "website": "http://raytheon.com",
+            "location":  "El Segundo, CA, USA",
             "roles": [
                 {
                     "position": "Adviser to Software Center Management",
@@ -90,6 +91,7 @@
             "company": "NTT Communication Science Laboratories",
             "title": "Summer Intern",
             "website": "http://www.kecl.ntt.co.jp/rps/english/index_e.html",
+            "location":  "Atsugi-shi, Kanagawa, Japan",
             "roles": [
                 {
                     "startDate": "2009-06-22",
@@ -106,6 +108,7 @@
             "company": "Caltech Physics Department",
             "title": "Teaching Assistant",
             "website": "http://www.caltech.edu",
+            "location": "Pasadena, CA, USA",
             "roles": [
                 {
                     "startDate": "2008-10-01",
