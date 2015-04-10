@@ -87,7 +87,12 @@
 <% for job in workplace.roles %>
 
 <% if job.highlights.length > 0 %>
-\begin{rSubsection}{<$ workplace.company  if not isNotFirst() $>}{ <$ workplace.title $> }{<$ job.position $>}{<$ printDate(job.startDate) $> --- <$ printDate(job.endDate) $>}
+\begin{rSubsection}
+<%- if not isNotFirst() %>
+{\href{<$ workplace.website $>}{<$ workplace.company $>}}
+<% else %>
+{}
+<% endif -%>{ <$ workplace.title $> }{<$ job.position $>}{<$ printDate(job.startDate) $> --- <$ printDate(job.endDate) $>}
 { <$ job.summary | TeXEscape $> }
 <% for highlight in job.highlights %>
 \item <$ highlight | TeXEscape $>
@@ -96,7 +101,11 @@
 
 <% else %>
 
-\begin{rSubsectionNoList}{<$ workplace.company  if not isNotFirst() $>}{ <$ workplace.title $> }{<$ job.position $>}{<$ printDate(job.startDate) $> --- <$ printDate(job.endDate) $>}
+\begin{rSubsectionNoList}<%- if not isNotFirst() %>
+{\href{<$ workplace.website $>}{<$ workplace.company $>}}
+<% else %>
+{}
+<% endif -%>{ <$ workplace.title $> }{<$ job.position $>}{<$ printDate(job.startDate) $> --- <$ printDate(job.endDate) $>}
 { <$ job.summary | TeXEscape $> }
 \end{rSubsectionNoList}
 
