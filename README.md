@@ -18,13 +18,13 @@ For CI, this repo is linked to the azure website that hosts it. Upon a push to t
 * Installs Bower Packages
 * Spell Checks the Resume
 * Builds the LaTeX Source
-* Installs MiKTeX Portable if necessary, and builds LaTeX source into a pdf
+* Installs MiKTeX Portable if necessary, installs the hyperref package, and builds LaTeX source into a pdf
 * builds the Html page
 * builds the CSS stylesheet
 
 Assuming success, Azure will then copy these outputs over and begin serving them.
 ###Other Credits
-This project inspired by [Steven Edouard's resume](http://resume.stevenedouard.com/). It waas originally, like his, based on [JSON Resume](https://jsonresume.org/) but lacks in pdf generation and dissatisfaction with the html options it had pushed me to the current design. The JSON file still follows the schema.
+This project inspired by [Steven Edouard's resume](http://resume.stevenedouard.com/). It waas originally, like his, based on [JSON Resume](https://jsonresume.org/) but lacks in pdf generation and dissatisfaction with the html options it had pushed me to the current design. The JSON file no longer follows the schema.
 
 The Scheme for installing MiKTeX portable at deploy time, the script for doing so, and the method for debugging that script are all credit to Scott Hanselman's brilliant explanation of using [Ruby Middleman on Azure](http://www.hanselman.com/blog/RunningTheRubyMiddlemanStaticSiteGeneratorOnMicrosoftAzure.aspx).
 

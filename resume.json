@@ -50,7 +50,7 @@
                 {
                     "position": "VIIRS Ground Support Equipment Responsible Engineering Authority",
                     "startDate": "2012-08-01",
-                    "summary": "VIIRS (Visible Infrared Imaging Radiometer Suite) is a calibrated spaceborne sensor for weather prediction. We test it extensively with simulators prior to launch.",
+                    "summary": "VIIRS (Visible Infrared Imaging Radiometer Suite) is a calibrated spaceborne sensor for weather prediction. My team tests it extensively prior to launch.",
                     "highlights": [
                         "Engineering owner of the ground station and spacecraft simulators for VIIRS test program.",
                         "Made the case for, designed, and executed a rewrite of the simulator software. (~40,000 lines of C++)",
@@ -68,7 +68,7 @@
                     "summary": "Software/hardware design of a test station offering new capabilities to customer programs and internal R&D.",
                     "highlights": [
                         "Gathered electrical and software requirements and designed an overall architecture.",
-                        "Designed and built the hardware, including interconnect, wiring, and mechanical.",
+                        "Designed and built the hardware, including interconnect, wiring, and mechanical design.",
                         "Built a web app and API for configuration data and telemetry. (~10,000 lines of C# and HTML)",
                         "Built a client library for the API that could be easily consumed in LabVIEW.",
                         "Worked closely with the LabVIEW team, resulting in smooth integration."
