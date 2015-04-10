@@ -115,12 +115,12 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rSubsection}[5]{ % 4 input arguments - company name, job title, position,  employment dates, and summary
+\newenvironment{rSubsection}[6]{ % 6 input arguments - company name, location, job title, position,  employment dates, and summary
  \ifthenelse{\equal{#1}{}}{}{
- {\bf \hspace*{-1.25em}#1} \hfill {\bf #2} \\}% Bold company name
-  \ifthenelse{\equal{#3}{}}{\null\hfill {#4}}{{\em #3} \hfill { #4}} % Italic job title and normal date
+ {\bf \hspace*{-1.25em}#1} --- {#2} \hfill {\bf #3} \\}% Bold company name
+  \ifthenelse{\equal{#4}{}}{\null\hfill {#5}}{{\em #4} \hfill { #5}} % Italic job title and normal date
   \par \hangindent=1em
-  {#5}\smallskip % summary
+  {#6}\smallskip % summary
   \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
@@ -128,12 +128,12 @@
   \vspace{0.5em} % Some space after the list of bullet points
 }
 
-\newenvironment{rSubsectionNoList}[5]{ % 4 input arguments - company name, job title, position,  employment dates, and summary
+\newenvironment{rSubsectionNoList}[6]{ % 6 input arguments - company name, locatoin, job title, position,  employment dates, and summary
  \ifthenelse{\equal{#1}{}}{}{
- {\bf \hspace*{-1.25em}#1} \hfill {\bf #2} \\}% Bold company name
-  \ifthenelse{\equal{#3}{}}{\null\hfill {#4}}{{\em #3} \hfill { #4}} % Italic job title and normal date
+ {\bf \hspace*{-1.25em}#1} --- {#2} \hfill {\bf #3} \\}% Bold company name
+  \ifthenelse{\equal{#4}{}}{\null\hfill {#5}}{{\em #4} \hfill { #5}} % Italic job title and normal date
   \par \hangindent=1em
-  {#5}\smallskip % summary
+  {#6}\smallskip % summary
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip

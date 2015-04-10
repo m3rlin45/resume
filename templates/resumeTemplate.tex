@@ -89,9 +89,9 @@
 <% if job.highlights.length > 0 %>
 \begin{rSubsection}
 <%- if not isNotFirst() %>
-{\href{<$ workplace.website $>}{<$ workplace.company $>}}
+{\href{<$ workplace.website $>}{<$ workplace.company $>}}{<$ workplace.location $>}
 <% else %>
-{}
+{}{}
 <% endif -%>{ <$ workplace.title $> }{<$ job.position $>}{<$ printDate(job.startDate) $> --- <$ printDate(job.endDate) $>}
 { <$ job.summary | TeXEscape $> }
 <% for highlight in job.highlights %>
@@ -102,9 +102,9 @@
 <% else %>
 
 \begin{rSubsectionNoList}<%- if not isNotFirst() %>
-{\href{<$ workplace.website $>}{<$ workplace.company $>}}
+{\href{<$ workplace.website $>}{<$ workplace.company $>}}{<$ workplace.location $>}
 <% else %>
-{}
+{}{}
 <% endif -%>{ <$ workplace.title $> }{<$ job.position $>}{<$ printDate(job.startDate) $> --- <$ printDate(job.endDate) $>}
 { <$ job.summary | TeXEscape $> }
 \end{rSubsectionNoList}
