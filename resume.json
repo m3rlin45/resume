@@ -39,6 +39,7 @@
                 {
                     "position": "Adviser to Software Center Management",
                     "startDate": "2015-01-01",
+                    "endDate": "2015-11-09",
                     "summary": "Led an effort in Software Engineering Center to improve talent acquisition and retention.",
                     "highlights": [
                         "Added an emphasis on system and hardware skills for test and measurement software roles.",
@@ -50,6 +51,7 @@
                 {
                     "position": "VIIRS Ground Support Equipment Responsible Engineering Authority",
                     "startDate": "2012-08-01",
+                    "endDate": "2015-11-09",
                     "summary": "VIIRS (Visible Infrared Imaging Radiometer Suite) is a calibrated spaceborne sensor for weather prediction. My team tests it extensively prior to launch.",
                     "highlights": [
                         "Engineering owner of the ground station and spacecraft simulators for VIIRS test program.",
