@@ -21,7 +21,7 @@ REM  get miktex portable from https://miktex.org/download/ctan/systems/win32/mik
 curl -L -o miktex-portable.exe https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x86/miktex-portable-2.9.6942.exe
 REM Azure puts 7zip here!
 EcHO START Unzipping MikTex
-d:\7zip\7za x -y -omiktex-portable miktex-portable> outmiktex
+d:\7zip\7za x -y -omiktex-portable miktex-portable.exe> outmiktex
 EcHO DONE Unzipping MikTex
 
 
