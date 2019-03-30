@@ -24,7 +24,7 @@ EcHO DONE Unzipping MikTex
 
 
 
-
+REM We probably should clean up these huge files or we will run out of quota
 
 :end
 popd
