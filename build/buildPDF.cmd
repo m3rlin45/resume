@@ -15,8 +15,6 @@ if exist miktex-portable goto end
 
 echo No LaTeX, need to get it!
 
-REM Get Ruby and Rails
-REM 32bit
 REM  get miktex portable from https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x86/miktex-portable-2.9.6942.exe
 curl -L -o miktex-portable.exe https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x86/miktex-portable-2.9.6942.exe
 REM Azure puts 7zip here!
