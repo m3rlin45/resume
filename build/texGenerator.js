@@ -5,6 +5,7 @@ var filters = require('./filters');
 
 
 var env = nunjucks.configure('templates', {
+    autoescape: false,
     tags: {
         blockStart: '<%',
         blockEnd: '%>',

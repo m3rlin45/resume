@@ -6,3 +6,6 @@ index.html
 resume.tex
 Thumbs.db
 package-lock.json
+*.out
+*.aux
+*.log
