@@ -28,8 +28,10 @@ REM We probably should clean up these huge files or we will run out of quota
 
 :end
 popd
-REM Install the url package
+REM Install the packages we need
 mpm --install=url
+mpm --install=parskip
+mpm --install=etoolbox
 REM Build the pdf
 pdflatex.exe resume.tex -halt-on-error
 
