@@ -5,7 +5,7 @@ REM https://github.com/shanselman/march-is-for-makers/blob/master/getruby.cmd
 
 REM Put Tex in Path
 REM You can also use %TEMP% but it is cleared on site restart. Tools is persistent.
-SET PATH=%PATH%;D:\home\site\deployments\tools\t\miktex-portable\miktex\bin
+SET PATH=%PATH%;D:\home\site\deployments\tools\t\miktex-portable\texmfs\install\miktex\bin
 
 REM I am in the repository folder
 pushd D:\home\site\deployments\tools 
