@@ -2,6 +2,7 @@
   "name": "CMD-Resume",
   "version": "0.0.1",
   "dependencies": {
+    "bower": "^1.8.8",
     "escape-latex": "^0.1.2",
     "less": "^3.9.0",
     "moment": "^2.9.0",

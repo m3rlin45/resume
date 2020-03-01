@@ -30,6 +30,48 @@
         ]
     },
     "work": [
+	{
+	    "company": "Facebook",
+	    "title": "Principle Software Engineer",
+	    "website": "https://www.facebook.com",
+	    "location": "Menlo Park, CA, USA",
+	    "roles": [
+		{
+		    "position": "Tech Lead Manager for NLP Infrastructure",
+		    "startDate": "2018-07-01",
+		    "summary": "A blended role of management and engineering leadership. I led the NLP Infrastructure team in Facebook AI.",
+		    "highlights": [
+			"Expanded the team beyond just inference into NLP training platforms forming a collaboration with the FB Assistant Language team to build the open source PyText platform to bring PyTorch based NLP models to all of Facebook.",
+			"Led the push to bring new hardware capabilities into FB in very short timeframes which paved the way for Facebook's RoBERTa and XLM-R models to be invented and productized in the same year.",
+			"Grew the team from 4 to 8 to support our needs, and supported the growth of individuals on the team.",
+			"Drove a broad effort across Facebook AI to improve engineering standards and maintenance",
+			"Recognized that the blended role was insufficient for the team size needed to realize our ambitions and hired an experienced manager to take over the people management side so I could focus on technical direction. This transition is ongoing."
+		    ]
+		},
+		{
+		    "position": "NLP Infrastructure Technical Lead",
+		    "startDate": "2017-09-01",
+		    "endDate": "2018-06-30",
+		    "summary": "As the engineering leader of the NLP Infrastructure team in Facebook AI, I was responsible for making sure that our research got to production and worked.",
+		    "highlights": [
+			"Built a generic auto-scaling microservice system for serving many ML models efficiently. This was extended beyond NLP and took over most non-ads ML inference workloads at Facebook.",
+			"Greatly expanded the scale and efficiency of Translation inference at Facebook",
+			"Supported my manager and helped hire and grow new talent within the team"
+		    ]
+		},
+		{
+		    "position": "Translation Infrastructure Engineer",
+		    "startDate": "2016-01-01",
+		    "endDate": "2017-09-01",
+		    "summary": "As the first infra engineer in the Facebook Translation Team, I worked to make our inference scalable and reliable",
+		    "highlights": [
+			"Drove the inference infrastructure side of migrating translation at FB to neural networks, which required vastly more compute than statistical methods.",
+			"Significantly increased the reliability of translations at Facebook through better system architecture.",
+			"Built the hot-fix system used to respond to bad translations at Facebook for Neural Machine Translation"
+		    ]
+		}
+	    ]
+	},
         {
             "company": "Raytheon",
             "title": "Senior Multi-Disciplined Engineer",
