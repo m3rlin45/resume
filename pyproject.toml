@@ -9,6 +9,8 @@ license = "MIT"
 python = "^3.8"
 click = "^8.0.3"
 Jinja2 = "^3.0.2"
+pyspellchecker = "^0.6.2"
+pytest = "^6.2.5"
 
 [tool.poetry.dev-dependencies]
 
