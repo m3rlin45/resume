@@ -9,3 +9,6 @@ package-lock.json
 *.out
 *.aux
 *.log
+__pycache__/
+*.pyc
+*.*~
