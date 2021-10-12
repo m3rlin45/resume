@@ -232,7 +232,7 @@
             {{ sectionTitle("Experience")}}
             <div class="row">
                 {% for job in work %}
-                <div class="{{ "col-md-10 col-md-offset-1" if job.roles.length > 1 else "col-md-8 col-md-offset-2" }}">
+                <div class="{{ "col-md-10 col-md-offset-1" if job.roles|length > 1 else "col-md-8 col-md-offset-2" }}">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="detail-panel"><a href="{{job.website}}">{{job.company}}</a></h3>
@@ -241,10 +241,10 @@
                         </div>
                         <div class="panel-body">
                             {% for role in job.roles %}
-                            {{ rollBlock(role, job.roles.length > 1) }}
+                            {{ rollBlock(role, job.roles|length > 1) }}
                             {% endfor %}
                         </div>
-                        {{ dateFooter(job.roles[0].startDate, job.roles[0].endDate) if job.roles.length == 1  }}
+                        {{ dateFooter(job.roles[0].startDate, job.roles[0].endDate) if job.roles|length == 1  }}
                     </div>
                 </div>
                 {%endfor%}
