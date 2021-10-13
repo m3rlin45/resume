@@ -1,5 +1,6 @@
 from collections import defaultdict
 from datetime import date
+from pylatex.utils import escape_latex
 
 def add_filters(env):
     def DateYearMonthFilter(datestr):
@@ -14,3 +15,6 @@ def add_filters(env):
         return [{"name": name, "entries": entries} for name, entries in new_skills.items()]
     env.filters["ConvertSkills"] = ConvertSkillsFilter
                 
+    def TeXEscapeFilter(input):
+        return escape_latex(input)
+    env.filters["TeXEscape"] = TeXEscapeFilter
