@@ -5,8 +5,11 @@ from jinja2 import Environment, select_autoescape, FileSystemLoader
 from filters import add_filters
 
 
+@click.group()
+def cli():
+    pass
 
-@click.command()
+@cli.command()
 @click.argument("json_resume", type=click.File("r"))
 @click.argument("template_path")
 @click.argument("output_file", type=click.File("w"))
@@ -20,4 +23,4 @@ def generate_html(json_resume, template_path, output_file):
 
     
 if __name__ == "__main__":
-    generate_html()
+    cli()
