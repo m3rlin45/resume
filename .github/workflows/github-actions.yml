@@ -9,7 +9,6 @@ jobs:
       - name: Run Tests
         run: poetry run pytest
   build-latex-pdf:
-    needs: setup
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
