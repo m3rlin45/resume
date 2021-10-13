@@ -1,7 +1,7 @@
 name: Build and Test Resume
 on: [push]
 jobs:
-  Run-Tests:
+  Build-And-Run-Tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -9,8 +9,19 @@ jobs:
         uses: actions/setup-python@v2
       - name: Install Poetry
         run: pip install poetry
-      - name: Install Dependencies
+      - name: Install Python Dependencies
         run: poetry install
       - name: Run Tests
         run: poetry run pytest
+      - name: Install Latex Dependencies
+        run: sudo apt install texlive-latex-extra --no-install-recommends
+      - name: build latex file
+        run: poetry run python build/Generator.py generate-latex resume.json templates/resumeTemplate.tex resume.tex
+      - name: build pdf
+        run: pdflatex resume.tex
+      - name: Upload pdf
+        uses: actions/upload-artifact@v2
+	with:
+	  name: resume.pdf
+	  path: resume.pdf
       
