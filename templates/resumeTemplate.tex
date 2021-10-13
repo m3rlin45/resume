@@ -63,8 +63,7 @@
 <% for skill  in filteredSkills %>
 <$ skill.name $> & \\
 <% for entry in skill.entries %>
-<% if loop.last %> \smallbreak <% endif %>
-\textnormal{  <$ entry.level $>} &
+\textnormal{  <$ entry.level $> } &
 <%- set comma = joiner() -%> 
 <%- for keyw in entry.keywords -%> 
 <$ comma() $> <$ keyw | TeXEscape $> 
@@ -87,7 +86,7 @@
 
 <% for job in workplace.roles %>
 
-<% if job.highlights.length > 0 %>
+<% if job.highlights|length > 0 %>
 \begin{rSubsection}
 <%- if not isNotFirst() %>
 {\href{<$ workplace.website $>}{<$ workplace.company $>}}{<$ workplace.location $>}
