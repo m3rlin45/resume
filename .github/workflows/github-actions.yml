@@ -5,14 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ./github/actions/setup
+      - uses: ./.github/actions/setup
       - name: Run Tests
         run: poetry run pytest
   build-latex-pdf:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ./github/actions/setup
+      - uses: ./.github/actions/setup
       - name: Install Latex Dependencies
         run: sudo apt install texlive-latex-extra --no-install-recommends
       - name: build latex file
