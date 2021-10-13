@@ -1,26 +1,19 @@
 name: Build and Test Resume
 on: [push]
 jobs:
-  setup:
+  run-tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: set up Python
-        uses: actions/setup-python@v2
-      - name: Install Poetry
-        run: pip install poetry
-      - name: Install Python Dependencies
-        run: poetry install
-  run-tests:
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
+      - uses: ./github/actions/setup
       - name: Run Tests
         run: poetry run pytest
   build-latex-pdf:
     needs: setup
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - uses: ./github/actions/setup
       - name: Install Latex Dependencies
         run: sudo apt install texlive-latex-extra --no-install-recommends
       - name: build latex file

@@ -1,0 +1,8 @@
+runs:
+    steps:
+      - name: set up Python
+        uses: actions/setup-python@v2
+      - name: Install Poetry
+        run: pip install poetry
+      - name: Install Python Dependencies
+        run: poetry install
