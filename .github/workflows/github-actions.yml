@@ -20,6 +20,7 @@ jobs:
   build-latex-pdf:
     needs: setup
     runs-on: ubuntu-latest
+    steps:
       - name: Install Latex Dependencies
         run: sudo apt install texlive-latex-extra --no-install-recommends
       - name: build latex file
