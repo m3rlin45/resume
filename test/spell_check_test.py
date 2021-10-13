@@ -2,12 +2,15 @@ import os
 import string
 import json
 import re
-from email.utils import parseaddr
+import validators
 from spellchecker import SpellChecker
 
 spell = SpellChecker()
 ROOT_PATH = os.path.join(os.path.dirname(__file__),"../")
 number_checker = re.compile(r"[\d]+")
+
+def normalize(word):
+    return word.lower().translate(str.maketrans("", "", string.punctuation))
 
 def test_spelling():
     
@@ -15,7 +18,7 @@ def test_spelling():
         resume = json.load(resume_json)
 
     with open(os.path.join(ROOT_PATH, "dictionaryAdditions.json")) as custom_words:
-        spell.word_frequency.load_words(json.load(custom_words)["AllowedWords"])
+        spell.word_frequency.load_words([normalize(word) for word in json.load(custom_words)["AllowedWords"]])
     
 
     def check_spelling(obj):
@@ -24,14 +27,14 @@ def test_spelling():
         if isinstance(obj, str):
             # tokenize
             for piece in obj.split(" "):
-                # ignore email addresses
-                if parseaddr(piece)[1]:
+                # ignore email addresses and urls
+                if validators.email(piece) or validators.url(piece):
                     continue
                 # strip punctuation and lowercase
-                normalized = piece.lower().translate(str.maketrans("", "", string.punctuation))
+                normalized = normalize(piece)
                 if number_checker.match(normalized):
                     continue
-                assert spell[normalized], f"spelling error: {piece}"
+                assert spell[normalized], f"spelling error: {piece}: normalized as {normalized}"
         elif isinstance(obj, list):
             [check_spelling(child) for child in obj]
         else:

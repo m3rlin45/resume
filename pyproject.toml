@@ -12,6 +12,7 @@ Jinja2 = "^3.0.2"
 pyspellchecker = "^0.6.2"
 pytest = "^6.2.5"
 PyLaTeX = "^1.4.1"
+validators = "^0.18.2"
 
 [tool.poetry.dev-dependencies]
 
