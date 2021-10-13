@@ -21,7 +21,7 @@ jobs:
         run: pdflatex resume.tex
       - name: Upload pdf
         uses: actions/upload-artifact@v2
-	with:
-	  name: resume.pdf
-	  path: resume.pdf
+        with:
+          name: resume.pdf
+          path: resume.pdf
       
