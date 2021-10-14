@@ -24,4 +24,23 @@ jobs:
         with:
           name: resume.pdf
           path: resume.pdf
+  build-website:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/setup
+      - name: Install Less Compiler
+        run: sudo apt install node-less
+      - name: build html file
+        run: poetry run python build/Generator.py generate-html resume.json templates/indexTemplate.html index.html
+      - name: build styles
+        run: lessc less/grayscale.less css/grayscale.css
+      - name: Upload files
+        uses: actions/upload-artifact@v2
+        with:
+          name: website
+          path: |
+	    index.html
+	    css/
+	    js/
       
