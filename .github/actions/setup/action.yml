@@ -4,5 +4,7 @@ runs:
         uses: actions/setup-python@v2
       - name: Install Poetry
         run: pip install poetry
+	shell: bash	
       - name: Install Python Dependencies
         run: poetry install
+	shell: bash
