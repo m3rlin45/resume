@@ -1,4 +1,5 @@
 runs:
+    using: "composite"
     steps:
       - name: set up Python
         uses: actions/setup-python@v2
