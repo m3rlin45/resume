@@ -24,6 +24,7 @@ jobs:
         with:
           name: resume.pdf
           path: resume.pdf
+          retention-days: 7
   build-website:
     runs-on: ubuntu-latest
     steps:
@@ -44,3 +45,21 @@ jobs:
             css/
             js/
             img/
+          retention-days: 7
+  package-together:
+    needs: [build-latex-pdf, build-website]
+    steps:
+    - name: Get Website
+      uses: actions/download-artifact@v2
+      with:
+        name: website
+    - name: Get PDF
+      uses: actions/download-artifact@v2
+      with:
+        name: resume.pdf
+    - name: Package Together
+      uses: actions/upload-artifact@v2
+      with:
+        name: full-site-package
+        path: ./
+    
