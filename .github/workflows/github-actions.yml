@@ -30,12 +30,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ./.github/actions/setup
-      - name: Install Less Compiler
-        run: sudo apt install node-less
+      - name: Setup Node
+        uses: actions/setup-node@v2
+      - name: install dependencies
+        run: npm install
       - name: build html file
         run: poetry run python build/Generator.py generate-html resume.json templates/indexTemplate.html index.html
       - name: build styles
-        run: lessc less/grayscale.less css/grayscale.css
+        run: npm run build-styles
+      - name: Remove Dev Deps
+        run: npm prune --production
       - name: Upload files
         uses: actions/upload-artifact@v2
         with:
@@ -45,6 +49,7 @@ jobs:
             css/
             js/
             img/
+            node_modules/
           retention-days: 7
   package-together:
     runs-on: ubuntu-latest
