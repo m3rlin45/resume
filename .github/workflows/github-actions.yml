@@ -64,6 +64,7 @@ jobs:
         name: full-site-package
         path: ./
     - name: Publish to Pages Branch
+      if: success() && github.ref == 'refs/heads/master'
       uses: crazy-max/ghaction-github-pages@v2
       with:
         target_branch: gh-pages
