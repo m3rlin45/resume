@@ -63,4 +63,10 @@ jobs:
       with:
         name: full-site-package
         path: ./
+    - name: Publish to Pages Branch
+      uses: crazy-max/ghaction-github-pages@v2
+      with:
+        target_branch: gh-pages
+        build_dir: ./
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
