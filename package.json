@@ -9,7 +9,10 @@
     "less": "^3.13.1"
   },
   "scripts": {
-    "build-styles": "lessc less/grayscale.less css/grayscale.css"
+    "build-styles": "lessc less/grayscale.less css/grayscale.css",
+    "build-html": "poetry run python build/Generator.py generate-html resume.json templates/indexTemplate.html index.html",
+    "build-latex": "poetry run python build/Generator.py generate-latex resume.json templates/resumeTemplate.tex resume.tex",
+    "build-all": "npm run build-styles && npm run build-html && npm run build-latex"
   },
   "repository": {
     "type": "git",
