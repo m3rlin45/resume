@@ -42,4 +42,4 @@ The CI system is pretty overengineered, because I wanted to try out GitHub actio
 
 
 ## Credits
-This project inspired by [Steven Edouard's resume](http://resume.stevenedouard.com/). It waas originally, like his, based on [JSON Resume](https://jsonresume.org/) but lacks in pdf generation and dissatisfaction with the html options it had pushed me to the current design. The JSON file no longer follows the schema.
+This project inspired by [Steven Edouard's](https://stevenedouard.com/)'s json resume. It waas originally, like his, based on [JSON Resume](https://jsonresume.org/) but lacks in pdf generation and dissatisfaction with the html options it had pushed me to the current design. The JSON file no longer follows the schema.
