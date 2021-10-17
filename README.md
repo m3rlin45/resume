@@ -11,7 +11,7 @@ To Develop on this resume, you need to have Python, NodeJs, and [Poetry](https:/
 
 Then you can install all the dependencies with and build like:
 
-```
+```bash
 $ # Install Dependencies
 $ npm install
 $ poetry install
