@@ -65,10 +65,6 @@
                         <a class="page-scroll" href="#experience">Experience</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#awards">Awards</a>
-                    </li>
-
-                    <li>
                         <a class="page-scroll" href="#languages">Languages</a>
                     </li>
                     <li>
@@ -251,33 +247,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Awards Section -->
-    <section id="awards" class="content-section awards-section text-center">
-        <div class="container">
-            {{ sectionTitle("Awards")}}
-            <div class="row">
-                {% for award in awards %}
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading detail-panel">
-                            <h4 class="detail-panel">{{award.awarder}}</h4>
-                            <h5 class="detail-panel">{{award.title}}</h5>
-                        </div>
-                        <div class="panel-body detail-panel">
-                            {{award.summary}}
-                        </div>
-                        <div class="panel-footer detail-panel">
-                            {{award.date | DateYearMonth}}
-                        </div>
-                    </div>
-                </div>
-                {%endfor%}
-            </div>
-        </div>
-    </section>
-
-
 
     <!-- languages Section -->
     <section id="languages" class="content-section languages-section text-center">

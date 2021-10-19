@@ -102,7 +102,8 @@
                         "Added an emphasis on system and hardware skills for test and measurement software roles.",
                         "Expanded the duration of on-site interviews and their technical scope.",
                         "Organized an effort to ensure new hires would have real work, improving morale and retention.",
-                        "Performed resume screening, phone screening, and on-site interviews."
+                        "Performed resume screening, phone screening, and on-site interviews.",
+                        "Received a Personal Contribution Award for my work in improving hiring process in the Software Center."
                     ]
                 },
                 {
@@ -117,7 +118,8 @@
                         "Redesigned the simulator for SpaceWire connectivity to support VIIRS upgrades.",
                         "Built and maintained a data aggregation system which cut analysis time from hours to minutes.",
                         "Provided 24/7 on call support for months of continuous testing.",
-                        "As a result of upgrades, test program had a marked (80%) reduction in errors caused by the simulators."
+                        "As a result of upgrades, test program had a marked (80%) reduction in errors caused by the simulators.",
+                        "Received 3 personal contributions and 7 team contribution Mission Success Awards on the VIIRS program."
                     ]
                 },
                 {
@@ -130,7 +132,8 @@
                         "Designed and built the hardware, including interconnect, wiring, and mechanical design.",
                         "Built a web app and API for configuration data and telemetry. (~10,000 lines of C# and HTML)",
                         "Built a client library for the API that could be easily consumed in LabVIEW.",
-                        "Worked closely with the LabVIEW team, resulting in smooth integration."
+                        "Worked closely with the LabVIEW team, resulting in smooth integration.",
+                        "Received a Raytheon Innovation Award for the novel configuration database approach I designed."
                     ]
                 },
                 {
@@ -185,26 +188,6 @@
             "startDate": "2006-10-01",
             "endDate": "2010-06-01",
             "gpa": "3.5"
-        }
-    ],
-    "awards": [
-        {
-            "title": "Innovation Award",
-            "date": "2012-11-01",
-            "awarder": "Raytheon",
-            "summary": "Award for a novel configuration database scheme for a test station"
-        },
-        {
-            "title": "Mission Success Awards",
-            "date": "2015-04-27",
-            "awarder": "Raytheon VIIRS Program",
-            "summary": "Received 3 personal contributions award and 7 team contribution awards on the VIIRS program."
-        },
-        {
-            "title": "Award for Personal Contribution",
-            "date": "2015-02-11",
-            "awarder": "Raytheon Software Center",
-            "summary": "Awarded for work in improving hiring process in the Software Center."
         }
     ],
     "skills": [
