@@ -36,16 +36,31 @@
 	    "website": "https://www.facebook.com",
 	    "location": "Menlo Park, CA, USA",
 	    "roles": [
+                {
+		    "position": "Engineering Technical Lead for Content Understanding Services in Facebook AI",
+		    "startDate": "2020-02-01",
+		    "summary": "A individual contributor role with a lot of management flavor, I drove the technical roadmap and execution of the core Content Understanding Services team, providing computer vision (CV) and natural language processing (NLP) services for all of Facebook.",
+		    "highlights": [
+                        "Wrote the business case for a centralized state of the art (SOTA) text understanding service at Facebook, partnered with research team to align the research agenda with product needs and infrastructure constraints. Designed the system architecture and implemented several of the most complex components. This is the flagship project of our team and the premier text understanding system at Facebook. We delivered by working as #oneteam across organizational boundaries.",
+                        "Partnered with internal research team to build the business case and research agenda for a centralized state of the art multi-modal content understanding system, guided the engineering team and research teams to bring it to production as #oneteam.",
+                        "Partnered with my manager to build a new team that centralized key technologies, models, and services that are used to understand both language and images across Facebook and Instagram.",
+                        "Drove the workload definitions and helped craft the business case for large scale research training clusters at Facebook",
+                        "When COVID-19 Caused a simultaneous jump in internet usage and shortage of computing hardware, I helped drive efficiency efforts in Facebook AI. I pushed us to go beyond the bare minimum and we delivered significant wins, including a major chunk that I personally achieved.",
+                        "Lots of mentorship, inside and outside my team: at peak I had 14 simultaneous mentees, both IC's and Managers, and I helped several of them achieve career goals including promotions, project successes, and team changes."
+		    ]
+		},
 		{
 		    "position": "Tech Lead Manager for NLP Infrastructure",
 		    "startDate": "2018-07-01",
+                    "endDate": "2020-02-01",
 		    "summary": "A blended role of management and engineering leadership. I led the NLP Infrastructure team in Facebook AI.",
 		    "highlights": [
 			"Expanded the team beyond just inference into NLP training platforms forming a collaboration with the FB Assistant Language team to build the open source PyText platform to bring PyTorch based NLP models to all of Facebook.",
 			"Led the push to bring new hardware capabilities into FB in very short timeframes which paved the way for Facebook's RoBERTa and XLM-R models to be invented and productized in the same year.",
 			"Grew the team from 4 to 8 to support our needs, and supported the growth of individuals on the team.",
-			"Drove a broad effort across Facebook AI to improve engineering standards and maintenance",
-			"Recognized that the blended role was insufficient for the team size needed to realize our ambitions and hired an experienced manager to take over the people management side so I could focus on technical direction. This transition is ongoing."
+			"Drove a broad effort across Facebook AI to improve engineering standards and maintenance.",
+                        "Built the business case for the first use of GPUs for AI inference in production at Facebook and provided management cover for the team to successfully implement what was a controversial, contrarian project at the time.",
+			"Recognized that in a blended role, I was the scaling bottleneck for the team, as splitting my time limited the size of our team. I worked with my management and helped hire an experienced manager to partner with me, taking the engineering management half of my job so we achieve more together than I could alone."
 		    ]
 		},
 		{
