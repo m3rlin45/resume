@@ -1,5 +1,6 @@
 {
     "AllowedWords": [
+        "#oneteam",
         "ASPNET",
         "Arduino",
         "Atsugi",
@@ -8,6 +9,7 @@
         "C",
         "C++11/14",
         "C11",
+        "COVID-19",
         "CSS",
         "CV",
         "Caltech",
