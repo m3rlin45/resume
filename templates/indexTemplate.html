@@ -107,13 +107,11 @@
                             {{basics.location.city}}, {{basics.location.region}} {{basics.location.countryCode}}
                         </p>
                         <p>{{basics.summary}}</p>
-                        <ul class="list-inline">
-                            {% for profile in basics.profiles %}
-                            <li>
-                                <a href="{{profile.url}}" class="btn btn-default btn-lg">{{profile.network}} <br />{{profile.username}}</a>
-                            </li>
-                            {% endfor %}
-                        </ul>
+                        <p>
+                          <i class="fab fa-github github-icon"></i> <br />
+                          This resume is open source code. <br />
+                          <a href="{{resume_repo}}">Check it out on GitHub!
+                        </p>
                     </div>
                 </div>
             </div>
