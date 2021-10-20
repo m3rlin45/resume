@@ -56,16 +56,16 @@
                         <a class="page-scroll" href="#profile">Profile</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#education">Education</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#skills">Skills</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#experience">Experience</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#languages">Languages</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#skills">Skills</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#interests">Interests</a>
@@ -170,6 +170,48 @@
         </ul>
     {% endmacro %}
 
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section content-section text-center">
+        <div class="container">
+            {{ sectionTitle("Experience")}}
+            <div class="row">
+                {% for job in work %}
+                <div class="{{ "col-md-10 col-md-offset-1" if job.roles|length > 1 else "col-md-8 col-md-offset-2" }}">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="detail-panel"><a href="{{job.website}}">{{job.company}}</a></h3>
+                            <h4 class="detail-panel">{{job.title}}</h4>
+                            <h5 class="detail-panel">{{job.location}}</h5>
+                        </div>
+                        <div class="panel-body">
+                            {% for role in job.roles %}
+                            {{ rollBlock(role, job.roles|length > 1) }}
+                            {% endfor %}
+                        </div>
+                        {{ dateFooter(job.roles[0].startDate, job.roles[0].endDate) if job.roles|length == 1  }}
+                    </div>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+    </section>
+
+    <!-- languages Section -->
+    <section id="languages" class="content-section languages-section text-center">
+        <div class="container">
+            {{ sectionTitle("Languages")}}
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <ul class="list-group">
+                        {% for lang in languages %}
+                        <li class="list-group-item language-list"><h3>{{lang.language}} &mdash; {{lang.fluency}}</h3></li>
+                        {%endfor%}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Education Section -->
     <section id="education" class="content-section education-section text-center">
         <div class="container">
@@ -218,48 +260,6 @@
                     </div>
                 </div>
                 {%endfor%}
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section content-section text-center">
-        <div class="container">
-            {{ sectionTitle("Experience")}}
-            <div class="row">
-                {% for job in work %}
-                <div class="{{ "col-md-10 col-md-offset-1" if job.roles|length > 1 else "col-md-8 col-md-offset-2" }}">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="detail-panel"><a href="{{job.website}}">{{job.company}}</a></h3>
-                            <h4 class="detail-panel">{{job.title}}</h4>
-                            <h5 class="detail-panel">{{job.location}}</h5>
-                        </div>
-                        <div class="panel-body">
-                            {% for role in job.roles %}
-                            {{ rollBlock(role, job.roles|length > 1) }}
-                            {% endfor %}
-                        </div>
-                        {{ dateFooter(job.roles[0].startDate, job.roles[0].endDate) if job.roles|length == 1  }}
-                    </div>
-                </div>
-                {%endfor%}
-            </div>
-        </div>
-    </section>
-
-    <!-- languages Section -->
-    <section id="languages" class="content-section languages-section text-center">
-        <div class="container">
-            {{ sectionTitle("Languages")}}
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <ul class="list-group">
-                        {% for lang in languages %}
-                        <li class="list-group-item language-list"><h3>{{lang.language}} &mdash; {{lang.fluency}}</h3></li>
-                        {%endfor%}
-                    </ul>
-                </div>
             </div>
         </div>
     </section>
