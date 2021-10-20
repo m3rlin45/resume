@@ -31,6 +31,10 @@
 \address{<$ basics.location.city $>, <$ basics.location.region $> <$ basics.location.countryCode $>} % Your address
 \address{\href{mailto:<$ basics.email $>}{<$ basics.email | TeXEscape $>}}
 \address{\href{<$ basics.website $>}{<$ basics.website | TeXEscape $>}}
+\address{\href{<$ basics.website $>}{<$ basics.website | TeXEscape $>}}
+\repository{<$ resume_repo $>}
+
+
 
 \begin{document}
 
@@ -151,21 +155,6 @@
 <$ comma() $> <$ keyw $> 
 <%- endfor -%>\\
 <% endfor %>
-\end{tabular}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	PROFILES SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Profiles}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-<% for profile  in basics.profiles -%>
-<$  profile.network $> & \href{<$ profile.url $>}{<$ profile.url | TeXEscape $>}\\
-\textnormal{  <$ profile.username $>} & \\
-<%- endfor %>
 \end{tabular}
 
 \end{rSection}

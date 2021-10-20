@@ -25,6 +25,7 @@
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
+\usepackage[hidelinks]{hyperref} 
 
 \pagestyle{empty} % Suppress page numbers
 
@@ -40,6 +41,9 @@
 
 \def \summary #1{\def\@summary{#1}} % Defines the \title command to set title
 \def \@summary {} % Sets \@title to empty by default
+
+\def \repository #1{\def\@repository{#1}} % Defines the \repository command to set the repo
+\def \@repository {} % sets \@repository to empty by default
 
 \def \addressSep {$\diamond$} % Set default address separator to a diamond
 
@@ -96,7 +100,11 @@
     \printaddress{\@addressthree}}
    \begin{center}
      \parbox{18 cm} { {\bf Summary:} \@summary}
+     \smallskip
+     \centerline{\href{\@repository}{This Resume is Code, Check it Out!}}
+
    \end{center}
+   
 }
 
 %----------------------------------------------------------------------------------------
