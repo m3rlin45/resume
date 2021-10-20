@@ -25,7 +25,8 @@
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
-\usepackage[hidelinks]{hyperref} 
+\usepackage[hidelinks]{hyperref}
+\usepackage{etoolbox}
 
 \pagestyle{empty} % Suppress page numbers
 
@@ -52,6 +53,8 @@
 \let \@addresstwo \relax
 \let \@addressthree \relax
 
+\newcommand*{\addresslist}{}
+
 % \address command can be used to set the first, second, and third address (last 2 optional)
 \def \address #1{
   \@ifundefined{@addresstwo}{
@@ -70,6 +73,14 @@
     \def \\ {\addressSep\ }
     \centerline{#1}
   \endgroup
+  \par
+  \addressskip
+}
+
+\newcommand{\horizontalAddrs}[2][$\;\bullet\;$]{%
+  \def\nextitem{\def\nextitem{#1}}% Separator
+  \renewcommand*{\do}[1]{\nextitem##1}% How to process each item
+  \centerline{\dolistloop{#2}}% Process list
   \par
   \addressskip
 }
@@ -93,11 +104,13 @@
  \printaddress{\@title} %print out title
   \smallskip
   \@ifundefined{@addressone}{}{ % Print the first address if specified
-    \printaddress{\@addressone}}
+    \listadd{\addresslist}{\@addressone}}
   \@ifundefined{@addresstwo}{}{ % Print the second address if specified
-    \printaddress{\@addresstwo}}
+    \listadd{\addresslist}{\@addresstwo}}
   \@ifundefined{@addressthree}{}{ % Print the third address if specified
-    \printaddress{\@addressthree}}
+    \listadd{\addresslist}{\@addressthree}}
+  \horizontalAddrs{\addresslist}
+  \smallskip
   \centerline{This Resume is Code: \href{\@repository}{\@repository}} 
   \begin{center}
     \parbox{18 cm} { {\bf Summary:} \@summary}
