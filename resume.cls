@@ -96,14 +96,12 @@
     \printaddress{\@addressone}}
   \@ifundefined{@addresstwo}{}{ % Print the second address if specified
     \printaddress{\@addresstwo}}
-     \@ifundefined{@addressthree}{}{ % Print the third address if specified
+  \@ifundefined{@addressthree}{}{ % Print the third address if specified
     \printaddress{\@addressthree}}
-   \begin{center}
-     \parbox{18 cm} { {\bf Summary:} \@summary}
-     \smallskip
-     \centerline{\href{\@repository}{This Resume is Code, Check it Out!}}
-
-   \end{center}
+  \centerline{This Resume is Code: \href{\@repository}{\@repository}} 
+  \begin{center}
+    \parbox{18 cm} { {\bf Summary:} \@summary}
+  \end{center}
    
 }
 
