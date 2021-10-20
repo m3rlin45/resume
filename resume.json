@@ -1,4 +1,5 @@
 {
+    "resume_repo": "https://github.com/m3rlin45/resume",
     "basics": {
         "name": "Christopher Dewan",
         "label": "Software and Hardware Engineer",
@@ -10,24 +11,7 @@
             "city": "Los Angeles",
             "countryCode": "USA",
             "region": "California"
-        },
-        "profiles": [
-            {
-                "network": "Github",
-                "url": "https://github.com/m3rlin45",
-                "username": "m3rlin45"
-            },
-            {
-                "network": "Picasa",
-                "url": "https://picasaweb.google.com/m3rlin45",
-                "username": "m3rlin45"
-            },
-            {
-                "network": "Resume Source",
-                "username": "This resume is code",
-                "url": "https://github.com/m3rlin45/resume"
-            }
-        ]
+        }
     },
     "work": [
 	{
