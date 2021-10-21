@@ -6,6 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ./.github/actions/setup
+      - name: Check Formatting
+        run: git ls-files | grep "\.py$" | xargs poetry run black --check
       - name: Run Tests
         run: poetry run pytest
   build-latex-pdf:
