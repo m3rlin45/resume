@@ -157,15 +157,19 @@
         {% endif %}
     {% endmacro %}
 
-    {% macro roleBlockCenter(role) %}
+     {% macro roleBlockCenter(role) %}
+        {% if role.summary %}
         <div class="well well-sm detail-panel">
             {{role.summary}}
         </div>
+        {% endif %}
+        {% if role.highlights %}
         <ul class="text-left detail-panel">
             {% for highlight in role.highlights %}
             <li>{{highlight}}</li>
             {%endfor%}
         </ul>
+        {% endif %}
     {% endmacro %}
 
     <!-- Experience Section -->

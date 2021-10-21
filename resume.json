@@ -152,14 +152,13 @@
         },
         {
             "company": "Caltech Physics Department",
-            "title": "Teaching Assistant",
+            "title": "Laboratory Teaching Assistant",
             "website": "http://www.caltech.edu",
             "location": "Pasadena, CA, USA",
             "roles": [
                 {
                     "startDate": "2008-10-01",
-                    "endDate": "2009-12-01",
-                    "summary": "Instructed physics students in a hands on laboratory environment. Topics included: analog circuit design and analysis, mass spectroscopy, electron diffraction, and light spectroscopy."
+                    "endDate": "2009-12-01"
                 }
             ]
         }
