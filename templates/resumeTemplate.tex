@@ -62,7 +62,9 @@
 <% else %>
 {}{}
 <% endif -%>{ <$ workplace.title $> }{<$ job.position $>}{<$ printDate(job.startDate) $> --- <$ printDate(job.endDate) $>}
+<%- if job.summary %>
 { <$ job.summary | TeXEscape $> }
+<% endif -%>
 <% for highlight in job.highlights %>
 \item <$ highlight | TeXEscape $>
 <% endfor %>
