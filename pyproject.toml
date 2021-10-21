@@ -13,6 +13,7 @@ pyspellchecker = "^0.6.2"
 pytest = "^6.2.5"
 PyLaTeX = "^1.4.1"
 validators = "^0.18.2"
+black = "^21.9b0"
 
 [tool.poetry.dev-dependencies]
 

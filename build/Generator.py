@@ -9,6 +9,7 @@ from filters import add_filters
 def cli():
     pass
 
+
 @cli.command()
 @click.argument("json_resume", type=click.File("r"))
 @click.argument("template_path")
@@ -41,6 +42,7 @@ def generate_latex(json_resume, template_path, output_file):
     )
     add_filters(env)
     env.get_template(template_path).stream(resume_data).dump(output_file)
-    
+
+
 if __name__ == "__main__":
     cli()
