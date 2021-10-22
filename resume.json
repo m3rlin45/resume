@@ -160,77 +160,47 @@
     ],
     "skills": [
         {
-            "name": "Languages",
+            "name": "Programming",
             "level": "Major Work",
+            "keywords": [
+                "C++"
+                "Python",
+                "PyTorch"
+            ]
+        },
+        {
+            "name": "Programming",
+            "level": "Minor Work",
             "keywords": [
                 "C#",
-                "C++"
-            ]
-        },
-        {
-            "name": "Frameworks",
-            "level": "Major Work",
-            "keywords": [
-                "C++11/14",
-                "boost",
-                "boost::test",
-                "Intel TBB",
-                "ASP.NET MVC"
-            ]
-        },
-        {
-            "name": "Languages",
-            "level": "Minor Work",
-            "keywords": [
                 "Javascript",
                 "HTML",
-                "CSS",
-                "Powershell",
-                "LaTeX",
-                "LabVIEW"
+                "CSS"
             ]
         },
         {
-            "name": "Frameworks",
-            "level": "Minor Work",
-            "keywords": [
-                "node.js",
-                "nunjucks.js",
-                "Log4CXX",
-                "MSTest",
-                "Entity Framework"
-            ]
-        },
-        {
-            "name": "Techniques",
+            "name": "Engineering",
             "level": "Major Work",
             "keywords": [
-                "Unit Testing",
-                "Continuous Integration",
-                "White Box Reverse Engineering",
-                "Scrum"
+                "Distributed Systems Architecture",
+                "Unit Testing and Design For Test",
+                "Continuous Integration and Deployment",
+                "System Measurement and Analytics",
+                "AI Hardware Strategy"
             ]
         },
         {
-            "name": "Hardware Test",
+            "name": "Leadership",
             "level": "Major Work",
             "keywords": [
-                "Test Design",
-                "Apparatus Design",
-                "Test Conduction",
-                "Data Analysis"
+                "Engineering Management",
+                "Mentorship",
+                "Aligning Research and Engineering Teams",
+                "Interviewing",
+                "Hiring",
             ]
         },
-        {
-            "name": "Electronics",
-            "level": "Minor Work",
-            "keywords": [
-                "Parts Selection",
-                "Circuit Design",
-                "Schematic Capture",
-                "Fabrication"
-            ]
-        }
+        
     ],
             "languages": [
                 {
