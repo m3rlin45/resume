@@ -51,11 +51,11 @@
 		    "position": "NLP Infrastructure Technical Lead",
 		    "startDate": "2017-09-01",
 		    "endDate": "2018-06-30",
-		    "summary": "As the engineering leader of the NLP Infrastructure team in Facebook AI, I was responsible for making sure that our research got to production and worked.",
+		    "summary": "As engineering lead for NLP Infrastructure team in Facebook AI, getting research into production was my job.",
 		    "highlights": [
 			"Built a generic auto-scaling microservice system for serving many ML models efficiently. This was extended beyond NLP and took over most non-ads ML inference workloads at Facebook.",
-			"Greatly expanded the scale and efficiency of Translation inference at Facebook",
-			"Supported my manager and helped hire and grow new talent within the team"
+			"Greatly expanded the scale and efficiency of Translation inference at Facebook.",
+			"Supported my manager and helped hire and grow new talent within the team."
 		    ]
 		},
 		{
