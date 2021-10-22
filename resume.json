@@ -163,7 +163,7 @@
             "name": "Programming",
             "level": "Major Work",
             "keywords": [
-                "C++"
+                "C++",
                 "Python",
                 "PyTorch"
             ]
@@ -182,10 +182,10 @@
             "name": "Engineering",
             "level": "Major Work",
             "keywords": [
-                "Distributed Systems Architecture",
-                "Unit Testing and Design For Test",
-                "Continuous Integration and Deployment",
-                "System Measurement and Analytics",
+                "Distributed Systems",
+                "Unit Testing",
+                "Continuous Integration",
+                "Analytics",
                 "AI Hardware Strategy"
             ]
         },
@@ -193,13 +193,12 @@
             "name": "Leadership",
             "level": "Major Work",
             "keywords": [
-                "Engineering Management",
+                "People Management",
                 "Mentorship",
-                "Aligning Research and Engineering Teams",
-                "Interviewing",
-                "Hiring",
+                "Cross Functional Alignment",
+                "Performance Review"
             ]
-        },
+        }
         
     ],
             "languages": [
