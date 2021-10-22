@@ -81,55 +81,40 @@
                     "position": "Adviser to Software Center Management",
                     "startDate": "2015-01-01",
                     "endDate": "2015-09-09",
-                    "summary": "Led an effort in Software Engineering Center to improve talent acquisition and retention.",
+                    "summary": "Led effort to improve talent acquisition and retention for software engineers. I recieved an award for this work.",
                     "highlights": [
-                        "Added an emphasis on system and hardware skills for test and measurement software roles.",
-                        "Expanded the duration of on-site interviews and their technical scope.",
-                        "Organized an effort to ensure new hires would have real work, improving morale and retention.",
-                        "Performed resume screening, phone screening, and on-site interviews.",
-                        "Received a Personal Contribution Award for my work in improving hiring process in the Software Center."
+                        "Created a tailored new interview loop focused on relevant skills with expanded use of technical questions.",
+                        "Organized an effort to ensure new hires would have real work, improving morale and retention."
                     ]
                 },
                 {
                     "position": "VIIRS Ground Support Equipment Responsible Engineering Authority",
                     "startDate": "2012-08-01",
                     "endDate": "2015-09-09",
-                    "summary": "VIIRS (Visible Infrared Imaging Radiometer Suite) is a calibrated spaceborne sensor for weather prediction. My team tests it extensively prior to launch.",
+                    "summary": "I was the engineering owner of the ground station and spacecraft simulators used to test VIIRS (Visible Infrared Imaging Radiometer Suite), a calibrated spaceborne weather sensor. My upgrades reduced errors during the test program by 80%. I received 3 personal and 7 team Mission Success Awards for this work.",
                     "highlights": [
-                        "Engineering owner of the ground station and spacecraft simulators for VIIRS test program.",
                         "Made the case for, designed, and executed a rewrite of the simulator software. (~40,000 lines of C++)",
-                        "Designed and built an adapter board so inexpensive commercial communications hardware could be used.",
+                        "Designed and built an adapter board so inexpensive commercial hardware could be used in test.",
                         "Redesigned the simulator for SpaceWire connectivity to support VIIRS upgrades.",
                         "Built and maintained a data aggregation system which cut analysis time from hours to minutes.",
-                        "Provided 24/7 on call support for months of continuous testing.",
-                        "As a result of upgrades, test program had a marked (80%) reduction in errors caused by the simulators.",
-                        "Received 3 personal contributions and 7 team contribution Mission Success Awards on the VIIRS program."
+                        "Provided 24/7 on call support for months of continuous testing."
                     ]
                 },
                 {
                     "position": "Raytheon Capital Test Station: Electrical and Software Architect",
                     "startDate": "2011-04-01",
                     "endDate": "2012-08-01",
-                    "summary": "Software/hardware design of a test station offering new capabilities to customer programs and internal R&D.",
+                    "summary": "Software/hardware design of a test station offering new capabilities to customer programs and internal R&D. I received a Raytheon Innovation Award for the novice configuration database I designed.",
                     "highlights": [
-                        "Gathered electrical and software requirements and designed an overall architecture.",
-                        "Designed and built the hardware, including interconnect, wiring, and mechanical design.",
-                        "Built a web app and API for configuration data and telemetry. (~10,000 lines of C# and HTML)",
-                        "Built a client library for the API that could be easily consumed in LabVIEW.",
-                        "Worked closely with the LabVIEW team, resulting in smooth integration.",
-                        "Received a Raytheon Innovation Award for the novel configuration database approach I designed."
+                        "Gathered electrical and software requirements and designed an overall architecture, selected the hardware, and did detailed hardware design, both electrical and mechanical",
+                        "Designed and built the software stack, including a web app and API for configuration data and telemetry, along with a client library integrated into LabVIEW, our test software platform. (~10,000 lines of C# and HTML)"
                     ]
                 },
                 {
                     "position": "Test Systems Engineer",
                     "startDate": "2010-06-21",
                     "endDate": "2011-04-01",
-                    "summary": "Designed Test apparatus and components, supported test programs and R&D efforts.",
-                    "highlights": [
-                        "Designed circuit boards and enclosures to support testing of space hardware.",
-                        "Supported a field test of a new method for vicarious calibration of satellites.",
-                        "Performed radiometric calibration of a hyperspectral sensor."
-                    ]
+                    "summary": "Designed Test apparatus and components, supported test programs and R&D efforts."
                 }
             ]
         },
