@@ -62,10 +62,10 @@
 		    "position": "Translation Infrastructure Engineer",
 		    "startDate": "2016-01-01",
 		    "endDate": "2017-09-01",
-		    "summary": "As the first infra engineer in the Facebook Translation Team, I worked to make our inference scalable and reliable",
+		    "summary": "As the first infra engineer on Facebook Translation, I made our system more scalable and reliable",
 		    "highlights": [
-			"Drove the inference infrastructure side of migrating translation at FB to neural networks, which required vastly more compute than statistical methods.",
-			"Significantly increased the reliability of translations at Facebook through better system architecture.",
+			"Drove the inference infrastructure migration from statistical to neural machine translation at FB.",
+			"Rearchitected translation inference to significantly increase reliability.",
 			"Built the hot-fix system used to respond to bad translations at Facebook for Neural Machine Translation"
 		    ]
 		}
