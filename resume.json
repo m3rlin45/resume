@@ -21,16 +21,16 @@
 	    "location": "Menlo Park, CA, USA",
 	    "roles": [
                 {
-		    "position": "Engineering Technical Lead for Content Understanding Services in Facebook AI",
+		    "position": "Engineering Technical Lead for Facebook AI Content Understanding Services",
 		    "startDate": "2020-02-01",
-		    "summary": "A individual contributor role with a lot of management flavor, I drove the technical roadmap and execution of the core Content Understanding Services team, providing computer vision (CV) and natural language processing (NLP) services for all of Facebook.",
+		    "summary": "As overall technical leader for content understanding. I am the responsible authority for the strategy, technical architecture, and execution of our team spanning multiple key computer vision and natural language processing (NLP) serving the needs of all of Facebook.",
 		    "highlights": [
-                        "Wrote the business case for a centralized state of the art (SOTA) text understanding service at Facebook, partnered with research team to align the research agenda with product needs and infrastructure constraints. Designed the system architecture and implemented several of the most complex components. This is the flagship project of our team and the premier text understanding system at Facebook. We delivered by working as #oneteam across organizational boundaries.",
-                        "Partnered with internal research team to build the business case and research agenda for a centralized state of the art multi-modal content understanding system, guided the engineering team and research teams to bring it to production as #oneteam.",
-                        "Partnered with my manager to build a new team that centralized key technologies, models, and services that are used to understand both language and images across Facebook and Instagram.",
-                        "Drove the workload definitions and helped craft the business case for large scale research training clusters at Facebook",
-                        "When COVID-19 Caused a simultaneous jump in internet usage and shortage of computing hardware, I helped drive efficiency efforts in Facebook AI. I pushed us to go beyond the bare minimum and we delivered significant wins, including a major chunk that I personally achieved.",
-                        "Lots of mentorship, inside and outside my team: at peak I had 14 simultaneous mentees, both IC's and Managers, and I helped several of them achieve career goals including promotions, project successes, and team changes."
+                        "Wrote the business case for a centralized state of the art (SOTA) text understanding service at Facebook. Built the engineering/research partnership to build it. Designed the system architecture and implemented several of the most complex components. This is the flagship project of our team and the premier text understanding system at Facebook. We delivered it into production despite a company wide capacity crunch and delivered significant business impact working as #oneteam across organizational boundaries.",
+                        "Partnered across organizations to build the case for a centralized SOTA multi-modal content understanding system. Led the combined research and engineering work that brought it to production as #oneteam.",
+                        "Drove the technical and business strategy for a new team that centralized content understanding AI services used to understand both language and images across Facebook and Instagram.",
+                        "Drove workload definitions and initial business case for large scale research training clusters at Facebook",
+                        "When COVID-19 Caused a simultaneous jump in internet usage and global supply chain challenges I drove Facebook AI's efficiency efforts far beyond the target baseline and we delivered big wins.",
+                        "Mentor to 14 simultaneous mentees, including IC's and managers across multiple teams. I helped them achieve career goals including promotions, project successes, and team changes."
 		    ]
 		},
 		{
