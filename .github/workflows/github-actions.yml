@@ -65,11 +65,6 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: resume.pdf
-    - name: Package Together
-      uses: actions/upload-artifact@v2
-      with:
-        name: full-site-package
-        path: ./
     - name: Publish to Pages Branch
       if: success() && github.ref == 'refs/heads/master'
       uses: crazy-max/ghaction-github-pages@v2
