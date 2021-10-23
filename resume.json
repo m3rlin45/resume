@@ -2,11 +2,11 @@
     "resume_repo": "https://github.com/m3rlin45/resume",
     "basics": {
         "name": "Christopher Dewan",
-        "label": "Software and Hardware Engineer",
+        "label": "Software Engineer, Technical and Team Leader",
         "picture": "",
         "email": "Chris.Dewan@m3rlin.net",
         "website": "http://m3rlin.net",
-        "summary": "Physicist turned Electrical Engineer turned Software Engineer with a hint of management. I'm looking to work with strong teams on challenging, multi-disciplinary problems with a system level outlook.",
+        "summary": "I have strengths in engineering, people and product management, and conflict resolution. I have a track record of working across teams and domains, strongly focus on engineering/research collaboration. I'm looking for great coworkers, supportive management, and big problems you must collaborate to solve.",
         "location": {
             "city": "Los Angeles",
             "countryCode": "USA",
@@ -16,7 +16,7 @@
     "work": [
 	{
 	    "company": "Facebook",
-	    "title": "Principal Software Engineer",
+	    "title": "Principal Software Engineer, Facebook AI",
 	    "website": "https://www.facebook.com",
 	    "location": "Menlo Park, CA, USA",
 	    "roles": [
