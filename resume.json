@@ -34,24 +34,24 @@
 		    ]
 		},
 		{
-		    "position": "Tech Lead Manager for NLP Infrastructure",
+		    "position": "Tech Lead Manager for Facebook AI NLP Infrastructure",
 		    "startDate": "2018-07-01",
                     "endDate": "2020-02-01",
-		    "summary": "A blended role of management and engineering leadership. I led the NLP Infrastructure team in Facebook AI.",
+		    "summary": "Combined role of both people management and technical leadership of the NLP Infrastructure team.",
 		    "highlights": [
-			"Expanded the team beyond just inference into NLP training platforms forming a collaboration with the FB Assistant Language team to build the open source PyText platform to bring PyTorch based NLP models to all of Facebook.",
-			"Led the push to bring new hardware capabilities into FB in very short timeframes which paved the way for Facebook's RoBERTa and XLM-R models to be invented and productized in the same year.",
-			"Grew the team from 4 to 8 to support our needs, and supported the growth of individuals on the team.",
-			"Drove a broad effort across Facebook AI to improve engineering standards and maintenance.",
-                        "Built the business case for the first use of GPUs for AI inference in production at Facebook and provided management cover for the team to successfully implement what was a controversial, contrarian project at the time.",
-			"Recognized that in a blended role, I was the scaling bottleneck for the team, as splitting my time limited the size of our team. I worked with my management and helped hire an experienced manager to partner with me, taking the engineering management half of my job so we achieve more together than I could alone."
+			"Expanded the team's scope beyond inference, building a collaboration with with the FB Assistant Language team to build the open source PyText training platform to bring PyTorch based NLP models to all of Facebook.",
+			"Led the push to bring new hardware capabilities into FB in a very short timeframe. This unblocked the research that resulted in the RoBERTa and XLM-R models.",
+			"Hired and grew my team from 4 to 8, and supported the growth of individuals on the team.",
+			"Drove a broad effort across Facebook AI to improve engineering standards.",
+                        "Built the business case for a crash effort to bring GPUs to production for inference for the first time at Facebook and provided management cover for this controversial project whose success changed FB AI Hardware Strategy.",
+			"Recognized that by doing two jobs I was a bottleneck for the team growth, as I couldn't support enough people to match our needs. I chose to split my role into two and reverted back to Technical Lead."
 		    ]
 		},
 		{
-		    "position": "NLP Infrastructure Technical Lead",
+		    "position": "Facebook AI NLP Infrastructure Technical Lead",
 		    "startDate": "2017-09-01",
 		    "endDate": "2018-06-30",
-		    "summary": "As engineering lead for Facebook AI NLP Infrastructure, getting research into production was my job.",
+		    "summary": "As engineering lead for NLP Infrastructure, getting research into production was my job.",
 		    "highlights": [
 			"Built a generic auto-scaling microservice system for serving many ML models efficiently. This was extended beyond NLP and took over most non-ads ML inference workloads at Facebook.",
 			"Greatly expanded the scale and efficiency of Translation inference at Facebook.",
