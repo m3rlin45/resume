@@ -208,7 +208,7 @@
                 },
                 {
                     "language": "Japanese",
-                    "fluency": "JLPT N1"
+                    "fluency": "Professional Working Level. Passed JLPT N1"
                 }
             ],
             "interests": [
@@ -223,8 +223,10 @@
                 {
                     "name": "Reading",
                     "keywords": [
+                        "Current Events",
                         "History",
                         "Economics",
+                        "Manga",
                         "Biography"
                     ]
                 },
@@ -232,7 +234,7 @@
                     "name": "Technology",
                     "keywords": [
                         "Computer Hardware",
-                        "Video Gaming",
+                        "Flight Simulators",
                         "Virtual Reality"
                     ]
                 }
