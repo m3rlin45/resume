@@ -1,6 +1,6 @@
 # [Chris Dewan's Resume](https://resume.m3rlin.net)
 
-This repository contains my Resume. The resume itself is the file [resume.json]. When changes are pushed to GitHub, it triggers a GitHub Actions workflow, that will spell check the resume and then build it into both an html web page, and a printable pdf. When changes are merged into the master branch, the workflow will also push the new website onto GitHub Pages, where you can view both the [html](https://resume.m3rlin.net) and the [pdf](https://resume.m3rlin.net/resume.pdf).
+This repository contains my Resume. The resume itself is the file [resume.json](resume.json). When changes are pushed to GitHub, it triggers a GitHub Actions workflow, that will spell check the resume and then build it into both an html web page, and a printable pdf. When changes are merged into the master branch, the workflow will also push the new website onto GitHub Pages, where you can view both the [html](https://resume.m3rlin.net) and the [pdf](https://resume.m3rlin.net/resume.pdf).
 
 **Isn't this excessive, overengineered, and a waste of time?**
 Yeah... basically, but it was a good opportunity to get a basic handle on stuff I don't deal with in my normal work, like web development tools, Github Actions, etc. Also, **it was FUN!**
