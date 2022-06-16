@@ -8,7 +8,7 @@
         "website": "http://m3rlin.net",
         "summary": "I have strengths in engineering, people and product management, and conflict resolution. I have a track record of working across teams and domains, strongly focus on engineering/research collaboration. I'm looking for great coworkers, supportive management, and big problems that require collaboration.",
         "location": {
-            "city": "Los Angeles",
+            "city": "Redwood City",
             "countryCode": "USA",
             "region": "California"
         }
@@ -20,9 +20,19 @@
 	    "website": "https://www.facebook.com",
 	    "location": "Menlo Park, CA, USA",
 	    "roles": [
+		{
+		    "position": "Research Engineer, FAIR"
+		    "startDate": "2022-02-12",
+		    "summary": "Lead the engineering efforts in a large language model research team in Meta AI's FAIR organization.",
+		    "highlights": [
+			"Restructured how we set goals and execute on them, getting the whole team working on common objectives and collaborating to achieve them.",
+			"Negotiated and executed a large refactor of the Metaseq codebase, allowing it to be open sourced as part of the Open Pretrained Transformers (OPT) model and paper release without disrupting internal research."			
+		    ]
+		},
                 {
 		    "position": "Engineering Technical Lead for Facebook AI Content Understanding Services",
 		    "startDate": "2020-02-01",
+		    "endDate": "2022-02-11",
 		    "summary": "As overall technical leader for content understanding. I am the responsible authority for the strategy, technical architecture, and execution of our team spanning multiple key computer vision and natural language processing (NLP) serving the needs of all of Facebook.",
 		    "highlights": [
                         "Wrote the business case for a centralized state of the art (SOTA) text understanding service at Facebook. Built the engineering/research partnership to build it. Designed the system architecture and implemented several of the most complex components. This is the flagship project of our team and the premier text understanding system at Facebook. We delivered it into production despite a company wide capacity crunch and delivered significant business impact working as #oneteam across organizational boundaries.",
