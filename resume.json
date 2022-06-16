@@ -15,8 +15,8 @@
     },
     "work": [
 	{
-	    "company": "Facebook",
-	    "title": "Software Engineer, Facebook AI",
+	    "company": "Meta Platforms",
+	    "title": "Software Engineer, Meta AI",
 	    "website": "https://www.facebook.com",
 	    "location": "Menlo Park, CA, USA",
 	    "roles": [
@@ -60,7 +60,7 @@
 		},
 		{
 		    "position": "Translation Infrastructure Engineer",
-		    "startDate": "2016-01-01",
+		    "startDate": "2015-11-02",
 		    "endDate": "2017-09-01",
 		    "summary": "As the first infra engineer on Facebook Translation, I made our system more scalable and reliable",
 		    "highlights": [
