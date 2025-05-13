@@ -7,5 +7,5 @@ runs:
         run: pip install poetry
         shell: bash     
       - name: Install Python Dependencies
-        run: poetry install
+        run: poetry install --no-root
         shell: bash
