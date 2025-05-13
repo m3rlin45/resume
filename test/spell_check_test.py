@@ -41,6 +41,8 @@ class TestSpelling(unittest.TestCase):
                 # tokenize
                 for piece in obj.split(" "):
                     # ignore email addresses and urls
+                    if(piece.startswith("(") and piece.endswith(")")):
+                        piece = piece[1:-1]
                     if validators.email(piece) or validators.url(piece):
                         continue
                     # strip punctuation and lowercase
