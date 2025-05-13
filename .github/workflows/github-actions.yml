@@ -58,11 +58,11 @@ jobs:
     needs: [build-latex-pdf, build-website]
     steps:
     - name: Get Website
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: website
     - name: Get PDF
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: resume.pdf
     - name: Publish to Pages Branch
