@@ -21,21 +21,23 @@
 	    "location": "Menlo Park, CA, USA",
 	    "roles": [
 		{
-		    "position": "Research Engineer, FAIR"
+		    "position": "Research Engineer, FAIR",
 		    "startDate": "2022-02-12",
-		    "summary": "Lead the engineering efforts in a large language model research team in Meta AI's FAIR organization.",
+		    "endDate": "2022-06-30",
+		    "summary": "Lead the engineering-side efforts in a large language model research team in Meta AI's FAIR organization.",
 		    "highlights": [
 			"Restructured how we set goals and execute on them, getting the whole team working on common objectives and collaborating to achieve them.",
-			"Negotiated and executed a large refactor of the Metaseq codebase, allowing it to be open sourced as part of the Open Pretrained Transformers (OPT) model and paper release without disrupting internal research."			
+			"Negotiated and executed a large refactor of the Metaseq codebase, allowing it to be open sourced as part of the Open Pretrained Transformers (OPT) model and paper (https://arxiv.org/abs/2205.01068) release without disrupting internal research.",
+			"Helped organize the transition of the OPT effort into following LLM efforts, which were quite successful."
 		    ]
 		},
                 {
-		    "position": "Engineering Technical Lead for Facebook AI Content Understanding Services",
+		    "position": "Technical Lead for MultiRay, TextRay, and PostRay, Facebook AI",
 		    "startDate": "2020-02-01",
 		    "endDate": "2022-02-11",
-		    "summary": "As overall technical leader for content understanding. I am the responsible authority for the strategy, technical architecture, and execution of our team spanning multiple key computer vision and natural language processing (NLP) serving the needs of all of Facebook.",
+		    "summary": "As overall technical leader for content understanding. I was the responsible authority for the strategy, technical architecture, and execution of our team spanning multiple key computer vision and natural language processing (NLP) problems across all of Facebook (Meta). This project, called MultiRay, changed how NLP and multimodal understanding was done cross the company.",
 		    "highlights": [
-                        "Wrote the business case for a centralized state of the art (SOTA) text understanding service at Facebook. Built the engineering/research partnership to build it. Designed the system architecture and implemented several of the most complex components. This is the flagship project of our team and the premier text understanding system at Facebook. We delivered it into production despite a company wide capacity crunch and delivered significant business impact working as #oneteam across organizational boundaries.",
+                        "Wrote the business case for MultiRay, (https://ai.meta.com/blog/multiray-large-scale-AI-models/) a centralized state of the art (SOTA) text understanding service at Facebook. Built the engineering/research partnerships, designed the system architecture, and implemented several of the most complex components. This was the flagship project of our team and the premier text understanding system at Facebook. We delivered it into production despite a company wide capacity crunch and delivered significant business impact working as #oneteam across organizational boundaries.",
                         "Partnered across organizations to build the case for a centralized SOTA multi-modal content understanding system. Led the combined research and engineering work that brought it to production as #oneteam.",
                         "Drove the technical and business strategy for a new team that centralized content understanding AI services used to understand both language and images across Facebook and Instagram.",
                         "Drove workload definitions and initial business case for large scale research training clusters at Facebook",
@@ -91,7 +93,7 @@
                     "position": "Adviser to Software Center Management",
                     "startDate": "2015-01-01",
                     "endDate": "2015-09-09",
-                    "summary": "Led effort to improve hiring and retention for software engineers. I recieved an award for this work.",
+                    "summary": "Led effort to improve hiring and retention for software engineers. I received an award for this work.",
                     "highlights": [
                         "Created a tailored new interview loop focused on relevant skills with expanded use of technical questions.",
                         "Organized an effort to ensure new hires would have real work, improving morale and retention."
