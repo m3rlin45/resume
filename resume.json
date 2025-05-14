@@ -6,7 +6,7 @@
         "picture": "",
         "email": "Chris.Dewan@m3rlin.net",
         "website": "http://m3rlin.net",
-        "summary": "I have strengths in engineering, people and product management, and conflict resolution. I have a track record of working across teams, domains and oceans, with a strong focus on engineering/research collaboration. I'm looking for great coworkers, supportive management, and big problems that require collaboration.",
+        "summary": "I have strengths in engineering, people and product management, and conflict resolution. I have a track record of working across teams, domains and oceans, with a strong focus on engineering/research collaboration. I'm looking for great coworkers, supportive management, and big technical challenges.",
         "location": {
             "city": "Chiyoda-ku",
             "countryCode": "Japan",
@@ -26,7 +26,7 @@
 		    "summary": "Led successful major initiatives around reliability and user control in Instagram Recommendations in a cross-Pacific remote role.",
 		    "highlights": [
                 "Developed a new novel reliability metric for Instagram recommendation serving that was so simple and successful that it has become one of the primary reliability metrics across all of Instagram.",
-                "Led the engineering effort to build Instagram Recommendations Reset (https://about.instagram.com/blog/announcements/reset-instagram-content-suggestions) which was a very challenging technical project delivered on schedule and well under initial estimates of team size. I built the team, designed the architecture, set the schedule, drove the execution, and built several of the most difficult components. All of my teammates on this project were in the United States."
+                "Led the engineering effort to build Instagram Recommendations Reset which was a very challenging technical project delivered on schedule and well under initial estimates of team size. I built the team, designed the architecture, set the schedule, drove the execution, and built several of the most difficult components. All of my teammates on this project were in the United States."
 		    ]
 		}
         ]
