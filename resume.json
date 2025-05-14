@@ -8,23 +8,40 @@
         "website": "http://m3rlin.net",
         "summary": "I have strengths in engineering, people and product management, and conflict resolution. I have a track record of working across teams and domains, strongly focus on engineering/research collaboration. I'm looking for great coworkers, supportive management, and big problems that require collaboration.",
         "location": {
-            "city": "Redwood City",
-            "countryCode": "USA",
-            "region": "California"
+            "city": "Chiyoda-ku",
+            "countryCode": "Japan",
+            "region": "Tokyo"
         }
     },
     "work": [
+        {
+    	"company": "Meta Japan",
+	    "title": "Software Engineer, Instagram Relevance",
+	    "website": "https://www.instagram.com",
+        "location": "Tokyo, Japan",
+	    "roles": [
+		{
+		    "position": "Technical Lead, IG Recommendations Foundations",
+		    "startDate": "2022-07-01",
+		    "summary": "Led successful major initiatives around reliability and user control in Instagram Recommendations in a cross-Pacific remote role.",
+		    "highlights": [
+                "Developed a new novel reliability metric for Instagram recommendation serving that was so simple and successful that it has become one of the primary reliability metrics across all of Instagram.",
+                "Led the engineering effort to build Instagram Recommendations Reset (https://about.instagram.com/blog/announcements/reset-instagram-content-suggestions) which was a very challenging technical project delivered on schedule and well under initial estimates of team size. I built the team, designed the architecture, set the schedule, drove the execution, and built several of the most difficult components. All of my teammates on this project were in the United States."
+		    ]
+		}
+        ]
+        },
 	{
-	    "company": "Meta Platforms",
+	    "company": "Meta Platforms (formerly Facebook)",
 	    "title": "Software Engineer, Meta AI",
-	    "website": "https://www.facebook.com",
+	    "website": "https://www.meta.com",
 	    "location": "Menlo Park, CA, USA",
 	    "roles": [
 		{
 		    "position": "Research Engineer, FAIR",
 		    "startDate": "2022-02-12",
 		    "endDate": "2022-06-30",
-		    "summary": "Lead the engineering-side efforts in a large language model research team in Meta AI's FAIR organization.",
+		    "summary": "Led the engineering-side efforts in a large language model research team in Meta AI's FAIR organization.",
 		    "highlights": [
 			"Restructured how we set goals and execute on them, getting the whole team working on common objectives and collaborating to achieve them.",
 			"Negotiated and executed a large refactor of the Metaseq codebase, allowing it to be open sourced as part of the Open Pretrained Transformers (OPT) model and paper (https://arxiv.org/abs/2205.01068) release without disrupting internal research.",
